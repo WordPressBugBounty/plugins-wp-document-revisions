@@ -37,7 +37,7 @@ class WP_Document_Revisions {
 	 *
 	 * @var string
 	 */
-	public $version = '3.7.2';
+	public $version = '3.8.1';
 
 	/**
 	 * The WP default upload directory cache.
@@ -377,6 +377,7 @@ class WP_Document_Revisions {
 	 * @param WP_Post|false|null $delete       Whether to go forward with deletion.
 	 * @param WP_Post            $post         Post object.
 	 * @param bool               $force_delete Whether to bypass the Trash.
+	 * @return WP_Post | null  Null - No opinion (will run deletion); $post - Bypass delete.
 	 */
 	public function possibly_delete_revision( $delete, $post, $force_delete ) { // phpcs:ignore Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed
 		// bail if not a revision, an autosave or already decided not to delete.
@@ -388,7 +389,7 @@ class WP_Document_Revisions {
 		// is it for a document.
 		$doc = $post->post_parent;
 		if ( 0 === $doc || ! $this->verify_post_type( $doc ) ) {
-			// not a document.
+			// not a document revision.
 			return $delete;
 		}
 
@@ -402,7 +403,7 @@ class WP_Document_Revisions {
 		 * @param WP_Post $post  Post object.
 		 */
 		if ( apply_filters( 'document_allow_revision_deletion', false, $post ) ) {
-			return $delete;
+			return null;
 		}
 
 		// Have we loaded our admin.
@@ -1093,6 +1094,10 @@ class WP_Document_Revisions {
 			return $cache;
 		}
 
+		// Before post is saved GMT fields are zero.
+		if ( '0000-00-00 00:00:00' === $document->post_modified_gmt ) {
+			$document->post_modified_gmt = current_time( 'mysql', 1 );
+		}
 		// correct the modified date.
 		$document->post_date = gmdate( 'Y-m-d H:i:s', (int) get_post_modified_time( 'U', null, $post_id ) );
 
@@ -1560,11 +1565,11 @@ class WP_Document_Revisions {
 		// Note: We use readfile, and not WP_Filesystem for memory/performance reasons.
 		if ( $compress ) {
 			if ( 'gzip' === $comp_type ) {
-				// phpcs:ignore  WordPress.Security.EscapeOutput, WordPress.WP.AlternativeFunctions
+				// phpcs:ignore WordPress.Security.EscapeOutput,WordPress.WP.AlternativeFunctions
 				echo gzencode( file_get_contents( $file ), 9 );
 				$headers['Content-Encoding'] = 'gzip';
 			} else {
-				// phpcs:ignore  WordPress.Security.EscapeOutput, WordPress.WP.AlternativeFunctions
+				// phpcs:ignore WordPress.Security.EscapeOutput,WordPress.WP.AlternativeFunctions
 				echo gzdeflate( file_get_contents( $file ), 9 );
 				$headers['Content-Encoding'] = 'deflate';
 			}
@@ -3058,8 +3063,12 @@ class WP_Document_Revisions {
 		} elseif ( is_numeric( $post_content ) ) {
 			return (int) $post_content;
 		} else {
+			// Early return if content doesn't contain WPDR marker to avoid regex cost.
+			if ( false === stripos( $post_content, 'WPDR' ) ) {
+				return false;
+			}
 			// find document id. Might have white space from the screen upload process.
-			preg_match( '/<!-- WPDR \s*(\d+) -->/', $post_content, $id );
+			preg_match( '/<!-- WPDR \s*(\d+) -->/i', $post_content, $id );
 			if ( isset( $id[1] ) ) {
 				// if a match return the id (Zero will be no document attached - WPML scenario).
 				return (int) $id[1];
@@ -3342,6 +3351,11 @@ class WP_Document_Revisions {
 			return;
 		}
 
+		// Verify user can edit this document.
+		if ( ! current_user_can( 'edit_document', $post_id ) ) {
+			wp_die( esc_html__( 'Not authorized', 'wp-document-revisions' ) );
+		}
+
 		// update the post name with the slug and then the guid - direct in the database.
 		$doc            = get_post( $post_id );
 		$slug           = wp_unique_post_slug( $slug, $post_id, $doc->post_status, 'document', 0 );
@@ -3361,7 +3375,7 @@ class WP_Document_Revisions {
 		// phpcs:enable WordPress.DB.PreparedSQL.InterpolatedNotPrepared,WordPress.DB.PreparedSQL.NotPrepared,WordPress.DB.DirectDatabaseQuery
 		$this->clear_cache( $post_id, $doc, true );
 
-		// phpcs:ignore  WordPress.Security.EscapeOutput
+		// phpcs:ignore WordPress.Security.EscapeOutput
 		wp_die( get_sample_permalink_html( $post_id, $title, $slug ) );
 	}
 

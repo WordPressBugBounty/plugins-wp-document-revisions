@@ -75,7 +75,7 @@ class WP_Document_Revisions_Admin {
 		add_action( 'admin_head', array( &$this, 'add_help_tab' ) );
 
 		// edit document screen.
-		add_action( 'admin_head', array( &$this, 'make_private' ) );
+		add_action( 'admin_head', array( &$this, 'make_private' ), 20 );
 		add_action( 'set_object_terms', array( &$this, 'workflow_state_save' ), 10, 6 );
 		add_action( 'save_post_document', array( &$this, 'save_document' ) );
 		add_action( 'admin_init', array( &$this, 'enqueue_edit_scripts' ) );
@@ -104,6 +104,7 @@ class WP_Document_Revisions_Admin {
 		add_action( 'admin_init', array( &$this, 'settings_fields' ) );
 		add_action( 'update_wpmu_options', array( &$this, 'network_upload_location_save' ) );
 		add_action( 'update_wpmu_options', array( &$this, 'network_slug_save' ) );
+		add_action( 'update_wpmu_options', array( &$this, 'network_link_date_save' ) );
 		add_action( 'wpmu_options', array( &$this, 'network_settings_cb' ) );
 		add_action( 'network_admin_notices', array( &$this, 'network_settings_errors' ) );
 		add_filter( 'wp_redirect', array( &$this, 'network_settings_redirect' ) );
@@ -141,7 +142,7 @@ class WP_Document_Revisions_Admin {
 	 * @since 1.0
 	 * @param function $funct the function to call.
 	 * @param array    $args  the arguments to pass to the function.
-	 * @returns mixed the result of the function.
+	 * @return mixed the result of the function.
 	 */
 	public function __call( $funct, $args ) {
 		return call_user_func_array( array( &self::$parent, $funct ), $args );
@@ -153,7 +154,7 @@ class WP_Document_Revisions_Admin {
 	 *
 	 * @since 1.0
 	 * @param string $name the property to fetch.
-	 * @returns mixed the property's value
+	 * @return mixed the property's value
 	 */
 	public function __get( $name ) {
 		return WP_Document_Revisions::$$name;
@@ -165,10 +166,14 @@ class WP_Document_Revisions_Admin {
 	 *
 	 * @since 0.5
 	 * @param array $messages messages array.
-	 * @returns array messages array with doc. messages
+	 * @return array messages array with doc. messages
 	 */
 	public function update_messages( $messages ) {
 		global $post, $post_id;
+
+		// Cache date/time format options to avoid multiple get_option calls.
+		$date_format = get_option( 'date_format' );
+		$time_format = get_option( 'time_format' );
 
 		$messages['document'] = array(
 			// translators: %s is the download link.
@@ -186,7 +191,7 @@ class WP_Document_Revisions_Admin {
 			// translators: %s is the download link.
 			8  => sprintf( __( 'Document submitted. <a target="_blank" href="%s">Download document</a>', 'wp-document-revisions' ), esc_url( add_query_arg( 'preview', 'true', get_permalink( $post_id ) ) ) ),
 			// translators: %1$s is the date, %2$s is the preview link.
-			9  => sprintf( __( 'Document scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview document</a>', 'wp-document-revisions' ), date_i18n( sprintf( _x( '%1$s @ %2$s', '%1$s: date; %2$s: time', 'wp-document-revisions' ), get_option( 'date_format' ), get_option( 'time_format' ) ), strtotime( $post->post_date ) ), esc_url( get_permalink( $post_id ) ) ),
+			9  => sprintf( __( 'Document scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview document</a>', 'wp-document-revisions' ), date_i18n( sprintf( _x( '%1$s @ %2$s', '%1$s: date; %2$s: time', 'wp-document-revisions' ), $date_format, $time_format ), strtotime( $post->post_date ) ), esc_url( get_permalink( $post_id ) ) ),
 			// translators: %s is the link to download the document.
 			10 => sprintf( __( 'Document draft updated. <a target="_blank" href="%s">Download document</a>', 'wp-document-revisions' ), esc_url( add_query_arg( 'preview', 'true', get_permalink( $post_id ) ) ) ),
 		);
@@ -227,7 +232,7 @@ class WP_Document_Revisions_Admin {
 	 *
 	 * @since 1.1
 	 * @param WP_Screen $screen (optional) the current screen.
-	 * @returns array the help text
+	 * @return array the help text
 	 */
 	public function get_help_text( $screen = null ) {
 		if ( is_null( $screen ) ) {
@@ -409,7 +414,7 @@ class WP_Document_Revisions_Admin {
 	 * @since 1.0
 	 * @param array     $hidden the default hidden metaboxes.
 	 * @param WP_Screen $screen the current screen.
-	 * @returns array defaults with postcustom
+	 * @return array defaults with postcustom
 	 */
 	public function hide_postcustom_metabox( $hidden, $screen ) {
 		if ( 'document' === $screen->id ) {
@@ -675,7 +680,7 @@ class WP_Document_Revisions_Admin {
 	 * @param string[] $_default_tabs An array of media tabs.
 	 */
 	public function media_upload_tabs_computer( $_default_tabs ) {
-		// phpcs:ignore  WordPress.Security.NonceVerification.Recommended
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		if ( $this->verify_post_type() && isset( $_GET['action'] ) ) {
 			// keep just load from computer for the document (but not the thumbnail).
 			unset( $_default_tabs['type_url'] );
@@ -708,7 +713,7 @@ class WP_Document_Revisions_Admin {
 		add_settings_field(
 			'document_link_date',
 			__( 'Document Date in Permalink', 'wp-document-revisions' ),
-			array( &$this, 'link_date_cb' ),
+			array( &$this, 'document_link_date_cb' ),
 			'media',
 			'uploads'
 		);
@@ -721,7 +726,7 @@ class WP_Document_Revisions_Admin {
 	 *
 	 * @since 1.0
 	 * @param string $dir path to the new directory.
-	 * @returns bool|string false on fail, path to new dir on sucess
+	 * @return bool|string false on fail, path to new dir on success
 	 */
 	public function sanitize_upload_dir( $dir ) {
 		// empty string passed.
@@ -822,25 +827,14 @@ class WP_Document_Revisions_Admin {
 					<?php wp_nonce_field( 'network_document_slug', 'document_slug_nonce' ); ?>
 				</td>
 			</tr>
+			<tr>
+				<th scope="row"><?php esc_html_e( 'Document Link Date', 'wp-document-revisions' ); ?></th>
+				<td>
+					<?php $this->document_link_date_cb(); ?>
+					<?php wp_nonce_field( 'network_document_link_date', 'document_link_date_nonce' ); ?>
+				</td>
+			</tr>
 		</table>
-		<?php
-	}
-
-
-	/**
-	 * Adds link_date option to permalink page.
-	 *
-	 * @since 3.5.0
-	 */
-	public function link_date_cb() {
-		?>
-		<label for="document_link_date">
-		<input name="document_link_date" type="checkbox" id="document_link_date" value="1" <?php checked( '1', get_option( 'document_link_date' ) ); ?> />
-		<?php esc_html_e( 'Remove the year and month element /yyyy/mm from the document permalink.', 'wp-document-revisions' ); ?></label><br />
-		<span class="description">
-		<?php esc_html_e( 'By default the document permalink will contain the post year and month.', 'wp-document-revisions' ); ?><br />
-		<?php esc_html_e( 'The delivered rewrite rules support both formats.', 'wp-document-revisions' ); ?>
-		</span>
 		<?php
 	}
 
@@ -901,9 +895,38 @@ class WP_Document_Revisions_Admin {
 		global $wp_settings_errors;
 		set_transient( 'settings_errors', $wp_settings_errors );
 
-		// if the dir is valid, save it.
-		if ( $slug ) {
+		// if the slug is valid, save it.
+		if ( ! empty( $slug ) ) {
 			update_site_option( 'document_slug', $slug );
+		}
+	}
+
+
+	/**
+	 * Callback to validate and save link date on network settings page.
+	 */
+	public function network_link_date_save() {
+		if ( ! isset( $_POST['document_link_date_nonce'] ) ) {
+			return;
+		}
+
+		// verify nonce, auth.
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
+		if ( ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['document_link_date_nonce'] ) ), 'network_document_link_date' ) || ! current_user_can( 'manage_network_options' ) ) {
+			wp_die( esc_html__( 'Not authorized', 'wp-document-revisions' ) );
+		}
+
+		// get link date value.
+		$link_date = ( isset( $_POST['document_link_date'] ) ? sanitize_text_field( wp_unslash( $_POST['document_link_date'] ) ) : '' );
+		$link_date = $this->sanitize_document_link_date( $link_date );
+
+		// because there's a redirect, and there's no Settings API, force settings errors into a transient.
+		global $wp_settings_errors;
+		set_transient( 'settings_errors', $wp_settings_errors );
+
+		// if the value has changed, save it.
+		if ( get_site_option( 'document_link_date' ) !== $link_date ) {
+			update_site_option( 'document_link_date', $link_date );
 		}
 	}
 
@@ -916,6 +939,7 @@ class WP_Document_Revisions_Admin {
 	public function network_settings_errors() {
 		settings_errors( 'document_upload_directory' );
 		settings_errors( 'document_slug' );
+		settings_errors( 'document_link_date' );
 	}
 
 
@@ -924,7 +948,7 @@ class WP_Document_Revisions_Admin {
 	 *
 	 * @since 1.0
 	 * @param string $location the URL being redirected to.
-	 * @returns string the modified location
+	 * @return string the modified location
 	 */
 	public function network_settings_redirect( $location ) {
 		// Verify redirect string from /wp-admin/network/edit.php line 164.
@@ -970,7 +994,7 @@ class WP_Document_Revisions_Admin {
 	 */
 	public function document_slug_cb() {
 		// phpcs:ignore
-		$year_month = ( get_option( 'document_link_date' ) ? '' : '/' . date( 'Y' ) . '/' . date( 'm' ) );
+		$year_month = ( get_site_option( 'document_link_date' ) ? '' : '/' . date( 'Y/m' ) );
 		?>
 		<code><?php echo esc_html( trailingslashit( home_url() ) ); ?><input name="document_slug" type="text" id="document_slug" value="<?php echo esc_attr( $this->document_slug() ); ?>" class="medium-text" /><?php echo esc_html( $year_month ); ?>/<?php esc_html_e( 'example-document-title', 'wp-document-revisions' ); ?>.txt</code><br />
 		<span class="description">
@@ -979,6 +1003,24 @@ class WP_Document_Revisions_Admin {
 		_e( '"Slug" with which to prefix all URLs for documents (and the document archive). Default is <code>documents</code>.', 'wp-document-revisions' );
 		echo '<br />';
 		echo '</span>';
+	}
+
+
+	/**
+	 * Adds link_date option to permalink page.
+	 *
+	 * @since 3.5.0
+	 */
+	public function document_link_date_cb() {
+		?>
+		<label for="document_link_date">
+		<input name="document_link_date" type="checkbox" id="document_link_date" value="1" <?php checked( '1', get_site_option( 'document_link_date' ) ); ?> />
+		<?php esc_html_e( 'Remove the year and month element /yyyy/mm from the document permalink.', 'wp-document-revisions' ); ?></label><br />
+		<span class="description">
+		<?php esc_html_e( 'By default the document permalink will contain the post year and month.', 'wp-document-revisions' ); ?><br />
+		<?php esc_html_e( 'The delivered rewrite rules support both formats.', 'wp-document-revisions' ); ?>
+		</span>
+		<?php
 	}
 
 
@@ -996,7 +1038,11 @@ class WP_Document_Revisions_Admin {
 			// Change event to load to let all js get loaded/initialised.
 			?>
 			<script type="text/javascript">
-				window.addEventListener('load', function() {window.WPDocumentRevisions.bindPostDocumentUploadCB()});
+				window.addEventListener('load', function() {
+					if ( typeof window.WPDocumentRevisions === "undefined" ) {
+						window.WPDocumentRevisions = new WPDocumentRevisions(jQuery);
+					}
+				});
 			</script>
 			<?php
 		}
@@ -1007,7 +1053,7 @@ class WP_Document_Revisions_Admin {
 	 *
 	 * @since 0.5
 	 * @param int $post_id the parent post.
-	 * @returns object the attachment object
+	 * @return object the attachment object
 	 */
 	public function get_latest_attachment( $post_id ) {
 		$attachments = $this->get_attachments( $post_id );
@@ -1068,7 +1114,7 @@ class WP_Document_Revisions_Admin {
 	 *
 	 * @since 0.5
 	 * @param int $user (optional) UserID.
-	 * @returns string the feed key
+	 * @return string the feed key
 	 */
 	public function get_feed_key( $user = null ) {
 		$key = get_user_option( $this->meta_key, $user );
@@ -1086,7 +1132,7 @@ class WP_Document_Revisions_Admin {
 	 *
 	 * @since 0.5
 	 * @param int $user (optional) UserID.
-	 * @returns string feed key
+	 * @return string feed key
 	 */
 	public function generate_new_feed_key( $user = null ) {
 		if ( ! $user ) {
@@ -1259,7 +1305,7 @@ class WP_Document_Revisions_Admin {
 	 *
 	 * @since 1.0.4
 	 * @param array $defaults the default column labels.
-	 * @returns array the modified column labels
+	 * @return array the modified column labels
 	 */
 	public function rename_author_column( $defaults ) {
 		if ( isset( $defaults['author'] ) ) {
@@ -1275,7 +1321,7 @@ class WP_Document_Revisions_Admin {
 	 *
 	 * @since 1.1
 	 * @param array $defaults the original columns.
-	 * @returns array our spliced columns
+	 * @return array our spliced columns
 	 */
 	public function add_currently_editing_column( $defaults ) {
 		// get checkbox and title.
@@ -1561,8 +1607,7 @@ class WP_Document_Revisions_Admin {
 		// translation strings.
 		$data = array(
 			'restoreConfirmation' => __( 'Are you sure you want to restore this revision? If you do, no history will be lost. This revision will be copied and become the most recent revision.', 'wp-document-revisions' ),
-			// phpcs:ignore WordPress.WP.I18n.MissingArgDomain
-			'lockNeedle'          => __( 'is currently editing this' ), // purposely left out text domain.
+			'lockNeedle'          => __( 'is currently editing this', 'wp-document-revisions' ),
 			'postUploadNotice'    => '<div id="message" class="updated" style="display:none"><p>' . __( 'File uploaded successfully. Add a revision summary below (optional) and press <strong>Update</strong> to save your changes.', 'wp-document-revisions' ) . '</p></div>',
 			'postDesktopNotice'   => '<div id="message" class="update-nag" style="display:none"><p>' . __( 'After you have saved your document in your office software, <a href="#" onClick="location.reload();">reload this page</a> to see your changes.', 'wp-document-revisions' ) . '</p></div>',
 			// translators: %s is the title of the document.
@@ -1722,7 +1767,10 @@ class WP_Document_Revisions_Admin {
 			return true;
 		}
 		global $wpdr;
-		if ( $wpdr->extract_document_id( $post->post_content ) !== $wpdr->extract_document_id( $last_revision->post_content ) ) {
+		// Cache extract_document_id results to avoid duplicate regex operations.
+		$post_doc_id          = $wpdr->extract_document_id( $post->post_content );
+		$last_revision_doc_id = $wpdr->extract_document_id( $last_revision->post_content );
+		if ( $post_doc_id !== $last_revision_doc_id ) {
 			return true;
 		}
 
@@ -1765,7 +1813,7 @@ class WP_Document_Revisions_Admin {
 		}
 
 		global $wpdb;
-		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery,WordPress.DB.DirectDatabaseQuery.NoCaching
 		$attachmts       = $wpdb->get_results(
 			$wpdb->prepare(
 				"SELECT ID FROM {$wpdb->prefix}posts WHERE post_parent = %d AND post_type = 'attachment'",
