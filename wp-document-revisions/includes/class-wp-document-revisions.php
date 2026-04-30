@@ -41,7 +41,7 @@ class WP_Document_Revisions {
 	 *
 	 * @var string
 	 */
-	public $version = '4.0.3';
+	public $version = '4.0.4';
 
 	/**
 	 * The WP default upload directory cache.
@@ -562,6 +562,14 @@ class WP_Document_Revisions {
 			);
 		}
 
+		if ( ! current_user_can( 'read_document', $document_id ) ) {
+			return new WP_Error(
+				'document_forbidden',
+				__( 'You do not have permission to view revisions for this document.', 'wp-document-revisions' ),
+				array( 'status' => 403 )
+			);
+		}
+
 		if ( ! current_user_can( 'read_document_revisions' ) ) {
 			return new WP_Error(
 				'revisions_forbidden',
@@ -613,6 +621,15 @@ class WP_Document_Revisions {
 			return array(
 				'success'       => true,
 				'previous_lock' => null,
+			);
+		}
+
+		// Mirror the AJAX `override_lock` path: require per-document edit access, not just the primitive override cap.
+		if ( ! current_user_can( 'edit_document', $document_id ) ) {
+			return new WP_Error(
+				'document_forbidden',
+				__( 'You do not have permission to override the lock on this document.', 'wp-document-revisions' ),
+				array( 'status' => 403 )
 			);
 		}
 
