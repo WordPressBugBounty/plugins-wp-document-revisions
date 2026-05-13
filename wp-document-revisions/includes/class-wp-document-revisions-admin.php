@@ -6,6 +6,11 @@
  * @package WP Document Revisions
  */
 
+// direct file access protection.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 /**
  * The WP Admin backend object
  */
@@ -30,20 +35,6 @@ class WP_Document_Revisions_Admin {
 	public static $instance;
 
 	/**
-	 * The last_but_one revision
-	 *
-	 * @var int | null
-	 */
-	private static $last_but_one_revn = null;
-
-	/**
-	 * The last_but_one revision excerpt
-	 *
-	 * @var string | null
-	 */
-	private static $last_revn_excerpt = null;
-
-	/**
 	 * The last revision
 	 *
 	 * @var int | null
@@ -62,7 +53,7 @@ class WP_Document_Revisions_Admin {
 	 * Note: we are at auth_redirect, first possible hook is admin_menu
 	 *
 	 * @since 0.5
-	 * @param unknown $instance (optional, reference).
+	 * @param object|null $instance (optional, reference).
 	 */
 	public function __construct( $instance = null ) {
 		self::$instance = &$this;
@@ -82,6 +73,7 @@ class WP_Document_Revisions_Admin {
 		add_action( 'admin_head', array( $this, 'make_private' ), 20 );
 		add_action( 'set_object_terms', array( $this, 'workflow_state_save' ), 10, 6 );
 		add_action( 'save_post_document', array( $this, 'save_document' ) );
+		add_filter( 'wp_insert_post_data', array( $this, 'restore_document_attachment_id' ), 10, 2 );
 		add_action( 'admin_init', array( $this, 'enqueue_edit_scripts' ) );
 		add_action( '_wp_put_post_revision', array( $this, 'revision_filter' ), 10, 1 );
 		add_filter( 'wp_save_post_revision_post_has_changed', array( $this, 'identify_last_but_one' ), 10, 3 );

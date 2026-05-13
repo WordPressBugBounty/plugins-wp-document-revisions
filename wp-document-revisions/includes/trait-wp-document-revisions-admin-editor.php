@@ -5,10 +5,29 @@
  * @package WP_Document_Revisions
  */
 
+// direct file access protection.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 /**
  * Admin editor functionality for WP_Document_Revisions_Admin.
  */
 trait WP_Document_Revisions_Admin_Editor {
+
+	/**
+	 * The last_but_one revision
+	 *
+	 * @var int | null
+	 */
+	private static $last_but_one_revn = null;
+
+	/**
+	 * The last_but_one revision excerpt
+	 *
+	 * @var string | null
+	 */
+	private static $last_revn_excerpt = null;
 
 	/**
 	 * Registers update messages
@@ -140,9 +159,9 @@ trait WP_Document_Revisions_Admin_Editor {
 	 * Metabox to provide common document functions.
 	 *
 	 * @since 0.5
-	 * @param object $post the post object.
+	 * @param WP_Post $post the post object.
 	 */
-	public function document_metabox( object $post ): void {
+	public function document_metabox( WP_Post $post ): void {
 		// convert old format to new.
 		if ( is_numeric( $post->post_content ) ) {
 			$post->post_content = $this->format_doc_id( $post->post_content );
@@ -227,9 +246,9 @@ trait WP_Document_Revisions_Admin_Editor {
 	 * Callback to generate metabox for workflow state.
 	 *
 	 * @since 0.5
-	 * @param object $post the post object.
+	 * @param WP_Post $post the post object.
 	 */
-	public function workflow_state_metabox_cb( object $post ): void {
+	public function workflow_state_metabox_cb( WP_Post $post ): void {
 		wp_nonce_field( 'wp-document-revisions', 'workflow_state_nonce' );
 
 		$current_state = wp_get_post_terms(
@@ -315,10 +334,60 @@ trait WP_Document_Revisions_Admin_Editor {
 		}
 
 		// Old action hook.
+		// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 		do_action( 'change_document_workflow_state', $doc_id, $new_id );
 
 		// Replacement action hook.
 		do_action( 'document_change_workflow_state', $doc_id, $new_id, $old_id );
+	}
+
+
+	/**
+	 * Restores the WPDR attachment ID comment to post_content when it has been stripped
+	 * by wp_kses_post (applied via content_save_pre for users without unfiltered_html).
+	 *
+	 * This filter runs after content_save_pre but before the DB write, so it can patch
+	 * the data in-place without a secondary wp_update_post call.
+	 *
+	 * @since 4.0.8
+	 * @param array $data    Sanitized post data about to be inserted.
+	 * @param array $postarr Raw post data passed to wp_insert_post.
+	 * @return array Post data, with post_content restored if needed.
+	 */
+	public function restore_document_attachment_id( array $data, array $postarr ): array { // phpcs:ignore Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed
+		if ( 'document' !== $data['post_type'] ) {
+			return $data;
+		}
+
+		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+			return $data;
+		}
+
+		// Already has an attachment ID — nothing to fix.
+		if ( $this->extract_document_id( $data['post_content'] ) ) {
+			return $data;
+		}
+
+		// The WPDR comment may have been stripped by wp_kses_post.  The raw form value is
+		// still in $_POST['post_content'] (unfiltered superglobal).
+		// phpcs:ignore WordPress.Security.NonceVerification.Missing
+		if ( ! isset( $_POST['post_content'] ) ) {
+			return $data;
+		}
+
+		// phpcs:ignore WordPress.Security.NonceVerification.Missing,WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- raw value needed; wp_kses_post() strips the HTML comment we're extracting. Only an integer is extracted from this string.
+		$raw_posted = wp_unslash( $_POST['post_content'] );
+		$attach_id  = $this->extract_document_id( $raw_posted );
+
+		if ( ! $attach_id ) {
+			return $data;
+		}
+
+		// Rebuild: attachment ID comment + any description that survived kses.
+		$description          = preg_replace( '/<!--\s*WPDR\s*\d+\s*-->/i', '', $data['post_content'] );
+		$data['post_content'] = $this->format_doc_id( $attach_id ) . $description;
+
+		return $data;
 	}
 
 
@@ -365,6 +434,32 @@ trait WP_Document_Revisions_Admin_Editor {
 		$content   = get_post_field( 'post_content', $doc_id );
 		$attach_id = $this->extract_document_id( $content );
 
+		// Fallback: if no attachment ID reached the DB (JS failed to set the hidden field, or
+		// wp_kses_post stripped the WPDR comment for low-privilege users), try to recover from
+		// the most recently uploaded attachment for this document.
+		if ( ! $attach_id ) {
+			$latest_attach = $this->get_latest_attachment( $doc_id );
+			if ( $latest_attach ) {
+				// Preserve any existing description text, but restore the attachment ID comment.
+				$description = preg_replace( '/<!--\s*WPDR\s*\d+\s*-->/i', '', $content );
+				$new_content = $this->format_doc_id( $latest_attach->ID ) . $description;
+				global $wpdb;
+				// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared,WordPress.DB.PreparedSQL.NotPrepared,WordPress.DB.DirectDatabaseQuery
+				$post_table = "{$wpdb->prefix}posts";
+				$wpdb->query(
+					$wpdb->prepare(
+						"UPDATE `$post_table` SET `post_content` = %s WHERE `ID` = %d",
+						$new_content,
+						$doc_id
+					)
+				);
+				// phpcs:enable WordPress.DB.PreparedSQL.InterpolatedNotPrepared,WordPress.DB.PreparedSQL.NotPrepared,WordPress.DB.DirectDatabaseQuery
+				wp_cache_delete( $doc_id, 'posts' );
+				clean_post_cache( $doc_id );
+				$attach_id = $latest_attach->ID;
+			}
+		}
+
 		// Let's work on Workflow state, Verify nonce.
 		if ( ! isset( $_POST['workflow_state_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['workflow_state_nonce'] ) ), 'wp-document-revisions' ) ) {
 			return;
@@ -398,7 +493,7 @@ trait WP_Document_Revisions_Admin_Editor {
 			// Yes. Need to delete the last_but one revision and update the excerpt on the last revision and the post to keep timestamps.
 			// Remove our filter so that we can delete the revision.
 			global $wpdr;
-			remove_filter( 'pre_delete_post', array( $wpdr, 'possibly_delete_revision' ), 9999, 3 );
+			remove_filter( 'pre_delete_post', array( $wpdr, 'possibly_delete_revision' ), 9999 );
 			wp_delete_post_revision( self::$last_but_one_revn );
 			add_filter( 'pre_delete_post', array( $wpdr, 'possibly_delete_revision' ), 9999, 3 );
 
@@ -743,7 +838,7 @@ trait WP_Document_Revisions_Admin_Editor {
 		global $pagenow;
 
 		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
-		if ( 'media-upload.php' === $pagenow && ( isset( $_GET['post_id'] ) ? $this->verify_post_type( sanitize_text_field( wp_unslash( $_GET['post_id'] ) ) ) : false ) ) {
+		if ( 'media-upload.php' === $pagenow && ( isset( $_GET['post_id'] ) ? $this->verify_post_type( (int) sanitize_text_field( wp_unslash( $_GET['post_id'] ) ) ) : false ) ) {
 			?>
 			<style>
 				#media-upload-header {display:none;}
@@ -801,9 +896,9 @@ trait WP_Document_Revisions_Admin_Editor {
 	 * Creates revision log metabox.
 	 *
 	 * @since 0.5
-	 * @param object $post the post object.
+	 * @param WP_Post $post the post object.
 	 */
-	public function revision_metabox( object $post ): void {
+	public function revision_metabox( WP_Post $post ): void {
 		$can_edit_doc = current_user_can( 'edit_document', $post->ID );
 		$revisions    = $this->get_revisions( $post->ID );
 		$key          = $this->get_feed_key();
@@ -1000,9 +1095,9 @@ trait WP_Document_Revisions_Admin_Editor {
 	 * Slightly modified document author metabox because the current one is ugly.
 	 *
 	 * @since 0.5
-	 * @param object $post the post object.
+	 * @param WP_Post $post the post object.
 	 */
-	public function post_author_meta_box( object $post ): void {
+	public function post_author_meta_box( WP_Post $post ): void {
 		global $user_id;
 		?>
 		<label class="screen-reader-text" for="post_author_override"><?php esc_html_e( 'Owner', 'wp-document-revisions' ); ?></label>
