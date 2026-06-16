@@ -79,6 +79,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Message  Attachment found for document, but not currently linked
  * Fixable  Yes
  * Cause    Post_content does not contain an attachment post belonging to the document, but there is one there so we could link to it.
+ *          This can also occur if a document file is uploaded, but the document is not saved.
  *
  * Code     5
  * Type     Error
@@ -137,6 +138,12 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Cause    The document permalink should contain the post_date year and month.
  *          This is only a completeness check. Normally access is possible, and normally indicates that the attachment extension has been changed.
  *          The "ugly" form "site_url/?post_type=document&p=nnnn" is a unique identifier and if set to this value, this test is not applied.
+ *
+ * Code     14
+ * Type     Warning
+ * Message  The document contains additional document files that are inaccessible. They should be deleted to reduce storage.
+ * Fixable  Yes
+ * Cause    Document files have been uploaded without the document post being saved. Or multiple uploads have been done before a document save.
  */
 
 /**
@@ -172,6 +179,7 @@ class WP_Document_Revisions_Validate_Structure {
 		if ( null === $instance ) {
 			global $wpdr;
 			if ( ! $wpdr ) {
+				// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 				$wpdr = new WP_Document_Revisions();
 			}
 			self::$parent = $wpdr;
@@ -215,7 +223,7 @@ class WP_Document_Revisions_Validate_Structure {
 	 * Register route
 	 */
 	public function wpdr_register_route(): void {
-		$valid_codes = array( 4, 5, 6, 7, 9, 10, 11, 12 );
+		$valid_codes = array( 4, 5, 6, 7, 9, 10, 11, 12, 14 );
 		$args        = array(
 			'methods'             => \WP_REST_Server::EDITABLE,
 			'callback'            => array( $this, 'correct_document' ),
@@ -255,7 +263,7 @@ class WP_Document_Revisions_Validate_Structure {
 	 * @since 3.4.0
 	 *
 	 * @param WP_REST_Request $request the arguments to pass to the function.
-	 * @return WP_REST_Response
+	 * @return WP_REST_Response|WP_Error
 	 *
 	 * @global $wpdb Database object.
 	 */
@@ -294,6 +302,9 @@ class WP_Document_Revisions_Validate_Structure {
 			);
 			$wpdb->query( $sql );
 			// phpcs:enable WordPress.DB.PreparedSQL.InterpolatedNotPrepared,WordPress.DB.PreparedSQL.NotPrepared,WordPress.DB.DirectDatabaseQuery
+			// update the post_meta.
+			update_post_meta( $id, '_document_attachment_id', $parm );
+
 			wp_cache_delete( $id, 'posts' );
 			wp_cache_delete( $id, 'document_revisions' );
 		}
@@ -322,6 +333,9 @@ class WP_Document_Revisions_Validate_Structure {
 			);
 			$wpdb->query( $sql );
 			// phpcs:enable WordPress.DB.PreparedSQL.InterpolatedNotPrepared,WordPress.DB.PreparedSQL.NotPrepared,WordPress.DB.DirectDatabaseQuery
+			// update the post_meta.
+			update_post_meta( $id, '_document_attachment_id', $parm );
+
 			wp_cache_delete( $id, 'posts' );
 			wp_cache_delete( $id, 'document_revisions' );
 		}
@@ -461,6 +475,43 @@ class WP_Document_Revisions_Validate_Structure {
 			wp_cache_delete( $id, 'document_revisions' );
 		}
 
+		if ( 14 === $params['code'] ) {
+			// orphans found.
+			$attach  = $parm;
+			$orphans = self::identify_orphans( $attach, $id );
+			foreach ( $orphans as $orphan ) {
+				// get name of file to ensure we don't delete a used file (WPML can do this).
+				$filename = get_post_meta( $orphan, '_wp_attached_file', true );
+				global $wpdb;
+				// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared,WordPress.DB.PreparedSQL.NotPrepared,WordPress.DB.DirectDatabaseQuery
+				$dups = $wpdb->get_var(
+					$wpdb->prepare(
+						"SELECT COUNT(1)
+						 FROM {$wpdb->prefix}posts
+						 INNER JOIN {$wpdb->prefix}postmeta
+						 ON post_id = ID
+						 WHERE post_type = 'attachment'
+						 AND post_parent = %d
+						 AND meta_key = '_wp_attached_file'
+						 AND meta_value = %s
+						",
+						$id,
+						$filename
+					),
+				);
+				// phpcs:enable WordPress.DB.PreparedSQL.InterpolatedNotPrepared,WordPress.DB.PreparedSQL.NotPrepared,WordPress.DB.DirectDatabaseQuery
+				if ( '1' !== $dups ) {
+					// change file name held in metadata so no file deletion.
+					update_post_meta( $orphan, '_wp_attached_file', $filename . 'txt' );
+				}
+
+				wp_delete_attachment( $orphan, true );
+			}
+
+			wp_cache_delete( $id, 'posts' );
+			wp_cache_delete( $id, 'document_revisions' );
+		}
+
 		$response = 'Success.';
 		return rest_ensure_response( $response );
 	}
@@ -503,7 +554,7 @@ class WP_Document_Revisions_Validate_Structure {
 		// phpcs:enable WordPress.DB.PreparedSQL.InterpolatedNotPrepared,WordPress.DB.PreparedSQL.NotPrepared,WordPress.DB.DirectDatabaseQuery
 
 		// make sure we're looking at the document directory.
-		add_filter( 'get_attached_file', array( self::$parent, 'get_attached_file_filter' ), 10, 2 );
+		add_filter( 'get_attached_file', array( $wpdr, 'get_attached_file_filter' ), 10, 2 );
 
 		$num_doc = $wpdb->num_rows;
 		$fails   = array();
@@ -690,7 +741,7 @@ class WP_Document_Revisions_Validate_Structure {
 	 * @since 3.4.0
 	 *
 	 * @param int    $doc_id            ID of a post object.
-	 * @param string $attach_id         attachment id from post content field.
+	 * @param int    $attach_id         attachment id from post content field.
 	 * @param string $post_modified_gmt post modified field.
 	 * @return array|false
 	 */
@@ -716,17 +767,21 @@ class WP_Document_Revisions_Validate_Structure {
 		}
 
 		// attachment found, is it valid.
-		$att_error = self::check_attachment( $attach_id, $doc_id );
+		$att_error = self::check_attachment( $attach_id, $doc_id, $post_modified_gmt );
 
 		// fixing the post_content structure takes precedence.
 		if ( ! $valid_att ) {
 			// there is an attachment out there, but not linked.
-				$post_date   = get_date_from_gmt( $post_modified_gmt );
-				$attach_date = get_date_from_gmt( get_post_field( 'post_modified_gmt', $attach_id, 'db' ) );
+			// has one been uploaded.
+			$meta_id     = absint( get_post_meta( $doc_id, '_document_attachment_id', true ) );
+			$post_date   = get_date_from_gmt( $post_modified_gmt );
+			$attach_date = get_date_from_gmt( get_post_field( 'post_modified_gmt', $attach_id, 'db' ) );
 			return array(
 				'code'  => 4,
 				'error' => 1,
-				'msg'   => __( 'Attachment found for document, but not currently linked', 'wp-document-revisions' ),
+				'msg'   => ( $meta_id === $attach_id ) ?
+					__( 'Attachment recently uploaded for document, but not currently linked to it', 'wp-document-revisions' ) :
+					__( 'Attachment found for document, but not currently linked', 'wp-document-revisions' ),
 				// translators: %1$s is the document last modified date, %2$s is its attachment last modifified date.
 				'msg2'  => sprintf( __( '[Modified Date: Document - %1$s, Attachment - %2$s]', 'wp-document-revisions' ), $post_date, $attach_date ),
 				'fix'   => 1,
@@ -752,6 +807,21 @@ class WP_Document_Revisions_Validate_Structure {
 			}
 		}
 
+		// if otherwise no error, look for orphan documents.
+		/**
+		 * Filter to Switch off checking for orphan documents.
+		 *
+		 * Whilst basically an on/off switch, it is called for each document.
+		 * Adding the document id allows only a segment of documents to be checked.
+		 *
+		 * @since 5.1.0
+		 * @param bool $check  Whether to check for orphan records (default true).
+		 * @param ?int $doc_id Document post id.
+		 */
+		if ( ! $att_error && apply_filters( 'document_check_orphans', true, $doc_id ) ) {
+			$att_error = self::check_for_orphans( $attach_id, $doc_id );
+		}
+
 		// return any attachment found.
 		return $att_error;
 	}
@@ -767,7 +837,7 @@ class WP_Document_Revisions_Validate_Structure {
 	 * @param string $post_date   post date field.
 	 * @param string $post_name   post name field.
 	 * @param string $guid        post guid field.
-	 * @return array|false
+	 * @return array|bool
 	 */
 	private static function validate_guid( $doc_id, $attach_id, string $post_status, string $post_date, string $post_name, string $guid ) {
 		$msg_09 = esc_html__( 'The guid is not the expected "ugly" permalink', 'wp-document-revisions' );
@@ -780,11 +850,11 @@ class WP_Document_Revisions_Validate_Structure {
 		$msg_12 = esc_html__( 'The guid does not reflect the complete document permalink.', 'wp-document-revisions' );
 		global $wp_rewrite;
 		$permalink1 = site_url( '?post_type=document&p=' . (string) $doc_id );
-		$permalink2 = str_replace( '/?', '?', $permalink1 );
+		$permalink2 = str_replace( '&p=', '&#038;p=', $permalink1 );
+		$permalink3 = str_replace( '/?', '?', $permalink1 );
+		$in_ugly    = in_array( $guid, array( $permalink1, $permalink2, $permalink3 ), true );
 		if ( '' === $wp_rewrite->permalink_structure || in_array( $post_status, array( 'pending', 'draft' ), true ) ) {
-			$permalink1 = site_url( '?post_type=document&p=' . $doc_id );
-			$permalink2 = str_replace( '/?', '?', $permalink1 );
-			if ( $guid !== $permalink1 && $guid !== $permalink2 ) {
+			if ( ! $in_ugly ) {
 				return array(
 					'code'  => 9,
 					'error' => 0,
@@ -829,7 +899,7 @@ class WP_Document_Revisions_Validate_Structure {
 					'parm'  => $doc_id,
 				);
 			}
-		} elseif ( $guid !== $permalink1 && $guid !== $permalink2 ) {
+		} elseif ( ! $in_ugly ) {
 			// Ugly one is accepable as it is unique.
 
 			if ( '' !== $year_mth ) {
@@ -846,6 +916,9 @@ class WP_Document_Revisions_Validate_Structure {
 				'parm'  => $doc_id,
 			);
 		}
+
+		// no problem found.
+		return false;
 	}
 
 	/**
@@ -882,11 +955,12 @@ class WP_Document_Revisions_Validate_Structure {
 	 *
 	 * @since 3.4.0
 	 *
-	 * @param int $attach_id id of an attachment post object.
-	 * @param int $doc_id    id of the document post object.
+	 * @param int    $attach_id         id of an attachment post object.
+	 * @param int    $doc_id            id of the document post object.
+	 * @param string $post_modified_gmt post modified field.
 	 * @return mixed[]|false
 	 */
-	private static function check_attachment( $attach_id, $doc_id ) {
+	private static function check_attachment( $attach_id, $doc_id, string $post_modified_gmt ) {
 		$attach = get_post( $attach_id );
 		if ( ( ! is_object( $attach ) ) || 'attachment' !== $attach->post_type || $doc_id !== $attach->post_parent ) {
 			// post_content points to an invalid attachment.
@@ -895,6 +969,21 @@ class WP_Document_Revisions_Validate_Structure {
 				'error' => 1,
 				'msg'   => __( 'Document links to an invalid attachment record', 'wp-document-revisions' ),
 				'fix'   => 0,
+			);
+		}
+
+		$meta_id = absint( get_post_meta( $doc_id, '_document_attachment_id', true ) );
+		if ( $meta_id > 0 && $attach_id !== $meta_id ) {
+			$post_date   = get_date_from_gmt( $post_modified_gmt );
+			$attach_date = get_date_from_gmt( get_post_field( 'post_modified_gmt', $attach_id, 'db' ) );
+			return array(
+				'code'  => 4,
+				'error' => 1,
+				'msg'   => __( 'Attachment recently uploaded for document, but not currently linked to it', 'wp-document-revisions' ),
+				// translators: %1$s is the document last modified date, %2$s is its attachment last modifified date.
+				'msg2'  => sprintf( __( '[Modified Date: Document - %1$s, Attachment - %2$s]', 'wp-document-revisions' ), $post_date, $attach_date ),
+				'fix'   => 1,
+				'parm'  => $attach_id,
 			);
 		}
 
@@ -958,6 +1047,100 @@ class WP_Document_Revisions_Validate_Structure {
 					'parm'  => $attach_id,
 				);
 			}
+		}
+
+		return false;
+	}
+
+	/**
+	 * Checks whether there are any orphaned document attachments.
+	 *
+	 * @since 4.1.0
+	 *
+	 * @param int $attach_id id of an attachment post object.
+	 * @param int $doc_id    id of the document post object.
+	 * @return mixed[]|false
+	 */
+	private static function check_for_orphans( int $attach_id, int $doc_id ): array|false {
+		// identify any orphans.
+		$orphans = self::identify_orphans( $attach_id, $doc_id );
+		if ( $orphans ) {
+			return array(
+				'code'  => 14,
+				'error' => 0,
+				'msg'   => __( 'The document contains additional document files that are inaccessible. They should be deleted to reduce storage.', 'wp-document-revisions' ),
+				'fix'   => 1,
+				'parm'  => $attach_id,
+			);
+		}
+
+		return false;
+	}
+
+	/**
+	 * Checks whether there are any orphaned document attachments.
+	 *
+	 * @since 4.1.0
+	 *
+	 * @param int $attach_id id of an attachment post object.
+	 * @param int $doc_id    id of the document post object.
+	 * @return mixed[]|false
+	 */
+	private static function identify_orphans( int $attach_id, int $doc_id ): array|false {
+		global $wpdb;
+		// get an array of attachments other than the one on the document.
+		// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared,WordPress.DB.PreparedSQL.NotPrepared,WordPress.DB.DirectDatabaseQuery
+		$attachs = $wpdb->get_results(
+			$wpdb->prepare(
+				"SELECT ID
+				 FROM {$wpdb->prefix}posts 
+				 WHERE post_type = 'attachment'
+				 AND post_parent = %d
+				 AND ID <> %d
+				",
+				$doc_id,
+				$attach_id
+			),
+			ARRAY_A
+		);
+		// phpcs:enable WordPress.DB.PreparedSQL.InterpolatedNotPrepared,WordPress.DB.PreparedSQL.NotPrepared,WordPress.DB.DirectDatabaseQuery
+		$attachs = wp_list_pluck( $attachs, 'ID', 'ID' );
+		$all_att = $attachs + array( $attach_id => $attach_id );
+
+		// get a list of revisions.
+		// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared,WordPress.DB.PreparedSQL.NotPrepared,WordPress.DB.DirectDatabaseQuery
+		$revns = $wpdb->get_results(
+			$wpdb->prepare(
+				"SELECT post_content
+				 FROM {$wpdb->prefix}posts 
+				 WHERE post_type = 'revision'
+				 AND post_parent = %d
+				",
+				$doc_id
+			),
+			ARRAY_A
+		);
+		// phpcs:enable WordPress.DB.PreparedSQL.InterpolatedNotPrepared,WordPress.DB.PreparedSQL.NotPrepared,WordPress.DB.DirectDatabaseQuery
+		$revns = wp_list_pluck( $revns, 'post_content' );
+
+		$wpdr = self::$parent;
+		foreach ( $revns as $revn ) {
+			$id = $wpdr->extract_document_id( $revn );
+			unset( $attachs[ $id ] );
+		}
+
+		/**
+		 * Filters the list of orphan attachment records found for a document.
+		 *
+		 * @param array $attachs Array of attachments that are orphans.
+		 * @param int   $doc_id  Document post ID.
+		 * @param array $all_att Array of all attachments for the document.
+		 */
+		$attachs = apply_filters( 'document_validate_orphans', $attachs, $doc_id, $all_att );
+
+		// are there any attachments left.
+		if ( ! empty( $attachs ) ) {
+			return $attachs;
 		}
 
 		return false;

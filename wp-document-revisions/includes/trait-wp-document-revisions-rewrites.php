@@ -257,42 +257,25 @@ trait WP_Document_Revisions_Rewrites {
 	 * @return array modified file array
 	 */
 	public function rewrite_file_url( array $file ): array {
-		// verify that this is a document.
-		// phpcs:ignore WordPress.Security.NonceVerification.Missing
-		if ( ! isset( $_POST['post_id'] ) || ! $this->verify_post_type( (int) sanitize_text_field( wp_unslash( $_POST['post_id'] ) ) ) ) {
-			self::$doc_image = true;
+		// verify this is a document load as self::$doc_image has been set false if a WPDR document.
+		if ( self::$doc_image ) {
+			// not a WPDR Document.
 			return $file;
 		}
 
-		// Ignore if dealing with thumbnail on document page. (Document has $_POST['type'] = 'file').
-		// phpcs:ignore WordPress.Security.NonceVerification.Missing
-		if ( ! isset( $_POST['type'] ) || 'file' !== $_POST['type'] ) {
-			self::$doc_image = true;
-			return $file;
+		// Resolve the parent document for the public URL. During an (async) upload the
+		// global $post is not reliably the parent document, so prefer the explicit
+		// upload target sent with the request and fall back to the global only if absent.
+		// The upload is itself nonce-verified by core/media_handle_upload; this is a
+		// read-only lookup of the upload target, so the nonce sniff is suppressed.
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
+		$parent = isset( $_REQUEST['post_id'] ) ? absint( wp_unslash( $_REQUEST['post_id'] ) ) : 0;
+		if ( ! $parent ) {
+			global $post;
+			$parent = $post;
 		}
 
-		global $pagenow;
-
-		if ( 'async-upload.php' === $pagenow ) {
-			// got past cookie, but still may be in thumbnail code.
-			// phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_debug_backtrace
-			$trace     = debug_backtrace( DEBUG_BACKTRACE_IGNORE_ARGS );
-			$functions = array(
-				'wp_ajax_get_post_thumbnail_html',
-				'_wp_post_thumbnail_html',
-				'post_thumbnail_meta_box',
-			);
-			foreach ( $trace as $traceline ) {
-				if ( in_array( $traceline['function'], $functions, true ) ) {
-					self::$doc_image = true;
-					return $file;
-				}
-			}
-		}
-
-		self::$doc_image = false;
-		// phpcs:ignore WordPress.Security.NonceVerification.Missing
-		$file['url'] = get_permalink( sanitize_text_field( wp_unslash( $_POST['post_id'] ) ) );
+		$file['url'] = get_permalink( $parent );
 
 		return $file;
 	}
