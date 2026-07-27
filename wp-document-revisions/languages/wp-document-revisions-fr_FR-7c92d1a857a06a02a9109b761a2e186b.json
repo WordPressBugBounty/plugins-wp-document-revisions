@@ -1,0 +1,57 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-widget\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "fr_FR",
+                "plural-forms": "nplurals=2; plural=(n > 1);"
+            },
+            "Draft": [
+                "Brouillon"
+            ],
+            "Private": [
+                "Priv\u00e9"
+            ],
+            "Show featured image?": [
+                "Afficher l'image mise en avant\u00a0?"
+            ],
+            "Show document description?": [
+                "Afficher la description du document\u00a0?"
+            ],
+            "Show PDF File indication?": [
+                "Afficher l'indication du fichier PDF\u00a0?"
+            ],
+            "Open documents in new tab?": [
+                "Ouvrir les documents dans un nouvel onglet\u00a0?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Activer cette option ouvrira le document dans un nouvel onglet. Il est conseill\u00e9 de l'activer lors de la modification de la page \u00e0 l'aide de ce bloc, car cliquer sur un lien pendant la modification forcera l'ouverture de la page actuelle."
+            ],
+            "Latest Documents Settings": [
+                "Param\u00e8tres des derniers documents"
+            ],
+            "Latest Documents List Heading": [
+                "Liste des documents les plus r\u00e9cents"
+            ],
+            "Documents to Display": [
+                "Documents \u00e0 afficher"
+            ],
+            "Document Statuses to Display": [
+                "Statuts des documents \u00e0 afficher"
+            ],
+            "Publish": [
+                "Publier"
+            ],
+            "Under certain conditons WordPress can generate an image for Page 1 of PDF documents. If created this will be used as the Featured Image.": [
+                "Sous certaines conditions, WordPress peut g\u00e9n\u00e9rer une image pour la premi\u00e8re page des documents PDF. Le cas \u00e9ch\u00e9ant, cette image sera utilis\u00e9e comme image \u00e0 la une."
+            ],
+            "Show author name?": [
+                "Afficher le nom de l'auteur\u00a0?"
+            ]
+        }
+    }
+}

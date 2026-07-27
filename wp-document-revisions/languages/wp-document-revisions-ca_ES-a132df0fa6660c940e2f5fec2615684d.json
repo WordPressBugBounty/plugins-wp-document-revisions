@@ -1,0 +1,93 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/editor-document-upload\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "ca_ES",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Revision Summary": [
+                "Resum de la revisi\u00f3"
+            ],
+            "Document": [
+                "Document"
+            ],
+            "Revision Log": [
+                "Registre de revisions"
+            ],
+            "Upload New Version": [
+                "Puja una nova versi\u00f3"
+            ],
+            "Download": [
+                "Descarrega"
+            ],
+            "Modified": [
+                "Modificat"
+            ],
+            "User": [
+                "Usuari"
+            ],
+            "Summary": [
+                "Resum"
+            ],
+            "Upload Document": [
+                "Puja el document"
+            ],
+            "just now": [
+                "ara mateix"
+            ],
+            "min ago": [
+                "fa un minut"
+            ],
+            "hour ago": [
+                "fa una hora"
+            ],
+            "hours ago": [
+                "fa hores"
+            ],
+            "day ago": [
+                "fa un dia"
+            ],
+            "days ago": [
+                "fa dies"
+            ],
+            "The attached document file could not be found. It may have been deleted.": [
+                "No s'ha trobat el fitxer del document adjunt. Potser s'ha suprimit."
+            ],
+            "Document selection failed.": [
+                "La selecci\u00f3 del document ha fallat."
+            ],
+            "New version selected. Press Update to save.": [
+                "Nova versi\u00f3 seleccionada. Premeu Actualitza per desar."
+            ],
+            "Document selected. Press Update to save.": [
+                "Document seleccionat. Premeu Actualitza per desar."
+            ],
+            "Select": [
+                "Selecciona"
+            ],
+            "Attached document": [
+                "Document adjunt"
+            ],
+            "%s is currently editing this document.": [
+                "%s est\u00e0 editant aquest document actualment."
+            ],
+            "This document is currently locked.": [
+                "Aquest document est\u00e0 actualment bloquejat."
+            ],
+            "A brief description of the changes in this version.": [
+                "Una breu descripci\u00f3 dels canvis d'aquesta versi\u00f3."
+            ],
+            "No revisions yet.": [
+                "Encara no hi ha revisions."
+            ],
+            "\u2014": [
+                "\u2014"
+            ]
+        }
+    }
+}

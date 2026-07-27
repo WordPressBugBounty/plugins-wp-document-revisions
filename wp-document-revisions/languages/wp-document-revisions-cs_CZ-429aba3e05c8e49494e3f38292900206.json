@@ -1,0 +1,81 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "cs_CZ",
+                "plural-forms": "nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;"
+            },
+            "There are no taxonomies defined.": [
+                "Nejsou definov\u00e1ny \u017e\u00e1dn\u00e9 taxonomie."
+            ],
+            "Taxonomy:": [
+                "Taxonomie:"
+            ],
+            "Block Heading": [
+                "Nadpis bloku"
+            ],
+            "Display Settings": [
+                "Nastaven\u00ed displeje"
+            ],
+            "Number of documents to display": [
+                "Po\u010det dokument\u016f k zobrazen\u00ed"
+            ],
+            "List ordering Field": [
+                "Pole pro \u0159azen\u00ed v seznamu"
+            ],
+            "Example fields are post_title, post_date and post_modified.": [
+                "P\u0159\u00edklady pol\u00ed jsou post_title, post_date a post_modified."
+            ],
+            "Ascending": [
+                "Vzestupn\u011b"
+            ],
+            "Descending": [
+                "Klesaj\u00edc\u00ed"
+            ],
+            "Show Edit link": [
+                "Zobrazit odkaz Upravit"
+            ],
+            "Show Edit link allows the list to have a link to the Edit function. A choice made here will over-ride the system-configured settings. Links will only appear if the user can edit the document.": [
+                "Zobrazit odkaz pro \u00fapravy umo\u017e\u0148uje, aby seznam obsahoval odkaz na funkci Upravit. Volba proveden\u00e1 zde p\u0159ep\u00ed\u0161e nastaven\u00ed nakonfigurovan\u00e1 syst\u00e9mem. Odkazy se zobraz\u00ed pouze v p\u0159\u00edpad\u011b, \u017ee u\u017eivatel m\u016f\u017ee dokument upravovat."
+            ],
+            "Default": [
+                "V\u00fdchoz\u00ed"
+            ],
+            "No Edit link": [
+                "\u017d\u00e1dn\u00fd odkaz pro \u00fapravu"
+            ],
+            "Edit link": [
+                "Upravit odkaz"
+            ],
+            "Show featured image?": [
+                "Zobrazit doporu\u010den\u00fd obr\u00e1zek?"
+            ],
+            "Show document description?": [
+                "Zobrazit popis dokumentu?"
+            ],
+            "Show PDF File indication?": [
+                "Zobrazit indikaci PDF souboru?"
+            ],
+            "Open documents in new tab?": [
+                "Otev\u0159\u00edt dokumenty v nov\u00e9 kart\u011b?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Zapnut\u00edm t\u00e9to mo\u017enosti se dokument otev\u0159e v nov\u00e9 kart\u011b. Toto by m\u011blo b\u00fdt zapnuto p\u0159i \u00faprav\u011b str\u00e1nky pomoc\u00ed tohoto bloku, proto\u017ee kliknut\u00ed na odkaz b\u011bhem \u00fapravy vynut\u00ed opu\u0161t\u011bn\u00ed aktu\u00e1ln\u00ed str\u00e1nky."
+            ],
+            "Free Form Settings": [
+                "Nastaven\u00ed voln\u00e9ho formul\u00e1\u0159e"
+            ],
+            "Free-form parameters": [
+                "Parametry ve voln\u00e9m tvaru"
+            ],
+            "The query parameters can be very extensive. enter any other parameters required here.": [
+                "Parametry dotazu mohou b\u00fdt velmi rozs\u00e1hl\u00e9. Zde zadejte jak\u00e9koli dal\u0161\u00ed po\u017eadovan\u00e9 parametry."
+            ]
+        }
+    }
+}

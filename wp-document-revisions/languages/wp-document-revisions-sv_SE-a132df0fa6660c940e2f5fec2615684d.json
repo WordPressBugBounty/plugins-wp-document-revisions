@@ -1,0 +1,93 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/editor-document-upload\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "sv_SE",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Revision Summary": [
+                "Versionssammandrag"
+            ],
+            "Document": [
+                "Dokument"
+            ],
+            "Revision Log": [
+                "Versionslogg"
+            ],
+            "Upload New Version": [
+                "Ladda upp ny version"
+            ],
+            "Download": [
+                "Ladda ner"
+            ],
+            "Modified": [
+                "\u00c4ndrat"
+            ],
+            "User": [
+                "Anv\u00e4ndare"
+            ],
+            "Summary": [
+                "Sammanfattning"
+            ],
+            "Upload Document": [
+                "Ladda upp dokument"
+            ],
+            "just now": [
+                "just nu"
+            ],
+            "min ago": [
+                "f\u00f6r en minut sedan"
+            ],
+            "hour ago": [
+                "f\u00f6r en timme sedan"
+            ],
+            "hours ago": [
+                "timmar sedan"
+            ],
+            "day ago": [
+                "f\u00f6r en dag sedan"
+            ],
+            "days ago": [
+                "dagar sedan"
+            ],
+            "The attached document file could not be found. It may have been deleted.": [
+                "Det bifogade dokumentet kunde inte hittas. Det kan ha tagits bort."
+            ],
+            "Document selection failed.": [
+                "Dokumentvalet misslyckades."
+            ],
+            "New version selected. Press Update to save.": [
+                "Ny version vald. Tryck p\u00e5 Uppdatera f\u00f6r att spara."
+            ],
+            "Document selected. Press Update to save.": [
+                "Dokument valt. Tryck p\u00e5 Uppdatera f\u00f6r att spara."
+            ],
+            "Select": [
+                "V\u00e4lja"
+            ],
+            "Attached document": [
+                "Bifogat dokument"
+            ],
+            "%s is currently editing this document.": [
+                "%s redigerar f\u00f6r n\u00e4rvarande detta dokument."
+            ],
+            "This document is currently locked.": [
+                "Det h\u00e4r dokumentet \u00e4r f\u00f6r n\u00e4rvarande l\u00e5st."
+            ],
+            "A brief description of the changes in this version.": [
+                "En kort beskrivning av \u00e4ndringarna i den h\u00e4r versionen."
+            ],
+            "No revisions yet.": [
+                "Inga revideringar \u00e4nnu."
+            ],
+            "\u2014": [
+                "\u2014"
+            ]
+        }
+    }
+}

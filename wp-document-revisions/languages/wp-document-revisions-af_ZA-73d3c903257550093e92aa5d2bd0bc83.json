@@ -1,0 +1,57 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/admin\/wp-document-revisions.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "af_ZA",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Upload failed.": [
+                "Oplaai het misluk."
+            ],
+            "File uploaded successfully. Add a revision summary below (optional) and press <strong>Update<\/strong> to save your changes.": [
+                "L\u00eaer suksesvol opgelaai. Voeg 'n hersieningsopsomming hieronder by (opsioneel) en druk <strong>Opdateer<\/strong> om jou veranderinge te stoor."
+            ],
+            "New version uploaded. Press Update to save.": [
+                "Nuwe weergawe opgelaai. Druk Opdateer om te stoor."
+            ],
+            "Are you sure you want to restore this revision? If you do, no history will be lost. This revision will be copied and become the most recent revision.": [
+                "Is jy seker jy wil hierdie hersiening herstel? Indien wel, sal geen geskiedenis verlore gaan nie. Hierdie hersiening sal gekopieer word en die mees onlangse hersiening word."
+            ],
+            "An error has occurred, please try reloading the page.": [
+                "'n Fout het voorgekom, probeer asseblief om die bladsy te herlaai."
+            ],
+            "Lost Document Lock": [
+                "Verlore Dokumentslot"
+            ],
+            "Your lock on the document %s has been overridden. Any changes will be lost.": [
+                "Jou slot op die dokument %s is oorgeskryf. Enige veranderinge sal verlore gaan."
+            ],
+            "%d mins": [
+                "%d min"
+            ],
+            "%d hour": [
+                "%d uur"
+            ],
+            "%d hours": [
+                "%d uur"
+            ],
+            "%d day": [
+                "%d dag"
+            ],
+            "%d days": [
+                "%d dae"
+            ],
+            "Upload Document": [
+                "Laai dokument op"
+            ],
+            "Select Document": [
+                "Kies Dokument"
+            ]
+        }
+    }
+}

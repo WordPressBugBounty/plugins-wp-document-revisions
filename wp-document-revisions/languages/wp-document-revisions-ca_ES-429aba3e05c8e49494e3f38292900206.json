@@ -1,0 +1,81 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "ca_ES",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "There are no taxonomies defined.": [
+                "No hi ha taxonomies definides."
+            ],
+            "Taxonomy:": [
+                "Taxonomia:"
+            ],
+            "Block Heading": [
+                "Encap\u00e7alament de bloc"
+            ],
+            "Display Settings": [
+                "Configuraci\u00f3 de la pantalla"
+            ],
+            "Number of documents to display": [
+                "Nombre de documents a mostrar"
+            ],
+            "List ordering Field": [
+                "Camp d'ordenaci\u00f3 de la llista"
+            ],
+            "Example fields are post_title, post_date and post_modified.": [
+                "Exemples de camps s\u00f3n post_title, post_date i post_modified."
+            ],
+            "Ascending": [
+                "Ascendent"
+            ],
+            "Descending": [
+                "Descendent"
+            ],
+            "Show Edit link": [
+                "Mostra l'enlla\u00e7 Edita"
+            ],
+            "Show Edit link allows the list to have a link to the Edit function. A choice made here will over-ride the system-configured settings. Links will only appear if the user can edit the document.": [
+                "Mostra l'enlla\u00e7 d'edici\u00f3 permet que la llista tingui un enlla\u00e7 a la funci\u00f3 Edita. Una elecci\u00f3 feta aqu\u00ed anul\u00b7lar\u00e0 els par\u00e0metres configurats pel sistema. Els enlla\u00e7os nom\u00e9s apareixeran si l'usuari pot editar el document."
+            ],
+            "Default": [
+                "Per defecte"
+            ],
+            "No Edit link": [
+                "Sense enlla\u00e7 d'edici\u00f3"
+            ],
+            "Edit link": [
+                "Edita l'enlla\u00e7"
+            ],
+            "Show featured image?": [
+                "Mostrar la imatge destacada?"
+            ],
+            "Show document description?": [
+                "Mostrar la descripci\u00f3 del document?"
+            ],
+            "Show PDF File indication?": [
+                "Mostra la indicaci\u00f3 del fitxer PDF?"
+            ],
+            "Open documents in new tab?": [
+                "Obrir documents en una pestanya nova?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Si activeu aquesta opci\u00f3, el document s'obrir\u00e0 en una pestanya nova. Cal activar-la en editar la p\u00e0gina amb aquest bloc, ja que si feu clic a un enlla\u00e7 mentre editeu, la p\u00e0gina actual es deixar\u00e0 de banda."
+            ],
+            "Free Form Settings": [
+                "Configuraci\u00f3 de forma lliure"
+            ],
+            "Free-form parameters": [
+                "Par\u00e0metres de forma lliure"
+            ],
+            "The query parameters can be very extensive. enter any other parameters required here.": [
+                "Els par\u00e0metres de consulta poden ser molt extensos. Introdu\u00efu aqu\u00ed qualsevol altre par\u00e0metre necessari."
+            ]
+        }
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/editor-document-upload\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "ar_SA",
+                "plural-forms": "nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);"
+            },
+            "Revision Summary": [
+                "\u0645\u0644\u062e\u0635 \u0627\u0644\u0645\u0631\u0627\u062c\u0639\u0629"
+            ],
+            "Document": [
+                "\u0648\u062b\u064a\u0642\u0629"
+            ],
+            "Revision Log": [
+                "\u0633\u062c\u0644 \u0627\u0644\u0645\u0631\u0627\u062c\u0639\u0627\u062a"
+            ],
+            "Upload New Version": [
+                "\u062a\u062d\u0645\u064a\u0644 \u0646\u0633\u062e\u0629 \u062c\u062f\u064a\u062f\u0629"
+            ],
+            "Download": [
+                "\u062a\u062d\u0645\u064a\u0644"
+            ],
+            "Modified": [
+                "\u0645\u0639\u062f\u0644"
+            ],
+            "User": [
+                "\u0645\u0633\u062a\u062e\u062f\u0645"
+            ],
+            "Summary": [
+                "\u0645\u0644\u062e\u0635"
+            ],
+            "Upload Document": [
+                "\u062a\u062d\u0645\u064a\u0644 \u0627\u0644\u0645\u0633\u062a\u0646\u062f"
+            ],
+            "just now": [
+                "\u0627\u0644\u0622\u0646"
+            ],
+            "min ago": [
+                "\u0645\u0646\u0630 \u062f\u0642\u064a\u0642\u0629"
+            ],
+            "hour ago": [
+                "\u0642\u0628\u0644 \u0633\u0627\u0639\u0629"
+            ],
+            "hours ago": [
+                "\u0642\u0628\u0644 \u0633\u0627\u0639\u0627\u062a"
+            ],
+            "day ago": [
+                "\u0642\u0628\u0644 \u064a\u0648\u0645"
+            ],
+            "days ago": [
+                "\u0642\u0628\u0644 \u0623\u064a\u0627\u0645"
+            ],
+            "The attached document file could not be found. It may have been deleted.": [
+                "\u0644\u0645 \u064a\u062a\u0645 \u0627\u0644\u0639\u062b\u0648\u0631 \u0639\u0644\u0649 \u0645\u0644\u0641 \u0627\u0644\u0645\u0633\u062a\u0646\u062f \u0627\u0644\u0645\u0631\u0641\u0642. \u0631\u0628\u0645\u0627 \u062a\u0645 \u062d\u0630\u0641\u0647."
+            ],
+            "Document selection failed.": [
+                "\u0641\u0634\u0644 \u0627\u062e\u062a\u064a\u0627\u0631 \u0627\u0644\u0645\u0633\u062a\u0646\u062f."
+            ],
+            "New version selected. Press Update to save.": [
+                "\u062a\u0645 \u0627\u062e\u062a\u064a\u0627\u0631 \u0627\u0644\u0625\u0635\u062f\u0627\u0631 \u0627\u0644\u062c\u062f\u064a\u062f. \u0627\u0636\u063a\u0637 \u0639\u0644\u0649 \"\u062a\u062d\u062f\u064a\u062b\" \u0644\u062d\u0641\u0638 \u0627\u0644\u062a\u063a\u064a\u064a\u0631\u0627\u062a."
+            ],
+            "Document selected. Press Update to save.": [
+                "\u062a\u0645 \u062a\u062d\u062f\u064a\u062f \u0627\u0644\u0645\u0633\u062a\u0646\u062f. \u0627\u0636\u063a\u0637 \u0639\u0644\u0649 \"\u062a\u062d\u062f\u064a\u062b\" \u0644\u062d\u0641\u0638\u0647."
+            ],
+            "Select": [
+                "\u064a\u062e\u062a\u0627\u0631"
+            ],
+            "Attached document": [
+                "\u0627\u0644\u0645\u0633\u062a\u0646\u062f \u0627\u0644\u0645\u0631\u0641\u0642"
+            ],
+            "%s is currently editing this document.": [
+                "\u064a\u0642\u0648\u0645 %s \u062d\u0627\u0644\u064a\u064b\u0627 \u0628\u062a\u062d\u0631\u064a\u0631 \u0647\u0630\u0627 \u0627\u0644\u0645\u0633\u062a\u0646\u062f."
+            ],
+            "This document is currently locked.": [
+                "\u0647\u0630\u0627 \u0627\u0644\u0645\u0633\u062a\u0646\u062f \u0645\u063a\u0644\u0642 \u062d\u0627\u0644\u064a\u064b\u0627."
+            ],
+            "A brief description of the changes in this version.": [
+                "\u0648\u0635\u0641 \u0645\u0648\u062c\u0632 \u0644\u0644\u062a\u063a\u064a\u064a\u0631\u0627\u062a \u0641\u064a \u0647\u0630\u0627 \u0627\u0644\u0625\u0635\u062f\u0627\u0631."
+            ],
+            "No revisions yet.": [
+                "\u0644\u0645 \u064a\u062a\u0645 \u0625\u062c\u0631\u0627\u0621 \u0623\u064a \u062a\u0639\u062f\u064a\u0644\u0627\u062a \u062d\u062a\u0649 \u0627\u0644\u0622\u0646."
+            ],
+            "\u2014": [
+                "\u2014"
+            ]
+        }
+    }
+}

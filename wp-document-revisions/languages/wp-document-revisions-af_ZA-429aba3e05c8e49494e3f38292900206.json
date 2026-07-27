@@ -1,0 +1,81 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "af_ZA",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "There are no taxonomies defined.": [
+                "Daar is geen taksonomie\u00eb gedefinieer nie."
+            ],
+            "Taxonomy:": [
+                "Taksonomie:"
+            ],
+            "Block Heading": [
+                "Blokopskrif"
+            ],
+            "Display Settings": [
+                "Skerminstellings"
+            ],
+            "Number of documents to display": [
+                "Aantal dokumente om te vertoon"
+            ],
+            "List ordering Field": [
+                "Lysvolgordeveld"
+            ],
+            "Example fields are post_title, post_date and post_modified.": [
+                "Voorbeeldvelde is post_title, post_date en post_modified."
+            ],
+            "Ascending": [
+                "Stygend"
+            ],
+            "Descending": [
+                "Dalend"
+            ],
+            "Show Edit link": [
+                "Wys Wysig skakel"
+            ],
+            "Show Edit link allows the list to have a link to the Edit function. A choice made here will over-ride the system-configured settings. Links will only appear if the user can edit the document.": [
+                "Wys Wysig skakel laat die lys toe om 'n skakel na die Wysig funksie te h\u00ea. 'n Keuse wat hier gemaak word, sal die stelsel-gekonfigureerde instellings oorskryf. Skakels sal slegs verskyn as die gebruiker die dokument kan wysig."
+            ],
+            "Default": [
+                "Standaard"
+            ],
+            "No Edit link": [
+                "Geen wysigingskakel nie"
+            ],
+            "Edit link": [
+                "Wysig skakel"
+            ],
+            "Show featured image?": [
+                "Wys uitgeligte prent?"
+            ],
+            "Show document description?": [
+                "Wys dokumentbeskrywing?"
+            ],
+            "Show PDF File indication?": [
+                "Wys PDF-l\u00eaer aanduiding?"
+            ],
+            "Open documents in new tab?": [
+                "Maak dokumente in nuwe oortjie oop?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "As jy dit aanskakel, sal die dokument in 'n nuwe oortjie oopmaak. Dit moet aangeskakel wees terwyl jy die bladsy met hierdie blok wysig, aangesien dit sal dwing om die huidige bladsy te verlaat as jy op 'n skakel klik terwyl jy wysig."
+            ],
+            "Free Form Settings": [
+                "Vrye Vorm Instellings"
+            ],
+            "Free-form parameters": [
+                "Vrye vorm parameters"
+            ],
+            "The query parameters can be very extensive. enter any other parameters required here.": [
+                "Die navraagparameters kan baie uitgebreid wees. Voer enige ander parameters hier in."
+            ]
+        }
+    }
+}

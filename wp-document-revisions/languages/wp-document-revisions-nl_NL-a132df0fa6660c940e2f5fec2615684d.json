@@ -1,0 +1,93 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/editor-document-upload\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "nl_NL",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Revision Summary": [
+                "Samenvatting Revisie"
+            ],
+            "Document": [
+                "Document"
+            ],
+            "Revision Log": [
+                "Revisie Logboek"
+            ],
+            "Upload New Version": [
+                "Upload Nieuwe Versie"
+            ],
+            "Download": [
+                "Download"
+            ],
+            "Modified": [
+                "Bewerkt"
+            ],
+            "User": [
+                "Gebruiker"
+            ],
+            "Summary": [
+                "Samenvatting"
+            ],
+            "Upload Document": [
+                "Document uploaden"
+            ],
+            "just now": [
+                "zojuist"
+            ],
+            "min ago": [
+                "minuten geleden"
+            ],
+            "hour ago": [
+                "een uur geleden"
+            ],
+            "hours ago": [
+                "uren geleden"
+            ],
+            "day ago": [
+                "een dag geleden"
+            ],
+            "days ago": [
+                "dagen geleden"
+            ],
+            "The attached document file could not be found. It may have been deleted.": [
+                "Het bijgevoegde documentbestand kon niet worden gevonden. Het is mogelijk verwijderd."
+            ],
+            "Document selection failed.": [
+                "Documentselectie mislukt."
+            ],
+            "New version selected. Press Update to save.": [
+                "Nieuwe versie geselecteerd. Druk op Bijwerken om op te slaan."
+            ],
+            "Document selected. Press Update to save.": [
+                "Geselecteerd document. Druk op Bijwerken om op te slaan."
+            ],
+            "Select": [
+                "Select"
+            ],
+            "Attached document": [
+                "Bijgevoegd document"
+            ],
+            "%s is currently editing this document.": [
+                "%s bewerkt dit document momenteel."
+            ],
+            "This document is currently locked.": [
+                "Dit document is momenteel vergrendeld."
+            ],
+            "A brief description of the changes in this version.": [
+                "Een korte beschrijving van de wijzigingen in deze versie."
+            ],
+            "No revisions yet.": [
+                "Nog geen wijzigingen."
+            ],
+            "\u2014": [
+                "\u2014"
+            ]
+        }
+    }
+}

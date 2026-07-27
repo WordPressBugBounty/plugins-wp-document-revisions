@@ -1,0 +1,36 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/revisions-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "pl_PL",
+                "plural-forms": "nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);"
+            },
+            "Show PDF File indication?": [
+                "Pokaza\u0107 wskazanie pliku PDF?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "W\u0142\u0105czenie tej opcji spowoduje otwarcie dokumentu w nowej karcie. Nale\u017cy j\u0105 w\u0142\u0105czy\u0107 podczas edycji strony za pomoc\u0105 tego bloku, poniewa\u017c klikni\u0119cie linku podczas edycji spowoduje opuszczenie bie\u017c\u0105cej strony."
+            ],
+            "Selection Criteria": [
+                "Kryteria wyboru"
+            ],
+            "Document Id": [
+                "Identyfikator dokumentu"
+            ],
+            "Revisions to Display": [
+                "Zmiany w wy\u015bwietlaniu"
+            ],
+            "Show Revision Summaries?": [
+                "Pokaza\u0107 podsumowania rewizji?"
+            ],
+            "Open in New Tab?": [
+                "Otworzy\u0107 w nowej karcie?"
+            ]
+        }
+    }
+}

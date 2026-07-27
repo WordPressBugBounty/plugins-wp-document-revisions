@@ -1,0 +1,93 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/editor-document-upload\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "af_ZA",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Revision Summary": [
+                "Hersieningsopsomming"
+            ],
+            "Document": [
+                "Dokument"
+            ],
+            "Revision Log": [
+                "Hersieningslogboek"
+            ],
+            "Upload New Version": [
+                "Laai Nuwe Weergawe Op"
+            ],
+            "Download": [
+                "Laai af"
+            ],
+            "Modified": [
+                "Gewysig"
+            ],
+            "User": [
+                "Gebruiker"
+            ],
+            "Summary": [
+                "Opsomming"
+            ],
+            "Upload Document": [
+                "Laai dokument op"
+            ],
+            "just now": [
+                "nou net"
+            ],
+            "min ago": [
+                "min gelede"
+            ],
+            "hour ago": [
+                "uur gelede"
+            ],
+            "hours ago": [
+                "ure gelede"
+            ],
+            "day ago": [
+                "dag gelede"
+            ],
+            "days ago": [
+                "dae gelede"
+            ],
+            "The attached document file could not be found. It may have been deleted.": [
+                "Die aangehegte dokumentl\u00eaer kon nie gevind word nie. Dit is moontlik verwyder."
+            ],
+            "Document selection failed.": [
+                "Dokumentkeuse het misluk."
+            ],
+            "New version selected. Press Update to save.": [
+                "Nuwe weergawe gekies. Druk Opdateer om te stoor."
+            ],
+            "Document selected. Press Update to save.": [
+                "Dokument gekies. Druk Opdateer om te stoor."
+            ],
+            "Select": [
+                "Kies"
+            ],
+            "Attached document": [
+                "Aangehegte dokument"
+            ],
+            "%s is currently editing this document.": [
+                "%s is tans besig om hierdie dokument te redigeer."
+            ],
+            "This document is currently locked.": [
+                "Hierdie dokument is tans gesluit."
+            ],
+            "A brief description of the changes in this version.": [
+                "'n Kort beskrywing van die veranderinge in hierdie weergawe."
+            ],
+            "No revisions yet.": [
+                "Geen hersienings nog nie."
+            ],
+            "\u2014": [
+                "\u2014"
+            ]
+        }
+    }
+}

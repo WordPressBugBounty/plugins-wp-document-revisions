@@ -1,0 +1,93 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/editor-document-upload\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "it_IT",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Revision Summary": [
+                "Note sulla versione"
+            ],
+            "Document": [
+                "Documento"
+            ],
+            "Revision Log": [
+                "Cronologia delle versioni"
+            ],
+            "Upload New Version": [
+                "Carica una nuova versione"
+            ],
+            "Download": [
+                "Scarica"
+            ],
+            "Modified": [
+                "Modificato"
+            ],
+            "User": [
+                "Utente"
+            ],
+            "Summary": [
+                "Note"
+            ],
+            "Upload Document": [
+                "Carica Documento"
+            ],
+            "just now": [
+                "proprio adesso"
+            ],
+            "min ago": [
+                "minuti fa"
+            ],
+            "hour ago": [
+                "un'ora fa"
+            ],
+            "hours ago": [
+                "ore fa"
+            ],
+            "day ago": [
+                "un giorno fa"
+            ],
+            "days ago": [
+                "giorni fa"
+            ],
+            "The attached document file could not be found. It may have been deleted.": [
+                "Impossibile trovare il file allegato. Potrebbe essere stato eliminato."
+            ],
+            "Document selection failed.": [
+                "Selezione del documento non riuscita."
+            ],
+            "New version selected. Press Update to save.": [
+                "Nuova versione selezionata. Premi Aggiorna per salvare."
+            ],
+            "Document selected. Press Update to save.": [
+                "Documento selezionato. Premere Aggiorna per salvare."
+            ],
+            "Select": [
+                "Selezionare"
+            ],
+            "Attached document": [
+                "Documento allegato"
+            ],
+            "%s is currently editing this document.": [
+                "%s sta attualmente modificando questo documento."
+            ],
+            "This document is currently locked.": [
+                "Questo documento \u00e8 attualmente bloccato."
+            ],
+            "A brief description of the changes in this version.": [
+                "Breve descrizione delle modifiche introdotte in questa versione."
+            ],
+            "No revisions yet.": [
+                "Nessuna revisione ancora."
+            ],
+            "\u2014": [
+                "\u2014"
+            ]
+        }
+    }
+}

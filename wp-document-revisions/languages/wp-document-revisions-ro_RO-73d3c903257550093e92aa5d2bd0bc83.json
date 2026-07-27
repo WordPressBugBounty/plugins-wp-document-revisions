@@ -1,0 +1,57 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/admin\/wp-document-revisions.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "ro_RO",
+                "plural-forms": "nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100>0 && n%100<20)) ? 1 : 2);"
+            },
+            "Upload failed.": [
+                "\u00cenc\u0103rcarea a e\u0219uat."
+            ],
+            "File uploaded successfully. Add a revision summary below (optional) and press <strong>Update<\/strong> to save your changes.": [
+                "Fi\u0219ierul a fost \u00eenc\u0103rcat cu succes. Ad\u0103uga\u021bi un rezumat al revizuirii mai jos (op\u021bional) \u0219i ap\u0103sa\u021bi pe <strong>Actualizare<\/strong> pentru a salva modific\u0103rile."
+            ],
+            "New version uploaded. Press Update to save.": [
+                "Versiune nou\u0103 \u00eenc\u0103rcat\u0103. Ap\u0103sa\u021bi Actualizare pentru a salva."
+            ],
+            "Are you sure you want to restore this revision? If you do, no history will be lost. This revision will be copied and become the most recent revision.": [
+                "Sigur dori\u021bi s\u0103 restaura\u021bi aceast\u0103 revizie? Dac\u0103 face\u021bi acest lucru, istoricul nu se va pierde. Aceast\u0103 revizie va fi copiat\u0103 \u0219i va deveni cea mai recent\u0103."
+            ],
+            "An error has occurred, please try reloading the page.": [
+                "A ap\u0103rut o eroare, v\u0103 rug\u0103m s\u0103 \u00eencerca\u021bi s\u0103 re\u00eenc\u0103rca\u021bi pagina."
+            ],
+            "Lost Document Lock": [
+                "Blocare documente pierdute"
+            ],
+            "Your lock on the document %s has been overridden. Any changes will be lost.": [
+                "Blocarea documentului %s a fost anulat\u0103. Orice modificare se va pierde."
+            ],
+            "%d mins": [
+                "%d minute"
+            ],
+            "%d hour": [
+                "%d or\u0103"
+            ],
+            "%d hours": [
+                "%d ore"
+            ],
+            "%d day": [
+                "%d zi"
+            ],
+            "%d days": [
+                "%d zile"
+            ],
+            "Upload Document": [
+                "\u00cenc\u0103rca\u021bi documentul"
+            ],
+            "Select Document": [
+                "Selecta\u021bi documentul"
+            ]
+        }
+    }
+}

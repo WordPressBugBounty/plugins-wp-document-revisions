@@ -715,23 +715,27 @@ class WP_Document_Revisions_Validate_Structure {
 	 * @return void
 	 */
 	public static function enqueue_scripts(): void {
-		$suffix = ( WP_DEBUG ) ? '.dev' : '';
-		$path   = '/js/wp-document-revisions-validate' . $suffix . '.js';
-		$vers   = ( WP_DEBUG ) ? filemtime( plugin_dir_path( __DIR__ ) . $path ) : self::$parent->version;
+		$asset_file = plugin_dir_path( __DIR__ ) . 'build/admin/wp-document-revisions-validate.asset.php';
+		$asset      = file_exists( $asset_file ) ? require $asset_file : array(
+			'dependencies' => array( 'wp-api-fetch' ),
+			'version'      => self::$parent->version,
+		);
 
 		wp_enqueue_script(
 			'wpdr_validate',
-			plugins_url( $path, __DIR__ ),
-			array( 'wp-api-fetch' ),
-			$vers,
+			plugins_url( '/build/admin/wp-document-revisions-validate.js', __DIR__ ),
+			$asset['dependencies'],
+			$asset['version'],
 			true
 		);
+		// The "Processed successfully." label now comes from @wordpress/i18n
+		// __() in the script (served via wp_set_script_translations below); only
+		// the current user id is passed through.
 		// phpcs:disable Squiz.Strings.DoubleQuoteUsage
-		$script =
-			"var user  = '" . get_current_user_id() . "';" . PHP_EOL .
-			"var processed = '" . esc_html__( 'Processed successfully.', 'wp-document-revisions' ) . "';";
+		$script = "var user  = '" . get_current_user_id() . "';";
 		// phpcs:enable Squiz.Strings.DoubleQuoteUsage
 		wp_add_inline_script( 'wpdr_validate', $script, 'before' );
+		wp_set_script_translations( 'wpdr_validate', 'wp-document-revisions', dirname( __DIR__ ) . '/languages' );
 	}
 
 	/**

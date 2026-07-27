@@ -1,0 +1,36 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/revisions-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "it_IT",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Show PDF File indication?": [
+                "Mostrare l'indicazione del file PDF?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Attivando questa opzione, il documento si aprir\u00e0 in una nuova scheda. \u00c8 consigliabile attivarla durante la modifica della pagina che utilizza questo blocco, poich\u00e9 cliccando su un collegamento durante la modifica si verr\u00e0 forzatamente reindirizzati a un'altra pagina."
+            ],
+            "Selection Criteria": [
+                "Criteri di selezione"
+            ],
+            "Document Id": [
+                "ID documento"
+            ],
+            "Revisions to Display": [
+                "Revisioni da visualizzare"
+            ],
+            "Show Revision Summaries?": [
+                "Mostra i riepiloghi delle revisioni?"
+            ],
+            "Open in New Tab?": [
+                "Apri in una nuova scheda?"
+            ]
+        }
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "zh_CN",
+                "plural-forms": "nplurals=1; plural=0;"
+            },
+            "There are no taxonomies defined.": [
+                "\u5c1a\u672a\u5b9a\u4e49\u5206\u7c7b\u4f53\u7cfb\u3002"
+            ],
+            "Taxonomy:": [
+                "\u5206\u7c7b\u5b66\uff1a"
+            ],
+            "Block Heading": [
+                "\u533a\u5757\u6807\u9898"
+            ],
+            "Display Settings": [
+                "\u663e\u793a\u8bbe\u7f6e"
+            ],
+            "Number of documents to display": [
+                "\u8981\u663e\u793a\u7684\u6587\u6863\u6570\u91cf"
+            ],
+            "List ordering Field": [
+                "\u5217\u8868\u6392\u5e8f\u5b57\u6bb5"
+            ],
+            "Example fields are post_title, post_date and post_modified.": [
+                "\u4f8b\u5982\u5b57\u6bb5\u6709 post_title\u3001post_date \u548c post_modified\u3002"
+            ],
+            "Ascending": [
+                "\u4e0a\u5347"
+            ],
+            "Descending": [
+                "\u4e0b\u964d"
+            ],
+            "Show Edit link": [
+                "\u663e\u793a\u7f16\u8f91\u94fe\u63a5"
+            ],
+            "Show Edit link allows the list to have a link to the Edit function. A choice made here will over-ride the system-configured settings. Links will only appear if the user can edit the document.": [
+                "\u663e\u793a\u7f16\u8f91\u94fe\u63a5\u5141\u8bb8\u5217\u8868\u5305\u542b\u6307\u5411\u7f16\u8f91\u529f\u80fd\u7684\u94fe\u63a5\u3002\u6b64\u5904\u6240\u505a\u7684\u9009\u62e9\u5c06\u8986\u76d6\u7cfb\u7edf\u914d\u7f6e\u8bbe\u7f6e\u3002\u94fe\u63a5\u4ec5\u5728\u7528\u6237\u62e5\u6709\u7f16\u8f91\u6743\u9650\u65f6\u624d\u4f1a\u663e\u793a\u3002"
+            ],
+            "Default": [
+                "\u9ed8\u8ba4"
+            ],
+            "No Edit link": [
+                "\u65e0\u7f16\u8f91\u94fe\u63a5"
+            ],
+            "Edit link": [
+                "\u7f16\u8f91\u94fe\u63a5"
+            ],
+            "Show featured image?": [
+                "\u663e\u793a\u7279\u8272\u56fe\u7247\uff1f"
+            ],
+            "Show document description?": [
+                "\u663e\u793a\u6587\u6863\u63cf\u8ff0\uff1f"
+            ],
+            "Show PDF File indication?": [
+                "\u663e\u793aPDF\u6587\u4ef6\u6307\u793a\uff1f"
+            ],
+            "Open documents in new tab?": [
+                "\u5728\u65b0\u6807\u7b7e\u9875\u4e2d\u6253\u5f00\u6587\u6863\uff1f"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "\u542f\u7528\u6b64\u9009\u9879\u540e\uff0c\u6587\u6863\u5c06\u5728\u65b0\u6807\u7b7e\u9875\u4e2d\u6253\u5f00\u3002\u4f7f\u7528\u6b64\u6a21\u5757\u7f16\u8f91\u9875\u9762\u65f6\u5e94\u542f\u7528\u6b64\u9009\u9879\uff0c\u56e0\u4e3a\u5728\u7f16\u8f91\u8fc7\u7a0b\u4e2d\u70b9\u51fb\u94fe\u63a5\u4f1a\u5f3a\u5236\u79bb\u5f00\u5f53\u524d\u9875\u9762\u3002"
+            ],
+            "Free Form Settings": [
+                "\u81ea\u7531\u5f62\u5f0f\u8bbe\u7f6e"
+            ],
+            "Free-form parameters": [
+                "\u81ea\u7531\u5f62\u5f0f\u53c2\u6570"
+            ],
+            "The query parameters can be very extensive. enter any other parameters required here.": [
+                "\u67e5\u8be2\u53c2\u6570\u53ef\u80fd\u975e\u5e38\u591a\u3002\u8bf7\u5728\u6b64\u5904\u8f93\u5165\u6240\u9700\u7684\u4efb\u4f55\u5176\u4ed6\u53c2\u6570\u3002"
+            ]
+        }
+    }
+}

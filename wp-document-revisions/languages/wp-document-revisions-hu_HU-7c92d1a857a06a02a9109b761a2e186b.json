@@ -1,0 +1,57 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-widget\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "hu_HU",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Draft": [
+                "V\u00e1zlat"
+            ],
+            "Private": [
+                "Mag\u00e1n"
+            ],
+            "Show featured image?": [
+                "Mutassa a kiemelt k\u00e9pet?"
+            ],
+            "Show document description?": [
+                "Mutassa a dokumentum le\u00edr\u00e1s\u00e1t?"
+            ],
+            "Show PDF File indication?": [
+                "PDF f\u00e1jl jelz\u00e9s megjelen\u00edt\u00e9se?"
+            ],
+            "Open documents in new tab?": [
+                "Dokumentumok megnyit\u00e1sa \u00faj lapon?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Ennek bekapcsol\u00e1sa eset\u00e9n a dokumentum \u00faj lapon ny\u00edlik meg. Ezt a blokk haszn\u00e1lat\u00e1val szerkesztett oldal eset\u00e9n kell bekapcsolni, mivel szerkeszt\u00e9s k\u00f6zben egy hivatkoz\u00e1sra kattintva a program elhagyja az aktu\u00e1lis oldalt."
+            ],
+            "Latest Documents Settings": [
+                "Legfrissebb dokumentumok be\u00e1ll\u00edt\u00e1sai"
+            ],
+            "Latest Documents List Heading": [
+                "Legut\u00f3bbi dokumentumok lista c\u00edmsora"
+            ],
+            "Documents to Display": [
+                "Megjelen\u00edtend\u0151 dokumentumok"
+            ],
+            "Document Statuses to Display": [
+                "Megjelen\u00edtend\u0151 dokumentum\u00e1llapotok"
+            ],
+            "Publish": [
+                "K\u00f6zz\u00e9t\u00e9tel"
+            ],
+            "Under certain conditons WordPress can generate an image for Page 1 of PDF documents. If created this will be used as the Featured Image.": [
+                "Bizonyos felt\u00e9telek mellett a WordPress k\u00e9pes k\u00e9pet gener\u00e1lni a PDF dokumentumok els\u0151 oldal\u00e1hoz. Ha l\u00e9trej\u00f6n, ez lesz a kiemelt k\u00e9p."
+            ],
+            "Show author name?": [
+                "Mutassa a szerz\u0151 nev\u00e9t?"
+            ]
+        }
+    }
+}

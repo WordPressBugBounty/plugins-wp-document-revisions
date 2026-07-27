@@ -1,0 +1,57 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/admin\/wp-document-revisions.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "es_ES",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Upload failed.": [
+                "Error al subir el archivo."
+            ],
+            "File uploaded successfully. Add a revision summary below (optional) and press <strong>Update<\/strong> to save your changes.": [
+                "Archivo cargado correctamente. A\u00f1ada un resumen de la revisi\u00f3n a continuaci\u00f3n (opcional) y pulse <strong>Actualizar<\/strong> para guardar los cambios."
+            ],
+            "New version uploaded. Press Update to save.": [
+                "Nueva versi\u00f3n subida. Pulsa Actualizar para guardar."
+            ],
+            "Are you sure you want to restore this revision? If you do, no history will be lost. This revision will be copied and become the most recent revision.": [
+                "Seguro que quiere restaurar la revisi\u00f3n? Si lo hace toda la historia se perder\u00e1 y esta ser\u00e1 copiada y establecida como la versi\u00f3n mas reciente."
+            ],
+            "An error has occurred, please try reloading the page.": [
+                "Ha ocurrido un error, por favor, intente recargar la p\u00e1gina."
+            ],
+            "Lost Document Lock": [
+                "Bloqueo de documento perdido"
+            ],
+            "Your lock on the document %s has been overridden. Any changes will be lost.": [
+                "Su bloqueo sobre el documento %s ha sido sobreescrito. Cualquier cambio no ser\u00e1 guardado."
+            ],
+            "%d mins": [
+                "%d minutos"
+            ],
+            "%d hour": [
+                "%d hora"
+            ],
+            "%d hours": [
+                "%d horas"
+            ],
+            "%d day": [
+                "%d d\u00eda"
+            ],
+            "%d days": [
+                "%d d\u00edas"
+            ],
+            "Upload Document": [
+                "Cargar Documento"
+            ],
+            "Select Document": [
+                "Seleccionar documento"
+            ]
+        }
+    }
+}

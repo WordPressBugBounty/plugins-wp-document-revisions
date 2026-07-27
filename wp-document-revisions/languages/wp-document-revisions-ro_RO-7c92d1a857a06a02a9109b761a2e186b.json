@@ -1,0 +1,57 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-widget\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "ro_RO",
+                "plural-forms": "nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100>0 && n%100<20)) ? 1 : 2);"
+            },
+            "Draft": [
+                "Proiect"
+            ],
+            "Private": [
+                "Privat"
+            ],
+            "Show featured image?": [
+                "Afi\u0219a\u021bi imaginea recomandat\u0103?"
+            ],
+            "Show document description?": [
+                "Afi\u0219a\u021bi descrierea documentului?"
+            ],
+            "Show PDF File indication?": [
+                "Afi\u0219a\u021bi indica\u021bia fi\u0219ierului PDF?"
+            ],
+            "Open documents in new tab?": [
+                "Deschide\u021bi documentele \u00eentr-o fil\u0103 nou\u0103?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Setarea acestei op\u021biuni va deschide documentul \u00eentr-o fil\u0103 nou\u0103. Aceast\u0103 op\u021biune ar trebui activat\u0103 la editarea paginii folosind acest bloc, deoarece dac\u0103 da\u021bi clic pe un link \u00een timpul edit\u0103rii, pagina curent\u0103 va fi for\u021bat\u0103 s\u0103 fie p\u0103r\u0103sit\u0103."
+            ],
+            "Latest Documents Settings": [
+                "Set\u0103ri pentru cele mai recente documente"
+            ],
+            "Latest Documents List Heading": [
+                "Titlul listei de documente cele mai recente"
+            ],
+            "Documents to Display": [
+                "Documente de afi\u0219at"
+            ],
+            "Document Statuses to Display": [
+                "St\u0103rile documentelor de afi\u0219at"
+            ],
+            "Publish": [
+                "Publica"
+            ],
+            "Under certain conditons WordPress can generate an image for Page 1 of PDF documents. If created this will be used as the Featured Image.": [
+                "\u00cen anumite condi\u021bii, WordPress poate genera o imagine pentru pagina 1 a documentelor PDF. Dac\u0103 este creat\u0103, aceasta va fi utilizat\u0103 ca imagine recomandat\u0103."
+            ],
+            "Show author name?": [
+                "Afi\u0219a\u021bi numele autorului?"
+            ]
+        }
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/editor-document-upload\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "cs_CZ",
+                "plural-forms": "nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;"
+            },
+            "Revision Summary": [
+                "Pozn\u00e1mky k verzi"
+            ],
+            "Document": [
+                "Dokument"
+            ],
+            "Revision Log": [
+                "Z\u00e1znam verz\u00ed"
+            ],
+            "Upload New Version": [
+                "Nahr\u00e1t novou verzi"
+            ],
+            "Download": [
+                "St\u00e1hnout"
+            ],
+            "Modified": [
+                "Zm\u011bn\u011bn"
+            ],
+            "User": [
+                "U\u017eivatel"
+            ],
+            "Summary": [
+                "Souhrn"
+            ],
+            "Upload Document": [
+                "Nahr\u00e1t dokument"
+            ],
+            "just now": [
+                "pr\u00e1v\u011b te\u010f"
+            ],
+            "min ago": [
+                "p\u0159ed minutou"
+            ],
+            "hour ago": [
+                "p\u0159ed hodinou"
+            ],
+            "hours ago": [
+                "p\u0159ed hodinami"
+            ],
+            "day ago": [
+                "p\u0159ed dnem"
+            ],
+            "days ago": [
+                "p\u0159ed n\u011bkolika dny"
+            ],
+            "The attached document file could not be found. It may have been deleted.": [
+                "P\u0159ilo\u017een\u00fd soubor dokumentu nebyl nalezen. Mo\u017en\u00e1 byl smaz\u00e1n."
+            ],
+            "Document selection failed.": [
+                "V\u00fdb\u011br dokumentu se nezda\u0159il."
+            ],
+            "New version selected. Press Update to save.": [
+                "Vybr\u00e1na nov\u00e1 verze. Stisknut\u00edm tla\u010d\u00edtka Aktualizovat ulo\u017ete."
+            ],
+            "Document selected. Press Update to save.": [
+                "Dokument je vybr\u00e1n. Stisknut\u00edm tla\u010d\u00edtka Aktualizovat jej ulo\u017ete."
+            ],
+            "Select": [
+                "Vybrat"
+            ],
+            "Attached document": [
+                "P\u0159ilo\u017een\u00fd dokument"
+            ],
+            "%s is currently editing this document.": [
+                "%s pr\u00e1v\u011b upravuje tento dokument."
+            ],
+            "This document is currently locked.": [
+                "Tento dokument je moment\u00e1ln\u011b uzam\u010den."
+            ],
+            "A brief description of the changes in this version.": [
+                "Stru\u010dn\u00fd popis zm\u011bn v t\u00e9to verzi."
+            ],
+            "No revisions yet.": [
+                "Zat\u00edm \u017e\u00e1dn\u00e9 revize."
+            ],
+            "\u2014": [
+                "\u2014"
+            ]
+        }
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "pl_PL",
+                "plural-forms": "nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);"
+            },
+            "There are no taxonomies defined.": [
+                "Nie zdefiniowano \u017cadnych taksonomii."
+            ],
+            "Taxonomy:": [
+                "Taksonomia:"
+            ],
+            "Block Heading": [
+                "Nag\u0142\u00f3wek bloku"
+            ],
+            "Display Settings": [
+                "Ustawienia wy\u015bwietlania"
+            ],
+            "Number of documents to display": [
+                "Liczba dokument\u00f3w do wy\u015bwietlenia"
+            ],
+            "List ordering Field": [
+                "Pole kolejno\u015bci listy"
+            ],
+            "Example fields are post_title, post_date and post_modified.": [
+                "Przyk\u0142adowe pola to post_title, post_date i post_modified."
+            ],
+            "Ascending": [
+                "Rosn\u0105co"
+            ],
+            "Descending": [
+                "Zst\u0119puj\u0105cy"
+            ],
+            "Show Edit link": [
+                "Poka\u017c link Edytuj"
+            ],
+            "Show Edit link allows the list to have a link to the Edit function. A choice made here will over-ride the system-configured settings. Links will only appear if the user can edit the document.": [
+                "Opcja Poka\u017c link do edycji pozwala na dodanie do listy linku do funkcji edycji. Wyb\u00f3r tej opcji spowoduje zast\u0105pienie ustawie\u0144 skonfigurowanych w systemie. Linki b\u0119d\u0105 widoczne tylko wtedy, gdy u\u017cytkownik b\u0119dzie m\u00f3g\u0142 edytowa\u0107 dokument."
+            ],
+            "Default": [
+                "Domy\u015blny"
+            ],
+            "No Edit link": [
+                "Brak linku do edycji"
+            ],
+            "Edit link": [
+                "Edytuj link"
+            ],
+            "Show featured image?": [
+                "Pokaza\u0107 wyr\u00f3\u017cniony obraz?"
+            ],
+            "Show document description?": [
+                "Pokaza\u0107 opis dokumentu?"
+            ],
+            "Show PDF File indication?": [
+                "Pokaza\u0107 wskazanie pliku PDF?"
+            ],
+            "Open documents in new tab?": [
+                "Otworzy\u0107 dokumenty w nowej karcie?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "W\u0142\u0105czenie tej opcji spowoduje otwarcie dokumentu w nowej karcie. Nale\u017cy j\u0105 w\u0142\u0105czy\u0107 podczas edycji strony za pomoc\u0105 tego bloku, poniewa\u017c klikni\u0119cie linku podczas edycji spowoduje opuszczenie bie\u017c\u0105cej strony."
+            ],
+            "Free Form Settings": [
+                "Ustawienia formularza swobodnego"
+            ],
+            "Free-form parameters": [
+                "Parametry swobodne"
+            ],
+            "The query parameters can be very extensive. enter any other parameters required here.": [
+                "Parametry zapytania mog\u0105 by\u0107 bardzo rozbudowane. Wprowad\u017a tutaj wszelkie inne wymagane parametry."
+            ]
+        }
+    }
+}

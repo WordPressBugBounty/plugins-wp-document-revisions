@@ -1,0 +1,36 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/revisions-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "hu_HU",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Show PDF File indication?": [
+                "PDF f\u00e1jl jelz\u00e9s megjelen\u00edt\u00e9se?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Ennek bekapcsol\u00e1sa eset\u00e9n a dokumentum \u00faj lapon ny\u00edlik meg. Ezt a blokk haszn\u00e1lat\u00e1val szerkesztett oldal eset\u00e9n kell bekapcsolni, mivel szerkeszt\u00e9s k\u00f6zben egy hivatkoz\u00e1sra kattintva a program elhagyja az aktu\u00e1lis oldalt."
+            ],
+            "Selection Criteria": [
+                "Kiv\u00e1laszt\u00e1si krit\u00e9riumok"
+            ],
+            "Document Id": [
+                "Dokumentumazonos\u00edt\u00f3"
+            ],
+            "Revisions to Display": [
+                "A kijelz\u0151 m\u00f3dos\u00edt\u00e1sai"
+            ],
+            "Show Revision Summaries?": [
+                "Mutassa a m\u00f3dos\u00edt\u00e1si \u00f6sszefoglal\u00f3kat?"
+            ],
+            "Open in New Tab?": [
+                "Megnyit\u00e1s \u00faj lapon?"
+            ]
+        }
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "es_ES",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "There are no taxonomies defined.": [
+                "No hay taxonom\u00edas definidas."
+            ],
+            "Taxonomy:": [
+                "Taxonom\u00eda:"
+            ],
+            "Block Heading": [
+                "Encabezado de bloque"
+            ],
+            "Display Settings": [
+                "Configuraci\u00f3n de pantalla"
+            ],
+            "Number of documents to display": [
+                "N\u00famero de documentos a mostrar"
+            ],
+            "List ordering Field": [
+                "Campo de ordenaci\u00f3n de la lista"
+            ],
+            "Example fields are post_title, post_date and post_modified.": [
+                "Los campos de ejemplo son post_title, post_date y post_modified."
+            ],
+            "Ascending": [
+                "Ascendente"
+            ],
+            "Descending": [
+                "Descendiendo"
+            ],
+            "Show Edit link": [
+                "Mostrar enlace de edici\u00f3n"
+            ],
+            "Show Edit link allows the list to have a link to the Edit function. A choice made here will over-ride the system-configured settings. Links will only appear if the user can edit the document.": [
+                "El enlace \"Mostrar edici\u00f3n\" permite que la lista incluya un enlace a la funci\u00f3n de edici\u00f3n. La opci\u00f3n seleccionada aqu\u00ed anular\u00e1 la configuraci\u00f3n predeterminada del sistema. Los enlaces solo aparecer\u00e1n si el usuario tiene permisos de edici\u00f3n para el documento."
+            ],
+            "Default": [
+                "Por defecto"
+            ],
+            "No Edit link": [
+                "No editar enlace"
+            ],
+            "Edit link": [
+                "Editar enlace"
+            ],
+            "Show featured image?": [
+                "\u00bfMostrar imagen destacada?"
+            ],
+            "Show document description?": [
+                "\u00bfMostrar descripci\u00f3n del documento?"
+            ],
+            "Show PDF File indication?": [
+                "\u00bfMostrar indicaci\u00f3n de archivo PDF?"
+            ],
+            "Open documents in new tab?": [
+                "\u00bfAbrir documentos en una pesta\u00f1a nueva?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Al activar esta opci\u00f3n, el documento se abrir\u00e1 en una pesta\u00f1a nueva. Debe estar activada mientras edita la p\u00e1gina usando este bloque, ya que al hacer clic en un enlace durante la edici\u00f3n se cerrar\u00e1 la p\u00e1gina actual."
+            ],
+            "Free Form Settings": [
+                "Configuraci\u00f3n de formato libre"
+            ],
+            "Free-form parameters": [
+                "Par\u00e1metros de forma libre"
+            ],
+            "The query parameters can be very extensive. enter any other parameters required here.": [
+                "Los par\u00e1metros de consulta pueden ser muy extensos. Introduzca aqu\u00ed cualquier otro par\u00e1metro necesario."
+            ]
+        }
+    }
+}

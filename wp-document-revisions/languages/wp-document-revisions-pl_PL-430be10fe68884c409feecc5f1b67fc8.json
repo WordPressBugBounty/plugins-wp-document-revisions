@@ -1,0 +1,30 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/admin\/wp-document-revisions-ai-prefill.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "pl_PL",
+                "plural-forms": "nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);"
+            },
+            "\u2728 AI suggestion \u2014 edit before saving.": [
+                "\u2728 Sugestia AI \u2014 edytuj przed zapisaniem."
+            ],
+            "\u2728 AI summary will be available shortly \u2014 refresh this page to see it.": [
+                "\u2728 Podsumowanie sztucznej inteligencji b\u0119dzie wkr\u00f3tce dost\u0119pne \u2014 od\u015bwie\u017c t\u0119 stron\u0119, aby je zobaczy\u0107."
+            ],
+            "Dismiss": [
+                "Odrzuca\u0107"
+            ],
+            "Reviewed \u2713": [
+                "Zrecenzowano \u2713"
+            ],
+            "Mark reviewed": [
+                "Mark zrecenzowa\u0142"
+            ]
+        }
+    }
+}

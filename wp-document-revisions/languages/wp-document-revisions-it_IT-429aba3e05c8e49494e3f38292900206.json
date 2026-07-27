@@ -1,0 +1,81 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "it_IT",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "There are no taxonomies defined.": [
+                "Non sono definite tassonomie."
+            ],
+            "Taxonomy:": [
+                "Tassonomia:"
+            ],
+            "Block Heading": [
+                "Intestazione di blocco"
+            ],
+            "Display Settings": [
+                "Impostazioni di visualizzazione"
+            ],
+            "Number of documents to display": [
+                "Numero di documenti da visualizzare"
+            ],
+            "List ordering Field": [
+                "Campo di ordinamento dell'elenco"
+            ],
+            "Example fields are post_title, post_date and post_modified.": [
+                "Esempi di campi sono post_title, post_date e post_modified."
+            ],
+            "Ascending": [
+                "Ascendente"
+            ],
+            "Descending": [
+                "Discendente"
+            ],
+            "Show Edit link": [
+                "Mostra il link Modifica"
+            ],
+            "Show Edit link allows the list to have a link to the Edit function. A choice made here will over-ride the system-configured settings. Links will only appear if the user can edit the document.": [
+                "L'opzione \"Mostra collegamento Modifica\" consente di visualizzare un link alla funzione di modifica nell'elenco. La scelta effettuata in questa sezione sovrascriver\u00e0 le impostazioni configurate dal sistema. I collegamenti saranno visibili solo se l'utente dispone dei permessi di modifica per il documento."
+            ],
+            "Default": [
+                "Predefinito"
+            ],
+            "No Edit link": [
+                "Nessun collegamento di modifica"
+            ],
+            "Edit link": [
+                "Modifica collegamento"
+            ],
+            "Show featured image?": [
+                "Mostra l'immagine in evidenza?"
+            ],
+            "Show document description?": [
+                "Mostrare la descrizione del documento?"
+            ],
+            "Show PDF File indication?": [
+                "Mostrare l'indicazione del file PDF?"
+            ],
+            "Open documents in new tab?": [
+                "Aprire i documenti in una nuova scheda?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Attivando questa opzione, il documento si aprir\u00e0 in una nuova scheda. \u00c8 consigliabile attivarla durante la modifica della pagina che utilizza questo blocco, poich\u00e9 cliccando su un collegamento durante la modifica si verr\u00e0 forzatamente reindirizzati a un'altra pagina."
+            ],
+            "Free Form Settings": [
+                "Impostazioni a forma libera"
+            ],
+            "Free-form parameters": [
+                "Parametri a forma libera"
+            ],
+            "The query parameters can be very extensive. enter any other parameters required here.": [
+                "I parametri della query possono essere molto estesi. Inserire qui eventuali altri parametri necessari."
+            ]
+        }
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/editor-document-upload\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "ko_KR",
+                "plural-forms": "nplurals=1; plural=0;"
+            },
+            "Revision Summary": [
+                "\uac1c\uc815 \uc694\uc57d"
+            ],
+            "Document": [
+                "\ubb38\uc11c"
+            ],
+            "Revision Log": [
+                "\uac1c\uc815 \uae30\ub85d"
+            ],
+            "Upload New Version": [
+                "\uc0c8 \ubc84\uc804 \uc5c5\ub85c\ub4dc"
+            ],
+            "Download": [
+                "\ub2e4\uc6b4\ub85c\ub4dc"
+            ],
+            "Modified": [
+                "\uc218\uc815\ub428"
+            ],
+            "User": [
+                "\uc0ac\uc6a9\uc790"
+            ],
+            "Summary": [
+                "\uc694\uc57d"
+            ],
+            "Upload Document": [
+                "\ubb38\uc11c \uc5c5\ub85c\ub4dc"
+            ],
+            "just now": [
+                "\ubc29\uae08"
+            ],
+            "min ago": [
+                "\uba87 \ubd84 \uc804"
+            ],
+            "hour ago": [
+                "\ud55c \uc2dc\uac04 \uc804"
+            ],
+            "hours ago": [
+                "\uba87 \uc2dc\uac04 \uc804"
+            ],
+            "day ago": [
+                "\ud558\ub8e8 \uc804"
+            ],
+            "days ago": [
+                "\uba70\uce60 \uc804"
+            ],
+            "The attached document file could not be found. It may have been deleted.": [
+                "\ucca8\ubd80\ub41c \ubb38\uc11c \ud30c\uc77c\uc744 \ucc3e\uc744 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. \ud30c\uc77c\uc774 \uc0ad\uc81c\ub418\uc5c8\uc744 \uc218 \uc788\uc2b5\ub2c8\ub2e4."
+            ],
+            "Document selection failed.": [
+                "\ubb38\uc11c \uc120\ud0dd\uc5d0 \uc2e4\ud328\ud588\uc2b5\ub2c8\ub2e4."
+            ],
+            "New version selected. Press Update to save.": [
+                "\uc0c8 \ubc84\uc804\uc774 \uc120\ud0dd\ub418\uc5c8\uc2b5\ub2c8\ub2e4. \uc5c5\ub370\uc774\ud2b8\ub97c \ub20c\ub7ec \uc800\uc7a5\ud558\uc138\uc694."
+            ],
+            "Document selected. Press Update to save.": [
+                "\uc120\ud0dd\ud55c \ubb38\uc11c\uc785\ub2c8\ub2e4. \uc800\uc7a5\ud558\ub824\uba74 '\uc5c5\ub370\uc774\ud2b8'\ub97c \ub204\ub974\uc138\uc694."
+            ],
+            "Select": [
+                "\uc120\ud0dd\ud558\ub2e4"
+            ],
+            "Attached document": [
+                "\ucca8\ubd80 \ubb38\uc11c"
+            ],
+            "%s is currently editing this document.": [
+                "%s\ub2d8\uc774 \ud604\uc7ac \uc774 \ubb38\uc11c\ub97c \ud3b8\uc9d1\ud558\uace0 \uc788\uc2b5\ub2c8\ub2e4."
+            ],
+            "This document is currently locked.": [
+                "\uc774 \ubb38\uc11c\ub294 \ud604\uc7ac \uc7a0\uaca8 \uc788\uc2b5\ub2c8\ub2e4."
+            ],
+            "A brief description of the changes in this version.": [
+                "\uc774\ubc88 \ubc84\uc804\uc758 \ubcc0\uacbd \uc0ac\ud56d\uc5d0 \ub300\ud55c \uac04\ub7b5\ud55c \uc124\uba85\uc785\ub2c8\ub2e4."
+            ],
+            "No revisions yet.": [
+                "\uc544\uc9c1 \uc218\uc815 \uc0ac\ud56d\uc774 \uc5c6\uc2b5\ub2c8\ub2e4."
+            ],
+            "\u2014": [
+                "\u2014"
+            ]
+        }
+    }
+}

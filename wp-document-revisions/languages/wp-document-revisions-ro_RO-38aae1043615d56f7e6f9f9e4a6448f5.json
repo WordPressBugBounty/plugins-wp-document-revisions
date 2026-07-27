@@ -1,0 +1,36 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/revisions-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "ro_RO",
+                "plural-forms": "nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100>0 && n%100<20)) ? 1 : 2);"
+            },
+            "Show PDF File indication?": [
+                "Afi\u0219a\u021bi indica\u021bia fi\u0219ierului PDF?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Setarea acestei op\u021biuni va deschide documentul \u00eentr-o fil\u0103 nou\u0103. Aceast\u0103 op\u021biune ar trebui activat\u0103 la editarea paginii folosind acest bloc, deoarece dac\u0103 da\u021bi clic pe un link \u00een timpul edit\u0103rii, pagina curent\u0103 va fi for\u021bat\u0103 s\u0103 fie p\u0103r\u0103sit\u0103."
+            ],
+            "Selection Criteria": [
+                "Criterii de selec\u021bie"
+            ],
+            "Document Id": [
+                "ID-ul documentului"
+            ],
+            "Revisions to Display": [
+                "Revizuiri de afi\u0219at"
+            ],
+            "Show Revision Summaries?": [
+                "Afi\u0219a\u021bi rezumatele reviziilor?"
+            ],
+            "Open in New Tab?": [
+                "Deschide\u021bi \u00eentr-o fil\u0103 nou\u0103?"
+            ]
+        }
+    }
+}

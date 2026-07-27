@@ -1,0 +1,93 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/editor-document-upload\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "ro_RO",
+                "plural-forms": "nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100>0 && n%100<20)) ? 1 : 2);"
+            },
+            "Revision Summary": [
+                "Rezumatul revizuirii"
+            ],
+            "Document": [
+                "Document"
+            ],
+            "Revision Log": [
+                "Jurnal de revizii"
+            ],
+            "Upload New Version": [
+                "\u00cenc\u0103rca\u021bi versiunea nou\u0103"
+            ],
+            "Download": [
+                "Desc\u0103rcare"
+            ],
+            "Modified": [
+                "Modificat"
+            ],
+            "User": [
+                "Utilizator"
+            ],
+            "Summary": [
+                "Rezumat"
+            ],
+            "Upload Document": [
+                "\u00cenc\u0103rca\u021bi documentul"
+            ],
+            "just now": [
+                "chiar acum"
+            ],
+            "min ago": [
+                "acum un minut"
+            ],
+            "hour ago": [
+                "acum o or\u0103"
+            ],
+            "hours ago": [
+                "acum c\u00e2teva ore"
+            ],
+            "day ago": [
+                "acum o zi"
+            ],
+            "days ago": [
+                "acum c\u00e2teva zile"
+            ],
+            "The attached document file could not be found. It may have been deleted.": [
+                "Fi\u0219ierul document ata\u0219at nu a putut fi g\u0103sit. Este posibil s\u0103 fi fost \u0219ters."
+            ],
+            "Document selection failed.": [
+                "Selec\u021bia documentului a e\u0219uat."
+            ],
+            "New version selected. Press Update to save.": [
+                "Versiune nou\u0103 selectat\u0103. Ap\u0103sa\u021bi Actualizare pentru a salva."
+            ],
+            "Document selected. Press Update to save.": [
+                "Document selectat. Ap\u0103sa\u021bi Actualizare pentru a salva."
+            ],
+            "Select": [
+                "Selecta"
+            ],
+            "Attached document": [
+                "Document ata\u0219at"
+            ],
+            "%s is currently editing this document.": [
+                "%s editeaz\u0103 \u00een prezent acest document."
+            ],
+            "This document is currently locked.": [
+                "Acest document este momentan blocat."
+            ],
+            "A brief description of the changes in this version.": [
+                "O scurt\u0103 descriere a modific\u0103rilor aduse acestei versiuni."
+            ],
+            "No revisions yet.": [
+                "\u00cenc\u0103 nu exist\u0103 revizuiri."
+            ],
+            "\u2014": [
+                "\u2014"
+            ]
+        }
+    }
+}

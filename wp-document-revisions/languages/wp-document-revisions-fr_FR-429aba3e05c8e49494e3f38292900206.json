@@ -1,0 +1,81 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "fr_FR",
+                "plural-forms": "nplurals=2; plural=(n > 1);"
+            },
+            "There are no taxonomies defined.": [
+                "Aucune taxonomie n'est d\u00e9finie."
+            ],
+            "Taxonomy:": [
+                "Taxonomie :"
+            ],
+            "Block Heading": [
+                "Titre du bloc"
+            ],
+            "Display Settings": [
+                "Param\u00e8tres d'affichage"
+            ],
+            "Number of documents to display": [
+                "Nombre de documents \u00e0 afficher"
+            ],
+            "List ordering Field": [
+                "Champ de tri de liste"
+            ],
+            "Example fields are post_title, post_date and post_modified.": [
+                "Exemples de champs\u00a0: post_title, post_date et post_modified."
+            ],
+            "Ascending": [
+                "Ascendant"
+            ],
+            "Descending": [
+                "Descendant"
+            ],
+            "Show Edit link": [
+                "Afficher le lien Modifier"
+            ],
+            "Show Edit link allows the list to have a link to the Edit function. A choice made here will over-ride the system-configured settings. Links will only appear if the user can edit the document.": [
+                "L'option \u00ab\u00a0Afficher le lien Modifier\u00a0\u00bb permet d'ajouter un lien vers la fonction Modifier \u00e0 la liste. Ce choix pr\u00e9vaut sur les param\u00e8tres syst\u00e8me. Les liens ne s'affichent que si l'utilisateur a les droits de modification sur le document."
+            ],
+            "Default": [
+                "D\u00e9faut"
+            ],
+            "No Edit link": [
+                "Lien non modifiable"
+            ],
+            "Edit link": [
+                "Modifier le lien"
+            ],
+            "Show featured image?": [
+                "Afficher l'image mise en avant\u00a0?"
+            ],
+            "Show document description?": [
+                "Afficher la description du document\u00a0?"
+            ],
+            "Show PDF File indication?": [
+                "Afficher l'indication du fichier PDF\u00a0?"
+            ],
+            "Open documents in new tab?": [
+                "Ouvrir les documents dans un nouvel onglet\u00a0?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Activer cette option ouvrira le document dans un nouvel onglet. Il est conseill\u00e9 de l'activer lors de la modification de la page \u00e0 l'aide de ce bloc, car cliquer sur un lien pendant la modification forcera l'ouverture de la page actuelle."
+            ],
+            "Free Form Settings": [
+                "Param\u00e8tres de forme libre"
+            ],
+            "Free-form parameters": [
+                "Param\u00e8tres de forme libre"
+            ],
+            "The query parameters can be very extensive. enter any other parameters required here.": [
+                "Les param\u00e8tres de requ\u00eate peuvent \u00eatre tr\u00e8s nombreux. Veuillez saisir ici tous les autres param\u00e8tres n\u00e9cessaires."
+            ]
+        }
+    }
+}

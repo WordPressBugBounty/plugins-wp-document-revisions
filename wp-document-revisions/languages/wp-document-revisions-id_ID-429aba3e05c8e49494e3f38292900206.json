@@ -1,0 +1,81 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "id_ID",
+                "plural-forms": "nplurals=1; plural=0;"
+            },
+            "There are no taxonomies defined.": [
+                "Tidak ada taksonomi yang didefinisikan."
+            ],
+            "Taxonomy:": [
+                "Taksonomi:"
+            ],
+            "Block Heading": [
+                "Judul Blok"
+            ],
+            "Display Settings": [
+                "Pengaturan Tampilan"
+            ],
+            "Number of documents to display": [
+                "Jumlah dokumen yang akan ditampilkan"
+            ],
+            "List ordering Field": [
+                "Daftar urutan Bidang"
+            ],
+            "Example fields are post_title, post_date and post_modified.": [
+                "Contoh kolom yang tersedia adalah post_title, post_date, dan post_modified."
+            ],
+            "Ascending": [
+                "Naik"
+            ],
+            "Descending": [
+                "Menurun"
+            ],
+            "Show Edit link": [
+                "Tampilkan tautan Edit"
+            ],
+            "Show Edit link allows the list to have a link to the Edit function. A choice made here will over-ride the system-configured settings. Links will only appear if the user can edit the document.": [
+                "Opsi \"Tampilkan tautan Edit\" memungkinkan daftar memiliki tautan ke fungsi Edit. Pilihan yang dibuat di sini akan menimpa pengaturan yang dikonfigurasi sistem. Tautan hanya akan muncul jika pengguna dapat mengedit dokumen."
+            ],
+            "Default": [
+                "Bawaan"
+            ],
+            "No Edit link": [
+                "Tidak ada tautan Edit"
+            ],
+            "Edit link": [
+                "Edit tautan"
+            ],
+            "Show featured image?": [
+                "Tampilkan gambar unggulan?"
+            ],
+            "Show document description?": [
+                "Tampilkan deskripsi dokumen?"
+            ],
+            "Show PDF File indication?": [
+                "Tampilkan indikasi file PDF?"
+            ],
+            "Open documents in new tab?": [
+                "Buka dokumen di tab baru?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Mengaktifkan opsi ini akan membuka dokumen di tab baru. Opsi ini harus diaktifkan saat mengedit halaman menggunakan blok ini, karena mengklik tautan saat mengedit akan memaksa halaman saat ini untuk ditinggalkan."
+            ],
+            "Free Form Settings": [
+                "Pengaturan Bentuk Bebas"
+            ],
+            "Free-form parameters": [
+                "Parameter bentuk bebas"
+            ],
+            "The query parameters can be very extensive. enter any other parameters required here.": [
+                "Parameter kueri bisa sangat luas. Masukkan parameter lain yang dibutuhkan di sini."
+            ]
+        }
+    }
+}

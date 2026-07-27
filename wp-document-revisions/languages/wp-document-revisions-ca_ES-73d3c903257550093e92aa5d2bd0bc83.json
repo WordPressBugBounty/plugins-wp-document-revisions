@@ -1,0 +1,57 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/admin\/wp-document-revisions.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "ca_ES",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Upload failed.": [
+                "La c\u00e0rrega ha fallat."
+            ],
+            "File uploaded successfully. Add a revision summary below (optional) and press <strong>Update<\/strong> to save your changes.": [
+                "El fitxer s'ha carregat correctament. Afegiu un resum de la revisi\u00f3 a continuaci\u00f3 (opcional) i premeu <strong>Actualitza<\/strong> per desar els canvis."
+            ],
+            "New version uploaded. Press Update to save.": [
+                "Nova versi\u00f3 carregada. Premeu Actualitza per desar."
+            ],
+            "Are you sure you want to restore this revision? If you do, no history will be lost. This revision will be copied and become the most recent revision.": [
+                "Esteu segur que voleu restaurar aquesta revisi\u00f3? Si ho feu, no es perdr\u00e0 cap historial. Aquesta revisi\u00f3 es copiar\u00e0 i esdevindr\u00e0 la revisi\u00f3 m\u00e9s recent."
+            ],
+            "An error has occurred, please try reloading the page.": [
+                "S'ha produ\u00eft un error, si us plau, torneu a carregar la p\u00e0gina."
+            ],
+            "Lost Document Lock": [
+                "Bloqueig de documents perduts"
+            ],
+            "Your lock on the document %s has been overridden. Any changes will be lost.": [
+                "S'ha anul\u00b7lat el bloqueig del document %s. Es perdr\u00e0 qualsevol canvi."
+            ],
+            "%d mins": [
+                "%d minuts"
+            ],
+            "%d hour": [
+                "%d hora"
+            ],
+            "%d hours": [
+                "%d hores"
+            ],
+            "%d day": [
+                "%d dia"
+            ],
+            "%d days": [
+                "%d dies"
+            ],
+            "Upload Document": [
+                "Puja el document"
+            ],
+            "Select Document": [
+                "Selecciona el document"
+            ]
+        }
+    }
+}

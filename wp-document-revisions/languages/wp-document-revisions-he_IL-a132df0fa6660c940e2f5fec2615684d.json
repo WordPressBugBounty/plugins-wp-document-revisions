@@ -1,0 +1,93 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/editor-document-upload\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "he_IL",
+                "plural-forms": "nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3;"
+            },
+            "Revision Summary": [
+                "\u05e1\u05d9\u05db\u05d5\u05dd \u05d2\u05e8\u05e1\u05d0\u05d5\u05ea"
+            ],
+            "Document": [
+                "\u05de\u05b4\u05e1\u05b0\u05de\u05b8\u05da"
+            ],
+            "Revision Log": [
+                "\u05d9\u05d5\u05de\u05df \u05d2\u05e8\u05e1\u05d0\u05d5\u05ea"
+            ],
+            "Upload New Version": [
+                "\u05d4\u05e2\u05dc\u05d4 \u05d2\u05e8\u05e1\u05d4 \u05d7\u05d3\u05e9\u05d4"
+            ],
+            "Download": [
+                "\u05d4\u05d5\u05e8\u05d3\u05d4"
+            ],
+            "Modified": [
+                "\u05e9\u05d5\u05e0\u05d4"
+            ],
+            "User": [
+                "\u05de\u05b4\u05e9\u05c1\u05ea\u05b7\u05de\u05b5\u05e9\u05c1"
+            ],
+            "Summary": [
+                "\u05ea\u05b7\u05e7\u05e6\u05b4\u05d9\u05e8"
+            ],
+            "Upload Document": [
+                "\u05d4\u05e2\u05dc\u05d0\u05ea \u05de\u05e1\u05de\u05da"
+            ],
+            "just now": [
+                "\u05d6\u05b6\u05d4 \u05e2\u05b7\u05ea\u05b8\u05d4"
+            ],
+            "min ago": [
+                "\u05dc\u05e4\u05e0\u05d9 \u05d3\u05e7\u05d4"
+            ],
+            "hour ago": [
+                "\u05dc\u05e4\u05e0\u05d9 \u05e9\u05e2\u05d4"
+            ],
+            "hours ago": [
+                "\u05dc\u05e4\u05e0\u05d9 \u05e9\u05e2\u05d5\u05ea"
+            ],
+            "day ago": [
+                "\u05dc\u05e4\u05e0\u05d9 \u05d9\u05d5\u05dd"
+            ],
+            "days ago": [
+                "\u05dc\u05e4\u05e0\u05d9 \u05d9\u05de\u05d9\u05dd"
+            ],
+            "The attached document file could not be found. It may have been deleted.": [
+                "\u05e7\u05d5\u05d1\u05e5 \u05d4\u05de\u05e1\u05de\u05da \u05d4\u05de\u05e6\u05d5\u05e8\u05e3 \u05dc\u05d0 \u05e0\u05de\u05e6\u05d0. \u05d9\u05d9\u05ea\u05db\u05df \u05e9\u05d4\u05d5\u05d0 \u05e0\u05de\u05d7\u05e7."
+            ],
+            "Document selection failed.": [
+                "\u05d1\u05d7\u05d9\u05e8\u05ea \u05d4\u05de\u05e1\u05de\u05da \u05e0\u05db\u05e9\u05dc\u05d4."
+            ],
+            "New version selected. Press Update to save.": [
+                "\u05d2\u05e8\u05e1\u05d4 \u05d7\u05d3\u05e9\u05d4 \u05e0\u05d1\u05d7\u05e8\u05d4. \u05dc\u05d7\u05e5 \u05e2\u05dc \u05e2\u05d3\u05db\u05df \u05db\u05d3\u05d9 \u05dc\u05e9\u05de\u05d5\u05e8."
+            ],
+            "Document selected. Press Update to save.": [
+                "\u05d4\u05de\u05e1\u05de\u05da \u05e0\u05d1\u05d7\u05e8. \u05dc\u05d7\u05e5 \u05e2\u05dc \u05e2\u05d3\u05db\u05df \u05db\u05d3\u05d9 \u05dc\u05e9\u05de\u05d5\u05e8."
+            ],
+            "Select": [
+                "\u05dc\u05b4\u05d1\u05d7\u05d5\u05b9\u05e8"
+            ],
+            "Attached document": [
+                "\u05de\u05e1\u05de\u05da \u05de\u05e6\u05d5\u05e8\u05e3"
+            ],
+            "%s is currently editing this document.": [
+                "%s \u05e2\u05d5\u05e8\u05da \u05db\u05e2\u05ea \u05de\u05e1\u05de\u05da \u05d6\u05d4."
+            ],
+            "This document is currently locked.": [
+                "\u05de\u05e1\u05de\u05da \u05d6\u05d4 \u05e0\u05e2\u05d5\u05dc \u05db\u05e2\u05ea."
+            ],
+            "A brief description of the changes in this version.": [
+                "\u05ea\u05d9\u05d0\u05d5\u05e8 \u05e7\u05e6\u05e8 \u05e9\u05dc \u05d4\u05e9\u05d9\u05e0\u05d5\u05d9\u05d9\u05dd \u05d1\u05d2\u05e8\u05e1\u05d4 \u05d6\u05d5."
+            ],
+            "No revisions yet.": [
+                "\u05e2\u05d3\u05d9\u05d9\u05df \u05d0\u05d9\u05df \u05ea\u05d9\u05e7\u05d5\u05e0\u05d9\u05dd."
+            ],
+            "\u2014": [
+                "\u2014"
+            ]
+        }
+    }
+}

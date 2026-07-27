@@ -1,0 +1,93 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/editor-document-upload\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "en_US",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Revision Summary": [
+                ""
+            ],
+            "Document": [
+                ""
+            ],
+            "Revision Log": [
+                ""
+            ],
+            "Upload New Version": [
+                ""
+            ],
+            "Download": [
+                ""
+            ],
+            "Modified": [
+                ""
+            ],
+            "User": [
+                ""
+            ],
+            "Summary": [
+                ""
+            ],
+            "Upload Document": [
+                ""
+            ],
+            "just now": [
+                ""
+            ],
+            "min ago": [
+                ""
+            ],
+            "hour ago": [
+                ""
+            ],
+            "hours ago": [
+                ""
+            ],
+            "day ago": [
+                ""
+            ],
+            "days ago": [
+                ""
+            ],
+            "The attached document file could not be found. It may have been deleted.": [
+                ""
+            ],
+            "Document selection failed.": [
+                ""
+            ],
+            "New version selected. Press Update to save.": [
+                ""
+            ],
+            "Document selected. Press Update to save.": [
+                ""
+            ],
+            "Select": [
+                ""
+            ],
+            "Attached document": [
+                ""
+            ],
+            "%s is currently editing this document.": [
+                ""
+            ],
+            "This document is currently locked.": [
+                ""
+            ],
+            "A brief description of the changes in this version.": [
+                ""
+            ],
+            "No revisions yet.": [
+                ""
+            ],
+            "\u2014": [
+                ""
+            ]
+        }
+    }
+}

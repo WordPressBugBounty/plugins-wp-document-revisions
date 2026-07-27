@@ -1,0 +1,81 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "nl_NL",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "There are no taxonomies defined.": [
+                "Er zijn geen taxonomie\u00ebn gedefinieerd."
+            ],
+            "Taxonomy:": [
+                "Taxonomie:"
+            ],
+            "Block Heading": [
+                "Blokkop"
+            ],
+            "Display Settings": [
+                "Weergave-instellingen"
+            ],
+            "Number of documents to display": [
+                "Aantal documenten dat moet worden weergegeven"
+            ],
+            "List ordering Field": [
+                "Lijstvolgorde Veld"
+            ],
+            "Example fields are post_title, post_date and post_modified.": [
+                "Voorbeelden van velden zijn post_title, post_date en post_modified."
+            ],
+            "Ascending": [
+                "Stijgend"
+            ],
+            "Descending": [
+                "Dalend"
+            ],
+            "Show Edit link": [
+                "Toon bewerkingslink"
+            ],
+            "Show Edit link allows the list to have a link to the Edit function. A choice made here will over-ride the system-configured settings. Links will only appear if the user can edit the document.": [
+                "Met de optie 'Link naar bewerken weergeven' kunt u een link naar de bewerkingsfunctie aan de lijst toevoegen. Een hier gemaakte keuze overschrijft de systeeminstellingen. Links worden alleen weergegeven als de gebruiker het document kan bewerken."
+            ],
+            "Default": [
+                "Standaard"
+            ],
+            "No Edit link": [
+                "Geen bewerkingslink"
+            ],
+            "Edit link": [
+                "Link bewerken"
+            ],
+            "Show featured image?": [
+                "Toon de uitgelichte afbeelding?"
+            ],
+            "Show document description?": [
+                "Documentbeschrijving weergeven?"
+            ],
+            "Show PDF File indication?": [
+                "PDF-bestand weergeven?"
+            ],
+            "Open documents in new tab?": [
+                "Documenten openen in een nieuw tabblad?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Als je deze optie inschakelt, wordt het document in een nieuw tabblad geopend. Je moet deze optie ingeschakeld laten tijdens het bewerken van de pagina met dit blok, omdat klikken op een link tijdens het bewerken ervoor zorgt dat de huidige pagina wordt verlaten."
+            ],
+            "Free Form Settings": [
+                "Vrije vorminstellingen"
+            ],
+            "Free-form parameters": [
+                "Vrije-vormparameters"
+            ],
+            "The query parameters can be very extensive. enter any other parameters required here.": [
+                "De queryparameters kunnen zeer uitgebreid zijn. Voer hier alle andere benodigde parameters in."
+            ]
+        }
+    }
+}

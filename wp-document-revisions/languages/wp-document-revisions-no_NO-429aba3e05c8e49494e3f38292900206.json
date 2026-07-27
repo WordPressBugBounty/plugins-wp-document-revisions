@@ -1,0 +1,81 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "no_NO",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "There are no taxonomies defined.": [
+                "Det er ingen definerte taksonomier."
+            ],
+            "Taxonomy:": [
+                "Taksonomi:"
+            ],
+            "Block Heading": [
+                "Blokkoverskrift"
+            ],
+            "Display Settings": [
+                "Skjerminnstillinger"
+            ],
+            "Number of documents to display": [
+                "Antall dokumenter som skal vises"
+            ],
+            "List ordering Field": [
+                "Listerekkef\u00f8lge Felt"
+            ],
+            "Example fields are post_title, post_date and post_modified.": [
+                "Eksempelfelt er post_title, post_date og post_modified."
+            ],
+            "Ascending": [
+                "Stigende"
+            ],
+            "Descending": [
+                "Synkende"
+            ],
+            "Show Edit link": [
+                "Vis redigeringslenke"
+            ],
+            "Show Edit link allows the list to have a link to the Edit function. A choice made here will over-ride the system-configured settings. Links will only appear if the user can edit the document.": [
+                "Vis redigeringslenke lar listen ha en lenke til redigeringsfunksjonen. Et valg som gj\u00f8res her, vil overstyre de systemkonfigurerte innstillingene. Lenker vises bare hvis brukeren kan redigere dokumentet."
+            ],
+            "Default": [
+                "Misligholde"
+            ],
+            "No Edit link": [
+                "Ingen redigeringslenke"
+            ],
+            "Edit link": [
+                "Rediger lenke"
+            ],
+            "Show featured image?": [
+                "Vis fremhevet bilde?"
+            ],
+            "Show document description?": [
+                "Vis dokumentbeskrivelse?"
+            ],
+            "Show PDF File indication?": [
+                "Vise PDF-filindikasjon?"
+            ],
+            "Open documents in new tab?": [
+                "\u00c5pne dokumenter i ny fane?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Hvis du aktiverer dette, \u00e5pnes dokumentet i en ny fane. Dette b\u00f8r aktiveres n\u00e5r du redigerer siden ved hjelp av denne blokken, da det \u00e5 klikke p\u00e5 en lenke mens du redigerer vil tvinge gjeldende side til \u00e5 forlates."
+            ],
+            "Free Form Settings": [
+                "Innstillinger for fri form"
+            ],
+            "Free-form parameters": [
+                "Friformsparametere"
+            ],
+            "The query parameters can be very extensive. enter any other parameters required here.": [
+                "Sp\u00f8rreparametrene kan v\u00e6re sv\u00e6rt omfattende. Skriv inn eventuelle andre n\u00f8dvendige parametere her."
+            ]
+        }
+    }
+}

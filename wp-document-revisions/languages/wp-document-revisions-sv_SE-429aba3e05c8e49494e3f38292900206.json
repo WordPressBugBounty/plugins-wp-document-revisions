@@ -1,0 +1,81 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "sv_SE",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "There are no taxonomies defined.": [
+                "Det finns inga definierade taxonomier."
+            ],
+            "Taxonomy:": [
+                "Taxonomi:"
+            ],
+            "Block Heading": [
+                "Blockrubrik"
+            ],
+            "Display Settings": [
+                "Sk\u00e4rminst\u00e4llningar"
+            ],
+            "Number of documents to display": [
+                "Antal dokument att visa"
+            ],
+            "List ordering Field": [
+                "Listordning F\u00e4lt"
+            ],
+            "Example fields are post_title, post_date and post_modified.": [
+                "Exempelf\u00e4lt \u00e4r post_title, post_date och post_modified."
+            ],
+            "Ascending": [
+                "Stigande"
+            ],
+            "Descending": [
+                "Fallande"
+            ],
+            "Show Edit link": [
+                "Visa redigeringsl\u00e4nk"
+            ],
+            "Show Edit link allows the list to have a link to the Edit function. A choice made here will over-ride the system-configured settings. Links will only appear if the user can edit the document.": [
+                "Visa redigeringsl\u00e4nk g\u00f6r att listan kan ha en l\u00e4nk till redigeringsfunktionen. Ett val som g\u00f6rs h\u00e4r \u00e5sidos\u00e4tter de systemkonfigurerade inst\u00e4llningarna. L\u00e4nkar visas bara om anv\u00e4ndaren kan redigera dokumentet."
+            ],
+            "Default": [
+                "Standard"
+            ],
+            "No Edit link": [
+                "Ingen redigeringsl\u00e4nk"
+            ],
+            "Edit link": [
+                "Redigera l\u00e4nk"
+            ],
+            "Show featured image?": [
+                "Visa utvald bild?"
+            ],
+            "Show document description?": [
+                "Visa dokumentbeskrivning?"
+            ],
+            "Show PDF File indication?": [
+                "Visa PDF-filindikering?"
+            ],
+            "Open documents in new tab?": [
+                "\u00d6ppna dokument i ny flik?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Om du aktiverar detta \u00f6ppnas dokumentet i en ny flik. Detta b\u00f6r vara aktiverat n\u00e4r du redigerar sidan med hj\u00e4lp av det h\u00e4r blocket, eftersom det inneb\u00e4r att du tvingas l\u00e4mna den aktuella sidan om du klickar p\u00e5 en l\u00e4nk medan du redigerar."
+            ],
+            "Free Form Settings": [
+                "Inst\u00e4llningar f\u00f6r fri form"
+            ],
+            "Free-form parameters": [
+                "Fritt formulerade parametrar"
+            ],
+            "The query parameters can be very extensive. enter any other parameters required here.": [
+                "Fr\u00e5geparametrarna kan vara mycket omfattande. Ange eventuella andra parametrar som kr\u00e4vs h\u00e4r."
+            ]
+        }
+    }
+}

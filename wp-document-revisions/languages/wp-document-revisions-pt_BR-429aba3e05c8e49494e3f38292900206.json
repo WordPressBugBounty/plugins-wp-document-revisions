@@ -1,0 +1,81 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "pt_BR",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "There are no taxonomies defined.": [
+                "N\u00e3o existem taxonomias definidas."
+            ],
+            "Taxonomy:": [
+                "Taxonomia:"
+            ],
+            "Block Heading": [
+                "T\u00edtulo do bloco"
+            ],
+            "Display Settings": [
+                "Configura\u00e7\u00f5es de exibi\u00e7\u00e3o"
+            ],
+            "Number of documents to display": [
+                "N\u00famero de documentos a serem exibidos"
+            ],
+            "List ordering Field": [
+                "Campo de ordena\u00e7\u00e3o da lista"
+            ],
+            "Example fields are post_title, post_date and post_modified.": [
+                "Os campos de exemplo s\u00e3o post_title, post_date e post_modified."
+            ],
+            "Ascending": [
+                "Ascendente"
+            ],
+            "Descending": [
+                "Descendente"
+            ],
+            "Show Edit link": [
+                "Mostrar link de edi\u00e7\u00e3o"
+            ],
+            "Show Edit link allows the list to have a link to the Edit function. A choice made here will over-ride the system-configured settings. Links will only appear if the user can edit the document.": [
+                "A op\u00e7\u00e3o \"Mostrar link Editar\" permite que a lista exiba um link para a fun\u00e7\u00e3o Editar. A escolha feita aqui substituir\u00e1 as configura\u00e7\u00f5es padr\u00e3o do sistema. Os links s\u00f3 aparecer\u00e3o se o usu\u00e1rio puder editar o documento."
+            ],
+            "Default": [
+                "Padr\u00e3o"
+            ],
+            "No Edit link": [
+                "Sem link para editar"
+            ],
+            "Edit link": [
+                "Editar link"
+            ],
+            "Show featured image?": [
+                "Exibir imagem em destaque?"
+            ],
+            "Show document description?": [
+                "Exibir descri\u00e7\u00e3o do documento?"
+            ],
+            "Show PDF File indication?": [
+                "Exibir indica\u00e7\u00e3o de arquivo PDF?"
+            ],
+            "Open documents in new tab?": [
+                "Abrir documentos em nova aba?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Ao ativar esta op\u00e7\u00e3o, o documento ser\u00e1 aberto em uma nova aba. \u00c9 recomend\u00e1vel ativ\u00e1-la ao editar a p\u00e1gina usando este bloco, pois clicar em um link durante a edi\u00e7\u00e3o for\u00e7ar\u00e1 o fechamento da p\u00e1gina atual."
+            ],
+            "Free Form Settings": [
+                "Configura\u00e7\u00f5es de formato livre"
+            ],
+            "Free-form parameters": [
+                "Par\u00e2metros de forma livre"
+            ],
+            "The query parameters can be very extensive. enter any other parameters required here.": [
+                "Os par\u00e2metros de consulta podem ser muito extensos. Insira aqui quaisquer outros par\u00e2metros necess\u00e1rios."
+            ]
+        }
+    }
+}

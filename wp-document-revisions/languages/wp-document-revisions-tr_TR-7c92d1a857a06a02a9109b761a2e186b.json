@@ -1,0 +1,57 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-widget\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "tr_TR",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Draft": [
+                "Taslak"
+            ],
+            "Private": [
+                "\u00d6zel"
+            ],
+            "Show featured image?": [
+                "\u00d6ne \u00e7\u0131kan g\u00f6rseli g\u00f6sterilsin mi?"
+            ],
+            "Show document description?": [
+                "Belge a\u00e7\u0131klamas\u0131n\u0131 g\u00f6sterilsin mi?"
+            ],
+            "Show PDF File indication?": [
+                "PDF dosyas\u0131n\u0131 g\u00f6sterilsin mi?"
+            ],
+            "Open documents in new tab?": [
+                "Belgeleri yeni sekmede a\u00e7?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Bu se\u00e7ene\u011fi etkinle\u015ftirmek, belgeyi yeni bir sekmede a\u00e7acakt\u0131r. Bu se\u00e7ene\u011fi, bu blo\u011fu kullanarak sayfay\u0131 d\u00fczenlerken etkinle\u015ftirmeniz gerekir, \u00e7\u00fcnk\u00fc d\u00fczenleme s\u0131ras\u0131nda bir ba\u011flant\u0131ya t\u0131klamak mevcut sayfan\u0131n kapat\u0131lmas\u0131na neden olur."
+            ],
+            "Latest Documents Settings": [
+                "Son Belgeler Ayarlar\u0131"
+            ],
+            "Latest Documents List Heading": [
+                "Son Belgeler Listesi Ba\u015fl\u0131\u011f\u0131"
+            ],
+            "Documents to Display": [
+                "G\u00f6r\u00fcnt\u00fclenecek Belgeler"
+            ],
+            "Document Statuses to Display": [
+                "G\u00f6r\u00fcnt\u00fclenecek Belge Durumlar\u0131"
+            ],
+            "Publish": [
+                "Yay\u0131nla"
+            ],
+            "Under certain conditons WordPress can generate an image for Page 1 of PDF documents. If created this will be used as the Featured Image.": [
+                "Belirli ko\u015fullar alt\u0131nda WordPress, PDF belgelerinin 1. sayfas\u0131 i\u00e7in bir resim olu\u015fturabilir. Olu\u015fturulursa, bu resim \u00f6ne \u00e7\u0131kan g\u00f6rsel olarak kullan\u0131lacakt\u0131r."
+            ],
+            "Show author name?": [
+                "Yazar\u0131n ad\u0131n\u0131 g\u00f6sterilsin mi?"
+            ]
+        }
+    }
+}

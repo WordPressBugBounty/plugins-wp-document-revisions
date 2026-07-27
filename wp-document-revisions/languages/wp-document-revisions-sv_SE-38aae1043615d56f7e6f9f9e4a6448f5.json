@@ -1,0 +1,36 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/revisions-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "sv_SE",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Show PDF File indication?": [
+                "Visa PDF-filindikering?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Om du aktiverar detta \u00f6ppnas dokumentet i en ny flik. Detta b\u00f6r vara aktiverat n\u00e4r du redigerar sidan med hj\u00e4lp av det h\u00e4r blocket, eftersom det inneb\u00e4r att du tvingas l\u00e4mna den aktuella sidan om du klickar p\u00e5 en l\u00e4nk medan du redigerar."
+            ],
+            "Selection Criteria": [
+                "Urvalskriterier"
+            ],
+            "Document Id": [
+                "Dokument-ID"
+            ],
+            "Revisions to Display": [
+                "Revisioner att visa"
+            ],
+            "Show Revision Summaries?": [
+                "Visa revisionssammanfattningar?"
+            ],
+            "Open in New Tab?": [
+                "\u00d6ppna i ny flik?"
+            ]
+        }
+    }
+}

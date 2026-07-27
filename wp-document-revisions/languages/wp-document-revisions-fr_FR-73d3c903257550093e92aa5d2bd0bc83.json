@@ -1,0 +1,57 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/admin\/wp-document-revisions.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "fr_FR",
+                "plural-forms": "nplurals=2; plural=(n > 1);"
+            },
+            "Upload failed.": [
+                "\u00c9chec du chargement."
+            ],
+            "File uploaded successfully. Add a revision summary below (optional) and press <strong>Update<\/strong> to save your changes.": [
+                "Fichier t\u00e9l\u00e9charg\u00e9 avec succ\u00e8s. Ajoutez un r\u00e9sum\u00e9 des modifications ci-dessous (facultatif) et appuyez sur <strong>Mettre \u00e0 jour<\/strong> pour enregistrer vos modifications."
+            ],
+            "New version uploaded. Press Update to save.": [
+                "Nouvelle version disponible. Cliquez sur \u00ab\u00a0Mettre \u00e0 jour\u00a0\u00bb pour enregistrer."
+            ],
+            "Are you sure you want to restore this revision? If you do, no history will be lost. This revision will be copied and become the most recent revision.": [
+                "\u00cates-vous s\u00fbr de vouloir restaurer cette version\u00a0? Si oui, aucune donn\u00e9e historique ne sera perdue. Cette version sera copi\u00e9e et deviendra la version la plus r\u00e9cente."
+            ],
+            "An error has occurred, please try reloading the page.": [
+                "Un erreur est survenue. Essayez de recharger la page."
+            ],
+            "Lost Document Lock": [
+                "Verrou de Document Perdu"
+            ],
+            "Your lock on the document %s has been overridden. Any changes will be lost.": [
+                "Votre verrou sur le document %s a \u00e9t\u00e9 outrepass\u00e9. Toutes les modifications seront perdues."
+            ],
+            "%d mins": [
+                "%d minutes"
+            ],
+            "%d hour": [
+                "%d heure"
+            ],
+            "%d hours": [
+                "%d heures"
+            ],
+            "%d day": [
+                "%d jour"
+            ],
+            "%d days": [
+                "%d jours"
+            ],
+            "Upload Document": [
+                "T\u00e9l\u00e9verser un document"
+            ],
+            "Select Document": [
+                "S\u00e9lectionner le document"
+            ]
+        }
+    }
+}

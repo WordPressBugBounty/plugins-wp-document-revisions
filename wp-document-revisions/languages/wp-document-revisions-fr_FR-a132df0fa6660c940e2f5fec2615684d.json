@@ -1,0 +1,93 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/editor-document-upload\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "fr_FR",
+                "plural-forms": "nplurals=2; plural=(n > 1);"
+            },
+            "Revision Summary": [
+                "Historique des Versions"
+            ],
+            "Document": [
+                "Document"
+            ],
+            "Revision Log": [
+                "Log des versions"
+            ],
+            "Upload New Version": [
+                "T\u00e9l\u00e9verser Nouvelle Version"
+            ],
+            "Download": [
+                "T\u00e9l\u00e9charger"
+            ],
+            "Modified": [
+                "Modifi\u00e9"
+            ],
+            "User": [
+                "Utilisateur"
+            ],
+            "Summary": [
+                "R\u00e9sum\u00e9"
+            ],
+            "Upload Document": [
+                "T\u00e9l\u00e9verser un document"
+            ],
+            "just now": [
+                "tout \u00e0 l' heure"
+            ],
+            "min ago": [
+                "il y a quelques minutes"
+            ],
+            "hour ago": [
+                "il y a une heure"
+            ],
+            "hours ago": [
+                "il y a quelques heures"
+            ],
+            "day ago": [
+                "il y a un jour"
+            ],
+            "days ago": [
+                "il y a quelques jours"
+            ],
+            "The attached document file could not be found. It may have been deleted.": [
+                "Le fichier joint est introuvable. Il a peut-\u00eatre \u00e9t\u00e9 supprim\u00e9."
+            ],
+            "Document selection failed.": [
+                "La s\u00e9lection du document a \u00e9chou\u00e9."
+            ],
+            "New version selected. Press Update to save.": [
+                "Nouvelle version s\u00e9lectionn\u00e9e. Appuyez sur Mettre \u00e0 jour pour enregistrer."
+            ],
+            "Document selected. Press Update to save.": [
+                "Document s\u00e9lectionn\u00e9. Appuyez sur Mettre \u00e0 jour pour enregistrer."
+            ],
+            "Select": [
+                "S\u00e9lectionner"
+            ],
+            "Attached document": [
+                "Document joint"
+            ],
+            "%s is currently editing this document.": [
+                "%s est en train de modifier ce document."
+            ],
+            "This document is currently locked.": [
+                "Ce document est actuellement verrouill\u00e9."
+            ],
+            "A brief description of the changes in this version.": [
+                "Br\u00e8ve description des modifications apport\u00e9es \u00e0 cette version."
+            ],
+            "No revisions yet.": [
+                "Aucune modification pour le moment."
+            ],
+            "\u2014": [
+                "\u2014"
+            ]
+        }
+    }
+}

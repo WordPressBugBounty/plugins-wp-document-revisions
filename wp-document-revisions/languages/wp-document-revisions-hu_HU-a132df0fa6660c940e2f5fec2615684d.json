@@ -1,0 +1,93 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/editor-document-upload\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "hu_HU",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Revision Summary": [
+                "V\u00e1ltozat\u00f6sszefoglal\u00f3"
+            ],
+            "Document": [
+                "Dokumentum"
+            ],
+            "Revision Log": [
+                "Rev\u00edzi\u00f3s napl\u00f3"
+            ],
+            "Upload New Version": [
+                "\u00daj verzi\u00f3 felt\u00f6lt\u00e9se"
+            ],
+            "Download": [
+                "Let\u00f6lt\u00e9s"
+            ],
+            "Modified": [
+                "M\u00f3dos\u00edtott"
+            ],
+            "User": [
+                "Felhaszn\u00e1l\u00f3"
+            ],
+            "Summary": [
+                "\u00d6sszefoglal\u00e1s"
+            ],
+            "Upload Document": [
+                "Dokumentum felt\u00f6lt\u00e9se"
+            ],
+            "just now": [
+                "\u00e9ppen most"
+            ],
+            "min ago": [
+                "perce ezel\u0151tt"
+            ],
+            "hour ago": [
+                "\u00f3r\u00e1val ezel\u0151tt"
+            ],
+            "hours ago": [
+                "\u00f3r\u00e1kkal ezel\u0151tt"
+            ],
+            "day ago": [
+                "nappal ezel\u0151tt"
+            ],
+            "days ago": [
+                "napokkal ezel\u0151tt"
+            ],
+            "The attached document file could not be found. It may have been deleted.": [
+                "A csatolt dokumentumf\u00e1jl nem tal\u00e1lhat\u00f3. Lehets\u00e9ges, hogy t\u00f6r\u00f6lt\u00e9k."
+            ],
+            "Document selection failed.": [
+                "A dokumentum kiv\u00e1laszt\u00e1sa sikertelen."
+            ],
+            "New version selected. Press Update to save.": [
+                "\u00daj verzi\u00f3 kiv\u00e1lasztva. A ment\u00e9shez kattintson a Friss\u00edt\u00e9s gombra."
+            ],
+            "Document selected. Press Update to save.": [
+                "Dokumentum kiv\u00e1lasztva. Ment\u00e9shez kattintson a Friss\u00edt\u00e9s gombra."
+            ],
+            "Select": [
+                "V\u00e1lasszon"
+            ],
+            "Attached document": [
+                "Csatolt dokumentum"
+            ],
+            "%s is currently editing this document.": [
+                "%s jelenleg szerkeszti ezt a dokumentumot."
+            ],
+            "This document is currently locked.": [
+                "Ez a dokumentum jelenleg z\u00e1rolva van."
+            ],
+            "A brief description of the changes in this version.": [
+                "A verzi\u00f3ban v\u00e9grehajtott v\u00e1ltoz\u00e1sok r\u00f6vid le\u00edr\u00e1sa."
+            ],
+            "No revisions yet.": [
+                "M\u00e9g nincsenek m\u00f3dos\u00edt\u00e1sok."
+            ],
+            "\u2014": [
+                "\u2014"
+            ]
+        }
+    }
+}

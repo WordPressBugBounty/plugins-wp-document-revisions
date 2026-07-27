@@ -1,0 +1,30 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/admin\/wp-document-revisions-ai-prefill.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "ca_ES",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "\u2728 AI suggestion \u2014 edit before saving.": [
+                "\u2728 Suggeriment d'IA: edita abans de desar."
+            ],
+            "\u2728 AI summary will be available shortly \u2014 refresh this page to see it.": [
+                "\u2728 El resum de la IA estar\u00e0 disponible en breu; actualitzeu aquesta p\u00e0gina per veure'l."
+            ],
+            "Dismiss": [
+                "Ignora"
+            ],
+            "Reviewed \u2713": [
+                "Revisat \u2713"
+            ],
+            "Mark reviewed": [
+                "Marc ha revisat"
+            ]
+        }
+    }
+}

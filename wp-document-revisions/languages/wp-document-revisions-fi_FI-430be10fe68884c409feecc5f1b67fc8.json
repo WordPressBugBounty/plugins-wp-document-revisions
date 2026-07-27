@@ -1,0 +1,30 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/admin\/wp-document-revisions-ai-prefill.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "fi_FI",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "\u2728 AI suggestion \u2014 edit before saving.": [
+                "\u2728 Teko\u00e4lyn ehdotus \u2014 muokkaa ennen tallentamista."
+            ],
+            "\u2728 AI summary will be available shortly \u2014 refresh this page to see it.": [
+                "\u2728 Teko\u00e4lyn yhteenveto on saatavilla pian \u2013 p\u00e4ivit\u00e4 t\u00e4m\u00e4 sivu n\u00e4hd\u00e4ksesi sen."
+            ],
+            "Dismiss": [
+                "Hylk\u00e4\u00e4"
+            ],
+            "Reviewed \u2713": [
+                "Arvosteltu \u2713"
+            ],
+            "Mark reviewed": [
+                "Mark arvioi"
+            ]
+        }
+    }
+}

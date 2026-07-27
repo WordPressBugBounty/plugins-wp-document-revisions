@@ -1,0 +1,57 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/documents-widget\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "ca_ES",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Draft": [
+                "Esborrany"
+            ],
+            "Private": [
+                "Privat"
+            ],
+            "Show featured image?": [
+                "Mostrar la imatge destacada?"
+            ],
+            "Show document description?": [
+                "Mostrar la descripci\u00f3 del document?"
+            ],
+            "Show PDF File indication?": [
+                "Mostra la indicaci\u00f3 del fitxer PDF?"
+            ],
+            "Open documents in new tab?": [
+                "Obrir documents en una pestanya nova?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Si activeu aquesta opci\u00f3, el document s'obrir\u00e0 en una pestanya nova. Cal activar-la en editar la p\u00e0gina amb aquest bloc, ja que si feu clic a un enlla\u00e7 mentre editeu, la p\u00e0gina actual es deixar\u00e0 de banda."
+            ],
+            "Latest Documents Settings": [
+                "Configuraci\u00f3 dels documents m\u00e9s recents"
+            ],
+            "Latest Documents List Heading": [
+                "Encap\u00e7alament de la llista de documents m\u00e9s recents"
+            ],
+            "Documents to Display": [
+                "Documents per mostrar"
+            ],
+            "Document Statuses to Display": [
+                "Estats dels documents per mostrar"
+            ],
+            "Publish": [
+                "Publica"
+            ],
+            "Under certain conditons WordPress can generate an image for Page 1 of PDF documents. If created this will be used as the Featured Image.": [
+                "Sota certes condicions, WordPress pot generar una imatge per a la p\u00e0gina 1 dels documents PDF. Si es crea, s'utilitzar\u00e0 com a imatge destacada."
+            ],
+            "Show author name?": [
+                "Mostrar el nom de l'autor?"
+            ]
+        }
+    }
+}

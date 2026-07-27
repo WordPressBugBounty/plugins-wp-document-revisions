@@ -1,0 +1,57 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/admin\/wp-document-revisions.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "he_IL",
+                "plural-forms": "nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3;"
+            },
+            "Upload failed.": [
+                "\u05d4\u05d4\u05e2\u05dc\u05d0\u05d4 \u05e0\u05db\u05e9\u05dc\u05d4."
+            ],
+            "File uploaded successfully. Add a revision summary below (optional) and press <strong>Update<\/strong> to save your changes.": [
+                "\u05d4\u05e7\u05d5\u05d1\u05e5 \u05d4\u05d5\u05e2\u05dc\u05d4 \u05d1\u05d4\u05e6\u05dc\u05d7\u05d4. \u05d4\u05d5\u05e1\u05e3 \u05e1\u05d9\u05db\u05d5\u05dd \u05d2\u05e8\u05e1\u05d0\u05d5\u05ea \u05dc\u05de\u05d8\u05d4 (\u05d0\u05d5\u05e4\u05e6\u05d9\u05d5\u05e0\u05dc\u05d9) \u05d5\u05dc\u05d7\u05e5 \u05e2\u05dc <strong>\u05e2\u05d3\u05db\u05df<\/strong> \u05db\u05d3\u05d9 \u05dc\u05e9\u05de\u05d5\u05e8 \u05d0\u05ea \u05d4\u05e9\u05d9\u05e0\u05d5\u05d9\u05d9\u05dd \u05e9\u05dc\u05da."
+            ],
+            "New version uploaded. Press Update to save.": [
+                "\u05d2\u05e8\u05e1\u05d4 \u05d7\u05d3\u05e9\u05d4 \u05d4\u05d5\u05e2\u05dc\u05ea\u05d4. \u05dc\u05d7\u05e5 \u05e2\u05dc \u05e2\u05d3\u05db\u05df \u05db\u05d3\u05d9 \u05dc\u05e9\u05de\u05d5\u05e8."
+            ],
+            "Are you sure you want to restore this revision? If you do, no history will be lost. This revision will be copied and become the most recent revision.": [
+                "\u05d4\u05d0\u05dd \u05d0\u05ea\u05d4 \u05d1\u05d8\u05d5\u05d7 \u05e9\u05d1\u05e8\u05e6\u05d5\u05e0\u05da \u05dc\u05e9\u05d7\u05d6\u05e8 \u05d2\u05e8\u05e1\u05d4 \u05d6\u05d5? \u05d0\u05dd \u05ea\u05e2\u05e9\u05d4 \u05d6\u05d0\u05ea, \u05dc\u05d0 \u05ea\u05d0\u05d1\u05d3 \u05d4\u05d9\u05e1\u05d8\u05d5\u05e8\u05d9\u05d4. \u05d2\u05e8\u05e1\u05d4 \u05d6\u05d5 \u05ea\u05d5\u05e2\u05ea\u05e7 \u05d5\u05ea\u05d4\u05e4\u05d5\u05da \u05dc\u05d2\u05e8\u05e1\u05d4 \u05d4\u05e2\u05d3\u05db\u05e0\u05d9\u05ea \u05d1\u05d9\u05d5\u05ea\u05e8."
+            ],
+            "An error has occurred, please try reloading the page.": [
+                "\u05d0\u05d9\u05e8\u05e2\u05d4 \u05e9\u05d2\u05d9\u05d0\u05d4, \u05d0\u05e0\u05d0 \u05e0\u05e1\u05d4 \u05dc\u05d8\u05e2\u05d5\u05df \u05de\u05d7\u05d3\u05e9 \u05d0\u05ea \u05d4\u05d3\u05e3."
+            ],
+            "Lost Document Lock": [
+                "\u05e0\u05e2\u05d9\u05dc\u05ea \u05de\u05e1\u05de\u05da \u05d0\u05d1\u05d5\u05d3\u05d4"
+            ],
+            "Your lock on the document %s has been overridden. Any changes will be lost.": [
+                "\u05d4\u05e0\u05e2\u05d9\u05dc\u05d4 \u05e9\u05dc\u05da \u05e2\u05dc \u05d4\u05de\u05e1\u05de\u05da %s \u05d1\u05d5\u05d8\u05dc\u05d4. \u05db\u05dc \u05e9\u05d9\u05e0\u05d5\u05d9 \u05d9\u05d0\u05d1\u05d3."
+            ],
+            "%d mins": [
+                ""
+            ],
+            "%d hour": [
+                "\u05e9\u05e2\u05d4 %d"
+            ],
+            "%d hours": [
+                ""
+            ],
+            "%d day": [
+                ""
+            ],
+            "%d days": [
+                "%d \u05d9\u05de\u05d9\u05dd"
+            ],
+            "Upload Document": [
+                "\u05d4\u05e2\u05dc\u05d0\u05ea \u05de\u05e1\u05de\u05da"
+            ],
+            "Select Document": [
+                "\u05d1\u05d7\u05e8 \u05de\u05e1\u05de\u05da"
+            ]
+        }
+    }
+}

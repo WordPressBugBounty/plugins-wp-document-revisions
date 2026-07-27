@@ -1,0 +1,36 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/blocks\/revisions-shortcode\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "vi_VN",
+                "plural-forms": "nplurals=1; plural=0;"
+            },
+            "Show PDF File indication?": [
+                "Hi\u1ec3n th\u1ecb ch\u1ec9 d\u1eabn T\u1ec7p PDF?"
+            ],
+            "Setting this on will open the document in a new tab. This should be set on whilst editing the page using this block as clicking on a link whilst editing will force the current page to be left.": [
+                "Vi\u1ec7c b\u1eadt t\u00f9y ch\u1ecdn n\u00e0y s\u1ebd m\u1edf t\u00e0i li\u1ec7u trong m\u1ed9t tab m\u1edbi. B\u1ea1n n\u00ean b\u1eadt t\u00f9y ch\u1ecdn n\u00e0y khi \u0111ang ch\u1ec9nh s\u1eeda trang b\u1eb1ng kh\u1ed1i n\u00e0y, v\u00ec vi\u1ec7c nh\u1ea5p v\u00e0o li\u00ean k\u1ebft trong khi ch\u1ec9nh s\u1eeda s\u1ebd bu\u1ed9c b\u1ea1n ph\u1ea3i r\u1eddi kh\u1ecfi trang hi\u1ec7n t\u1ea1i."
+            ],
+            "Selection Criteria": [
+                "Ti\u00eau ch\u00ed l\u1ef1a ch\u1ecdn"
+            ],
+            "Document Id": [
+                "M\u00e3 s\u1ed1 t\u00e0i li\u1ec7u"
+            ],
+            "Revisions to Display": [
+                "S\u1eeda \u0111\u1ed5i hi\u1ec3n th\u1ecb"
+            ],
+            "Show Revision Summaries?": [
+                "Hi\u1ec3n th\u1ecb t\u00f3m t\u1eaft b\u00e0i \u00f4n t\u1eadp?"
+            ],
+            "Open in New Tab?": [
+                "M\u1edf trong tab m\u1edbi?"
+            ]
+        }
+    }
+}

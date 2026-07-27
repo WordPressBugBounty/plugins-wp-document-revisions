@@ -1,0 +1,93 @@
+{
+    "translation-revision-date": "2022-01-24 22:19",
+    "generator": "WP-CLI\/2.12.0",
+    "source": "build\/editor-document-upload\/index.js",
+    "domain": "messages",
+    "locale_data": {
+        "messages": {
+            "": {
+                "domain": "messages",
+                "lang": "tr_TR",
+                "plural-forms": "nplurals=2; plural=(n != 1);"
+            },
+            "Revision Summary": [
+                "Revizyon \u00d6zeti"
+            ],
+            "Document": [
+                "Belge"
+            ],
+            "Revision Log": [
+                "Revizyon G\u00fcnl\u00fc\u011f\u00fc"
+            ],
+            "Upload New Version": [
+                "Yeni S\u00fcr\u00fcm\u00fc Y\u00fckle"
+            ],
+            "Download": [
+                "\u0130ndirmek"
+            ],
+            "Modified": [
+                "De\u011fi\u015ftirildi"
+            ],
+            "User": [
+                "Kullan\u0131c\u0131"
+            ],
+            "Summary": [
+                "\u00d6zet"
+            ],
+            "Upload Document": [
+                "Belge Y\u00fckle"
+            ],
+            "just now": [
+                "\u015eu anda"
+            ],
+            "min ago": [
+                "dakika \u00f6nce"
+            ],
+            "hour ago": [
+                "bir saat \u00f6nce"
+            ],
+            "hours ago": [
+                "saatler \u00f6nce"
+            ],
+            "day ago": [
+                "bir g\u00fcn \u00f6nce"
+            ],
+            "days ago": [
+                "g\u00fcnler \u00f6nce"
+            ],
+            "The attached document file could not be found. It may have been deleted.": [
+                "Ekli belge dosyas\u0131 bulunamad\u0131. Silinmi\u015f olabilir."
+            ],
+            "Document selection failed.": [
+                "Belge se\u00e7imi ba\u015far\u0131s\u0131z oldu."
+            ],
+            "New version selected. Press Update to save.": [
+                "Yeni s\u00fcr\u00fcm se\u00e7ildi. Kaydetmek i\u00e7in G\u00fcncelle'ye bas\u0131n."
+            ],
+            "Document selected. Press Update to save.": [
+                "Se\u00e7ilen belge. Kaydetmek i\u00e7in G\u00fcncelle'ye bas\u0131n."
+            ],
+            "Select": [
+                "Se\u00e7me"
+            ],
+            "Attached document": [
+                "Ekli belge"
+            ],
+            "%s is currently editing this document.": [
+                "%s \u015fu anda bu belgeyi d\u00fczenliyor."
+            ],
+            "This document is currently locked.": [
+                "Bu belge \u015fu anda kilitli."
+            ],
+            "A brief description of the changes in this version.": [
+                "Bu s\u00fcr\u00fcmdeki de\u011fi\u015fikliklerin k\u0131sa bir a\u00e7\u0131klamas\u0131."
+            ],
+            "No revisions yet.": [
+                "Hen\u00fcz herhangi bir de\u011fi\u015fiklik yap\u0131lmad\u0131."
+            ],
+            "\u2014": [
+                "\u2014"
+            ]
+        }
+    }
+}
