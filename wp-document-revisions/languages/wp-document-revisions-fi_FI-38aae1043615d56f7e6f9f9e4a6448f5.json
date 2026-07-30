@@ -10,6 +10,9 @@
                 "lang": "fi_FI",
                 "plural-forms": "nplurals=2; plural=(n != 1);"
             },
+            "Document Id": [
+                "Asiakirjan tunnus"
+            ],
             "Show PDF File indication?": [
                 "N\u00e4ytet\u00e4\u00e4nk\u00f6 PDF-tiedoston ilmaisin?"
             ],
@@ -18,9 +21,6 @@
             ],
             "Selection Criteria": [
                 "Valintakriteerit"
-            ],
-            "Document Id": [
-                "Asiakirjan tunnus"
             ],
             "Revisions to Display": [
                 "N\u00e4ytt\u00f6sivun muutokset"

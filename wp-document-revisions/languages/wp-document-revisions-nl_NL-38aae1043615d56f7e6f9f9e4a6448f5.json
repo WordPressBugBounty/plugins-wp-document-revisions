@@ -10,6 +10,9 @@
                 "lang": "nl_NL",
                 "plural-forms": "nplurals=2; plural=(n != 1);"
             },
+            "Document Id": [
+                "Document-ID"
+            ],
             "Show PDF File indication?": [
                 "PDF-bestand weergeven?"
             ],
@@ -18,9 +21,6 @@
             ],
             "Selection Criteria": [
                 "Selectiecriteria"
-            ],
-            "Document Id": [
-                "Document-ID"
             ],
             "Revisions to Display": [
                 "Wijzigingen in de weergave"

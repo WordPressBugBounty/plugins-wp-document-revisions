@@ -10,6 +10,9 @@
                 "lang": "tr_TR",
                 "plural-forms": "nplurals=2; plural=(n != 1);"
             },
+            "Document Id": [
+                "Belge Kimli\u011fi"
+            ],
             "Show PDF File indication?": [
                 "PDF dosyas\u0131n\u0131 g\u00f6sterilsin mi?"
             ],
@@ -18,9 +21,6 @@
             ],
             "Selection Criteria": [
                 "Se\u00e7im Kriterleri"
-            ],
-            "Document Id": [
-                "Belge Kimli\u011fi"
             ],
             "Revisions to Display": [
                 "Ekranda Yap\u0131lan De\u011fi\u015fiklikler"

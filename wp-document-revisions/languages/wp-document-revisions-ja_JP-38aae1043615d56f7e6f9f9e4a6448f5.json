@@ -10,6 +10,9 @@
                 "lang": "ja_JP",
                 "plural-forms": "nplurals=1; plural=0;"
             },
+            "Document Id": [
+                "\u6587\u66f8ID"
+            ],
             "Show PDF File indication?": [
                 "PDF\u30d5\u30a1\u30a4\u30eb\u8868\u793a\u3092\u3057\u307e\u3059\u304b\uff1f"
             ],
@@ -18,9 +21,6 @@
             ],
             "Selection Criteria": [
                 "\u9078\u8003\u57fa\u6e96"
-            ],
-            "Document Id": [
-                "\u6587\u66f8ID"
             ],
             "Revisions to Display": [
                 "\u8868\u793a\u5185\u5bb9\u306e\u6539\u8a02"

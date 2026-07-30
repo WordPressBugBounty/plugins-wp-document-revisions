@@ -10,6 +10,9 @@
                 "lang": "hu_HU",
                 "plural-forms": "nplurals=2; plural=(n != 1);"
             },
+            "Document Id": [
+                "Dokumentumazonos\u00edt\u00f3"
+            ],
             "Show PDF File indication?": [
                 "PDF f\u00e1jl jelz\u00e9s megjelen\u00edt\u00e9se?"
             ],
@@ -18,9 +21,6 @@
             ],
             "Selection Criteria": [
                 "Kiv\u00e1laszt\u00e1si krit\u00e9riumok"
-            ],
-            "Document Id": [
-                "Dokumentumazonos\u00edt\u00f3"
             ],
             "Revisions to Display": [
                 "A kijelz\u0151 m\u00f3dos\u00edt\u00e1sai"

@@ -10,6 +10,9 @@
                 "lang": "cs_CZ",
                 "plural-forms": "nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;"
             },
+            "Document Id": [
+                "ID dokumentu"
+            ],
             "Show PDF File indication?": [
                 "Zobrazit indikaci PDF souboru?"
             ],
@@ -18,9 +21,6 @@
             ],
             "Selection Criteria": [
                 "Krit\u00e9ria v\u00fdb\u011bru"
-            ],
-            "Document Id": [
-                "ID dokumentu"
             ],
             "Revisions to Display": [
                 "Revize k zobrazen\u00ed"

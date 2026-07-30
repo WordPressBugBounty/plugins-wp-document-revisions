@@ -10,6 +10,9 @@
                 "lang": "it_IT",
                 "plural-forms": "nplurals=2; plural=(n != 1);"
             },
+            "Document Id": [
+                "ID documento"
+            ],
             "Show PDF File indication?": [
                 "Mostrare l'indicazione del file PDF?"
             ],
@@ -18,9 +21,6 @@
             ],
             "Selection Criteria": [
                 "Criteri di selezione"
-            ],
-            "Document Id": [
-                "ID documento"
             ],
             "Revisions to Display": [
                 "Revisioni da visualizzare"

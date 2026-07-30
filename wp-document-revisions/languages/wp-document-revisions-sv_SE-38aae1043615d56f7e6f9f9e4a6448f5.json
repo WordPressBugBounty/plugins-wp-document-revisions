@@ -10,6 +10,9 @@
                 "lang": "sv_SE",
                 "plural-forms": "nplurals=2; plural=(n != 1);"
             },
+            "Document Id": [
+                "Dokument-ID"
+            ],
             "Show PDF File indication?": [
                 "Visa PDF-filindikering?"
             ],
@@ -18,9 +21,6 @@
             ],
             "Selection Criteria": [
                 "Urvalskriterier"
-            ],
-            "Document Id": [
-                "Dokument-ID"
             ],
             "Revisions to Display": [
                 "Revisioner att visa"

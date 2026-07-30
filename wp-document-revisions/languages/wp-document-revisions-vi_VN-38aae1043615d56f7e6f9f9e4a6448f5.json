@@ -10,6 +10,9 @@
                 "lang": "vi_VN",
                 "plural-forms": "nplurals=1; plural=0;"
             },
+            "Document Id": [
+                "M\u00e3 s\u1ed1 t\u00e0i li\u1ec7u"
+            ],
             "Show PDF File indication?": [
                 "Hi\u1ec3n th\u1ecb ch\u1ec9 d\u1eabn T\u1ec7p PDF?"
             ],
@@ -18,9 +21,6 @@
             ],
             "Selection Criteria": [
                 "Ti\u00eau ch\u00ed l\u1ef1a ch\u1ecdn"
-            ],
-            "Document Id": [
-                "M\u00e3 s\u1ed1 t\u00e0i li\u1ec7u"
             ],
             "Revisions to Display": [
                 "S\u1eeda \u0111\u1ed5i hi\u1ec3n th\u1ecb"

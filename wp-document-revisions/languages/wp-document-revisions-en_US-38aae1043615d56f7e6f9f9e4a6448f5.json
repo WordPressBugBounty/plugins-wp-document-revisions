@@ -10,6 +10,9 @@
                 "lang": "en_US",
                 "plural-forms": "nplurals=2; plural=(n != 1);"
             },
+            "Document Id": [
+                ""
+            ],
             "Show PDF File indication?": [
                 ""
             ],
@@ -17,9 +20,6 @@
                 ""
             ],
             "Selection Criteria": [
-                ""
-            ],
-            "Document Id": [
                 ""
             ],
             "Revisions to Display": [

@@ -10,6 +10,9 @@
                 "lang": "af_ZA",
                 "plural-forms": "nplurals=2; plural=(n != 1);"
             },
+            "Document Id": [
+                "Dokument-ID"
+            ],
             "Show PDF File indication?": [
                 "Wys PDF-l\u00eaer aanduiding?"
             ],
@@ -18,9 +21,6 @@
             ],
             "Selection Criteria": [
                 "Seleksiekriteria"
-            ],
-            "Document Id": [
-                "Dokument-ID"
             ],
             "Revisions to Display": [
                 "Hersienings om te vertoon"

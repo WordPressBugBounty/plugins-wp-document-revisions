@@ -10,6 +10,9 @@
                 "lang": "ca_ES",
                 "plural-forms": "nplurals=2; plural=(n != 1);"
             },
+            "Document Id": [
+                "ID del document"
+            ],
             "Show PDF File indication?": [
                 "Mostra la indicaci\u00f3 del fitxer PDF?"
             ],
@@ -18,9 +21,6 @@
             ],
             "Selection Criteria": [
                 "Criteris de selecci\u00f3"
-            ],
-            "Document Id": [
-                "ID del document"
             ],
             "Revisions to Display": [
                 "Revisions per mostrar"

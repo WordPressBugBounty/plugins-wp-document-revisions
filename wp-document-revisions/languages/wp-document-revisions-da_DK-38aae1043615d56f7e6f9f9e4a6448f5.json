@@ -10,6 +10,9 @@
                 "lang": "da_DK",
                 "plural-forms": "nplurals=2; plural=(n != 1);"
             },
+            "Document Id": [
+                "Dokument-ID"
+            ],
             "Show PDF File indication?": [
                 "Vis PDF-filindikation?"
             ],
@@ -18,9 +21,6 @@
             ],
             "Selection Criteria": [
                 "Udv\u00e6lgelseskriterier"
-            ],
-            "Document Id": [
-                "Dokument-ID"
             ],
             "Revisions to Display": [
                 "Revisioner til visning"

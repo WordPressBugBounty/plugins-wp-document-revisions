@@ -10,6 +10,9 @@
                 "lang": "ro_RO",
                 "plural-forms": "nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100>0 && n%100<20)) ? 1 : 2);"
             },
+            "Document Id": [
+                "ID-ul documentului"
+            ],
             "Show PDF File indication?": [
                 "Afi\u0219a\u021bi indica\u021bia fi\u0219ierului PDF?"
             ],
@@ -18,9 +21,6 @@
             ],
             "Selection Criteria": [
                 "Criterii de selec\u021bie"
-            ],
-            "Document Id": [
-                "ID-ul documentului"
             ],
             "Revisions to Display": [
                 "Revizuiri de afi\u0219at"

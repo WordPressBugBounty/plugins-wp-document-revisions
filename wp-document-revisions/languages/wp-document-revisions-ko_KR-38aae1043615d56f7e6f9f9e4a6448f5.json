@@ -10,6 +10,9 @@
                 "lang": "ko_KR",
                 "plural-forms": "nplurals=1; plural=0;"
             },
+            "Document Id": [
+                "\ubb38\uc11c ID"
+            ],
             "Show PDF File indication?": [
                 "PDF \ud30c\uc77c \ud45c\uc2dc\ub97c \ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?"
             ],
@@ -18,9 +21,6 @@
             ],
             "Selection Criteria": [
                 "\uc120\uc815 \uae30\uc900"
-            ],
-            "Document Id": [
-                "\ubb38\uc11c ID"
             ],
             "Revisions to Display": [
                 "\ub514\uc2a4\ud50c\ub808\uc774 \uc218\uc815 \uc0ac\ud56d"
