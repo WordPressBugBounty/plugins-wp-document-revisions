@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: wordpress-document-revisions\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-document-"
 "revisions\n"
-"POT-Creation-Date: 2026-07-30T00:15:51+00:00\n"
+"POT-Creation-Date: 2026-08-13T17:44:59+00:00\n"
 "PO-Revision-Date: 2022-01-24 22:19\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
@@ -166,7 +166,7 @@ msgstr "На жаль, ви не маєте дозволу переглядат�
 
 #: includes/class-wp-document-revisions-manage-rest.php:307
 msgid "<!-- protected -->"
-msgstr ""
+msgstr "<!-- protected -->"
 
 #: includes/class-wp-document-revisions-notifications.php:142
 #: includes/class-wp-document-revisions-notifications.php:196

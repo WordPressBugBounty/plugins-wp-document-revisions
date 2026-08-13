@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: wordpress-document-revisions\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-document-"
 "revisions\n"
-"POT-Creation-Date: 2026-07-30T00:15:51+00:00\n"
+"POT-Creation-Date: 2026-08-13T17:44:59+00:00\n"
 "PO-Revision-Date: 2022-01-24 22:19\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -231,13 +231,13 @@ msgstr ""
 #: includes/class-wp-document-revisions-recently-revised-widget.php:113
 #, php-format
 msgid "%1$s ago by %2$s"
-msgstr ""
+msgstr "%2$s により %1$s 前"
 
 #. translators: %1$s is the time ago in words, %2$s is the author.
 #: includes/class-wp-document-revisions-recently-revised-widget.php:113
 #, php-format
 msgid "%1$s ago"
-msgstr ""
+msgstr "%1$s前"
 
 #: includes/class-wp-document-revisions-recently-revised-widget.php:201
 msgid "Title:"
@@ -1089,6 +1089,10 @@ msgid ""
 "a description, and click <code>Upload New Version</code> and select the file "
 "from your computer."
 msgstr ""
+"この画面では、ユーザーがドキュメントを共同編集し、リビジョン履歴を追跡できま"
+"す。開始するには、ドキュメントのタイトルを入力し、必要に応じて説明を入力し、"
+"<code>Upload New Version</code> をクリックしてコンピューターからファイルを選"
+"択してください。"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:750
 msgid ""
@@ -1186,12 +1190,16 @@ msgid ""
 "To add a new document, click <strong>Add Document</strong> on the left-hand "
 "side."
 msgstr ""
+"新しいドキュメントを追加するには、左側の<strong>Add Document</strong>をクリッ"
+"クしてください"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:767
 msgid ""
 "To view all documents at a particular workflow state, click <strong>Workflow "
 "States</strong> in the menu on the left."
 msgstr ""
+"特定のワークフロー状態のすべてのドキュメントを表示するには、左側のメニューで "
+"<strong>ワークフロー状態</strong> をクリックしてください"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:955
 #: includes/trait-wp-document-revisions-admin-editor.php:963

@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: wordpress-document-revisions\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-document-"
 "revisions\n"
-"POT-Creation-Date: 2026-07-30T00:15:51+00:00\n"
+"POT-Creation-Date: 2026-08-13T17:44:59+00:00\n"
 "PO-Revision-Date: 2022-01-24 22:19\n"
 "Language-Team: Hebrew\n"
 "Language: he_IL\n"
@@ -1014,6 +1014,8 @@ msgid ""
 "<br />If you believe this is in error you can <a href=\"#\" "
 "id=\"override_link\">override the lock</a>, but their changes will be lost."
 msgstr ""
+"<br />אם אתה סבור שזו טעות, תוכל <a href=\"#\" id=\"override_link\">לעקוף את "
+"הנעילה</a>, אך השינויים שלהם יאבדו"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:196
 #: build/editor-document-upload/index.js:257
@@ -1619,7 +1621,7 @@ msgstr "הנעילה שלך על המסמך %s בוטלה. כל שינוי יא�
 #. translators: %d is the number of minutes.
 #: build/admin/wp-document-revisions.js:311
 msgid "%d mins"
-msgstr ""
+msgstr "%d דקות"
 
 #. translators: %d is the number of hours (singular).
 #: build/admin/wp-document-revisions.js:316
@@ -1629,12 +1631,12 @@ msgstr "שעה %d"
 #. translators: %d is the number of hours (plural).
 #: build/admin/wp-document-revisions.js:319
 msgid "%d hours"
-msgstr ""
+msgstr "%d שעות"
 
 #. translators: %d is the number of days (singular).
 #: build/admin/wp-document-revisions.js:324
 msgid "%d day"
-msgstr ""
+msgstr "%d יום"
 
 #. translators: %d is the number of days (plural).
 #: build/admin/wp-document-revisions.js:327

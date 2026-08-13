@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: wordpress-document-revisions\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-document-"
 "revisions\n"
-"POT-Creation-Date: 2026-07-30T00:15:51+00:00\n"
+"POT-Creation-Date: 2026-08-13T17:44:59+00:00\n"
 "PO-Revision-Date: 2022-01-24 22:19\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -163,7 +163,7 @@ msgstr "抱歉，您无权查看此版本。"
 
 #: includes/class-wp-document-revisions-manage-rest.php:307
 msgid "<!-- protected -->"
-msgstr ""
+msgstr "<!-- protected -->"
 
 #: includes/class-wp-document-revisions-notifications.php:142
 #: includes/class-wp-document-revisions-notifications.php:196
@@ -1043,6 +1043,8 @@ msgid ""
 "a description, and click <code>Upload New Version</code> and select the file "
 "from your computer."
 msgstr ""
+"此界面允许用户协作编辑文档并跟踪其修订历史。要开始，请输入文档标题，可选输入"
+"描述，然后点击<code>上传新版本</code>并从您的电脑选择文件。"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:750
 msgid ""

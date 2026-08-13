@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: wordpress-document-revisions\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-document-"
 "revisions\n"
-"POT-Creation-Date: 2026-07-30T00:15:51+00:00\n"
+"POT-Creation-Date: 2026-08-13T17:44:59+00:00\n"
 "PO-Revision-Date: 2022-01-24 22:19\n"
 "Language-Team: Swedish\n"
 "Language: sv_SE\n"
@@ -1044,8 +1044,8 @@ msgid ""
 "<br />If you believe this is in error you can <a href=\"#\" "
 "id=\"override_link\">override the lock</a>, but their changes will be lost."
 msgstr ""
-"< br / > Ifall du tror att det har blivit fel kan du <a href=\"#\" "
-"id=\"override_link\"> låsa upp </a>, observera att ändringarna går förlorade."
+"<br />Ifall du tror att det har blivit fel kan du <a href=\"#\" "
+"id=\"override_link\">låsa upp</a>, observera att ändringarna går förlorade."
 
 #: includes/trait-wp-document-revisions-admin-editor.php:196
 #: build/editor-document-upload/index.js:257
@@ -1143,8 +1143,8 @@ msgid ""
 "the <code>restore</code> button beside the revision."
 msgstr ""
 "Du kan ladda ner och se tidigare versioner av dokumentet genom att klicka på "
-"tidpunkten på samma rad som versionen. Du kan också återställa en tidigare "
-"version genom att klicka på knappen \"Återställ\" på samma rad som versionen."
+"tidpunkten i versionsloggen. Du kan också återställa versioner genom att "
+"klicka på <code>restore</code>-knappen bredvid versionen."
 
 #: includes/trait-wp-document-revisions-admin-editor.php:759
 msgid ""
@@ -1172,8 +1172,9 @@ msgid ""
 msgstr ""
 "Standardval för uppladdade dokument är bara nödvändigt för inloggade "
 "användare. Dokument kan publiceras, då visas de publikt genom att ändra "
-"synbarhet. <code>Obs! Alla dokument som publiseras kan vem som helst som har "
-"länken ladda ner!</code>"
+"synbarhet i \"Publicera\"-rutan i det övre högra hörnet. Alla dokument som "
+"är markerade som publicerade kommer att vara tillgängliga för alla med rätt "
+"URL."
 
 #: includes/trait-wp-document-revisions-admin-editor.php:765
 msgid ""
@@ -1196,7 +1197,7 @@ msgid ""
 "States</strong> in the menu on the left."
 msgstr ""
 "För att visa alla dokument i ett speciellt skede så kan du klicka på "
-"<strong>Status</status> i menyn till vänster."
+"<strong>Workflow States</strong> i menyn till vänster."
 
 #: includes/trait-wp-document-revisions-admin-editor.php:955
 #: includes/trait-wp-document-revisions-admin-editor.php:963
