@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: wordpress-document-revisions\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-document-"
 "revisions\n"
-"POT-Creation-Date: 2026-08-13T17:44:59+00:00\n"
+"POT-Creation-Date: 2026-08-23T20:48:45+00:00\n"
 "PO-Revision-Date: 2022-01-24 22:19\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
@@ -124,47 +124,47 @@ msgstr "A blokk taxonómiai részletei megváltoztak."
 msgid " Taxonomy term does not belong to this taxonomy."
 msgstr "A taxonómiai kifejezés nem tartozik ehhez a taxonómiához."
 
-#: includes/class-wp-document-revisions-front-end.php:1030
+#: includes/class-wp-document-revisions-front-end.php:1031
 msgid "You are not authorized to read this document."
 msgstr ""
 
-#: includes/class-wp-document-revisions-front-end.php:1035
+#: includes/class-wp-document-revisions-front-end.php:1036
 msgid "This document has no file to preview."
 msgstr ""
 
-#: includes/class-wp-document-revisions-front-end.php:1046
+#: includes/class-wp-document-revisions-front-end.php:1047
 msgid "Download document"
 msgstr ""
 
-#: includes/class-wp-document-revisions-front-end.php:1065
+#: includes/class-wp-document-revisions-front-end.php:1066
 msgid "This file type cannot be previewed inline."
 msgstr ""
 
-#: includes/class-wp-document-revisions-manage-rest.php:112
+#: includes/class-wp-document-revisions-manage-rest.php:121
 msgid "Sorry, you are not allowed to edit documents."
 msgstr "Sajnáljuk, de nem jogosult a dokumentumok szerkesztésére."
 
-#: includes/class-wp-document-revisions-manage-rest.php:123
+#: includes/class-wp-document-revisions-manage-rest.php:132
 msgid "Sorry, you are not allowed to view revisions."
 msgstr "Sajnáljuk, de nem jogosult a módosítások megtekintésére."
 
-#: includes/class-wp-document-revisions-manage-rest.php:134
+#: includes/class-wp-document-revisions-manage-rest.php:143
 msgid "Sorry, you are not allowed to read documents."
 msgstr "Sajnáljuk, de nem jogosult dokumentumok olvasására."
 
-#: includes/class-wp-document-revisions-manage-rest.php:149
+#: includes/class-wp-document-revisions-manage-rest.php:158
 msgid "Sorry, invalid REST call"
 msgstr "Sajnáljuk, érvénytelen REST hívás"
 
-#: includes/class-wp-document-revisions-manage-rest.php:156
+#: includes/class-wp-document-revisions-manage-rest.php:165
 msgid "Sorry, you are only allowed to use GET method"
 msgstr "Sajnáljuk, de csak a GET metódust használhatod."
 
-#: includes/class-wp-document-revisions-manage-rest.php:260
+#: includes/class-wp-document-revisions-manage-rest.php:269
 msgid "Sorry, you are not allowed to view this revision."
 msgstr "Sajnáljuk, de nincs jogosultsága megtekinteni ezt a verziót."
 
-#: includes/class-wp-document-revisions-manage-rest.php:307
+#: includes/class-wp-document-revisions-manage-rest.php:316
 msgid "<!-- protected -->"
 msgstr ""
 

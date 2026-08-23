@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: wordpress-document-revisions\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-document-"
 "revisions\n"
-"POT-Creation-Date: 2026-08-13T17:44:59+00:00\n"
+"POT-Creation-Date: 2026-08-23T20:48:45+00:00\n"
 "PO-Revision-Date: 2022-01-24 22:19\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -121,47 +121,47 @@ msgstr "このブロック内の分類に関する詳細情報が変更されま
 msgid " Taxonomy term does not belong to this taxonomy."
 msgstr "この分類用語は、この分類体系に属していません。"
 
-#: includes/class-wp-document-revisions-front-end.php:1030
+#: includes/class-wp-document-revisions-front-end.php:1031
 msgid "You are not authorized to read this document."
 msgstr ""
 
-#: includes/class-wp-document-revisions-front-end.php:1035
+#: includes/class-wp-document-revisions-front-end.php:1036
 msgid "This document has no file to preview."
 msgstr ""
 
-#: includes/class-wp-document-revisions-front-end.php:1046
+#: includes/class-wp-document-revisions-front-end.php:1047
 msgid "Download document"
 msgstr ""
 
-#: includes/class-wp-document-revisions-front-end.php:1065
+#: includes/class-wp-document-revisions-front-end.php:1066
 msgid "This file type cannot be previewed inline."
 msgstr ""
 
-#: includes/class-wp-document-revisions-manage-rest.php:112
+#: includes/class-wp-document-revisions-manage-rest.php:121
 msgid "Sorry, you are not allowed to edit documents."
 msgstr "申し訳ありませんが、ドキュメントの編集は許可されていません。"
 
-#: includes/class-wp-document-revisions-manage-rest.php:123
+#: includes/class-wp-document-revisions-manage-rest.php:132
 msgid "Sorry, you are not allowed to view revisions."
 msgstr "申し訳ありませんが、修正内容を閲覧することはできません。"
 
-#: includes/class-wp-document-revisions-manage-rest.php:134
+#: includes/class-wp-document-revisions-manage-rest.php:143
 msgid "Sorry, you are not allowed to read documents."
 msgstr "申し訳ありませんが、あなたは文書を閲覧する権限がありません。"
 
-#: includes/class-wp-document-revisions-manage-rest.php:149
+#: includes/class-wp-document-revisions-manage-rest.php:158
 msgid "Sorry, invalid REST call"
 msgstr "申し訳ありませんが、無効なREST呼び出しです。"
 
-#: includes/class-wp-document-revisions-manage-rest.php:156
+#: includes/class-wp-document-revisions-manage-rest.php:165
 msgid "Sorry, you are only allowed to use GET method"
 msgstr "申し訳ありませんが、GETメソッドのみ使用可能です。"
 
-#: includes/class-wp-document-revisions-manage-rest.php:260
+#: includes/class-wp-document-revisions-manage-rest.php:269
 msgid "Sorry, you are not allowed to view this revision."
 msgstr "申し訳ありませんが、この改訂版は閲覧できません。"
 
-#: includes/class-wp-document-revisions-manage-rest.php:307
+#: includes/class-wp-document-revisions-manage-rest.php:316
 msgid "<!-- protected -->"
 msgstr "<!-- protected -->"
 
