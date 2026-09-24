@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: wordpress-document-revisions\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-document-"
 "revisions\n"
-"POT-Creation-Date: 2026-08-23T20:48:45+00:00\n"
+"POT-Creation-Date: 2026-09-24T21:06:46+00:00\n"
 "PO-Revision-Date: 2022-01-24 22:19\n"
 "Language-Team: Ukrainian\n"
 "Language: uk_UA\n"
@@ -282,8 +282,8 @@ msgstr "Індикація відображення PDF-файлу:"
 msgid "Open documents in new tab:"
 msgstr "Відкрити документи в новій вкладці:"
 
-#: includes/class-wp-document-revisions-recently-revised-widget.php:374
-#: includes/class-wp-document-revisions-recently-revised-widget.php:377
+#: includes/class-wp-document-revisions-recently-revised-widget.php:375
+#: includes/class-wp-document-revisions-recently-revised-widget.php:378
 #: includes/trait-wp-document-revisions-admin-settings.php:273
 msgid "Recently Revised Documents"
 msgstr "Нещодавно переглянуті документи"
@@ -452,7 +452,7 @@ msgstr ""
 msgid "Attachment found for document, but not currently linked"
 msgstr "Вкладення для документа знайдено, але наразі посилання не додано"
 
-#. translators: %1$s is the document last modified date, %2$s is its attachment last modifified date.
+#. translators: %1$s is the document last modified date, %2$s is its attachment last modified date.
 #: includes/class-wp-document-revisions-validate-structure.php:789
 #: includes/class-wp-document-revisions-validate-structure.php:806
 #: includes/class-wp-document-revisions-validate-structure.php:987
@@ -575,7 +575,7 @@ msgstr ""
 
 #: includes/class-wp-document-revisions-validate-structure.php:1194
 msgid ""
-"If this is missing or points to a non-existant one then the document cannot "
+"If this is missing or points to a non-existent one then the document cannot "
 "be viewed."
 msgstr ""
 "Якщо цей елемент відсутній або вказує на неіснуючий елемент, то документ "
@@ -781,7 +781,7 @@ msgstr "Ви активували плагін WP Document Revisions"
 #: includes/class-wp-document-revisions.php:664
 msgid ""
 "You do not have the edit_documents capability possibly due to multiple "
-"conficting roles or use of a custom role!"
+"conflicting roles or use of a custom role!"
 msgstr ""
 "У вас немає можливості edit_documents, можливо, через кілька конфліктуючих "
 "ролей або використання власної ролі!"
