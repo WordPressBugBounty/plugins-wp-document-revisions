@@ -3,7 +3,7 @@
 Plugin Name: WP Document Revisions
 Plugin URI: http://ben.balter.com/2011/08/29/wp-document-revisions-document-management-version-control-wordpress/
 Description: A document management and version control plugin for WordPress that allows teams of any size to collaboratively edit files and manage their workflow.
-Version: 5.4.3
+Version: 5.5.0
 Requires at least: 5.9
 Requires PHP: 8.0
 Author: Ben Balter
@@ -44,7 +44,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  *  @copyright 2011-2026
  *  @license GPL-3.0-or-later
- *  @version 5.4.3
+ *  @version 5.5.0
  *  @package WP_Document_Revisions
  *  @author Ben Balter <ben@balter.com>
  */
@@ -52,7 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 // parsed by WordPress from the file header itself and must remain literal; this
 // constant is the canonical value for runtime PHP code (cache busters, etc.).
 if ( ! defined( 'WPDR_VERSION' ) ) {
-	define( 'WPDR_VERSION', '5.4.3' );
+	define( 'WPDR_VERSION', '5.5.0' );
 }
 
 // Composer autoloader for production dependencies.
@@ -87,6 +87,30 @@ if ( file_exists( __DIR__ . '/vendor-prefixed/scoper-autoload.php' ) ) {
 			}
 		}
 	);
+}
+
+if ( ! function_exists( 'wpdr_vendor_class' ) ) {
+	/**
+	 * Resolve a bundled Composer class name to the one that is actually loaded.
+	 *
+	 * Prefers the php-scoper name (`WP_Document_Revisions\Vendor\...`) when it can be
+	 * autoloaded, which covers both the scoped build and the unscoped build (via the
+	 * alias shim above), and falls back to the plain name. Plugin code must go through
+	 * this rather than hard-coding `\Smalot\...` / `\PhpOffice\...`, because the
+	 * plugin files themselves are not rewritten by php-scoper.
+	 *
+	 * @since 5.5.0
+	 * @param string $class_name unprefixed, fully-qualified class name.
+	 * @return class-string the class name to instantiate or compare against.
+	 */
+	function wpdr_vendor_class( string $class_name ): string {
+		$class_name = ltrim( $class_name, '\\' );
+		$prefixed   = 'WP_Document_Revisions\\Vendor\\' . $class_name;
+		if ( class_exists( $prefixed ) || interface_exists( $prefixed ) ) {
+			return $prefixed;
+		}
+		return $class_name;
+	}
 }
 
 require_once __DIR__ . '/includes/trait-wp-document-revisions-rewrites.php';

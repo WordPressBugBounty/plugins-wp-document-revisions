@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: wordpress-document-revisions\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-document-"
 "revisions\n"
-"POT-Creation-Date: 2026-09-24T21:06:46+00:00\n"
+"POT-Creation-Date: 2026-07-27T17:37:46+00:00\n"
 "PO-Revision-Date: 2022-01-24 22:19\n"
 "Language-Team: Romanian\n"
 "Language: ro_RO\n"
@@ -29,7 +29,7 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: wp-document-revisions.php
-#: includes/class-wp-document-revisions-front-end.php:565
+#: includes/class-wp-document-revisions-front-end.php:564
 msgid "WP Document Revisions"
 msgstr "Revizuiri documente WP"
 
@@ -80,155 +80,76 @@ msgstr ""
 msgid "No summary has been generated for this revision yet."
 msgstr "Nu a fost generat încă niciun rezumat pentru această revizuire."
 
-#: includes/class-wp-document-revisions-front-end.php:136
-#: includes/class-wp-document-revisions-front-end.php:819
-#: includes/class-wp-document-revisions-front-end.php:974
+#: includes/class-wp-document-revisions-front-end.php:135
+#: includes/class-wp-document-revisions-front-end.php:795
+#: includes/class-wp-document-revisions-front-end.php:950
 msgid "You are not authorized to read this data"
 msgstr "Nu aveți autorizație să citiți aceste date"
 
-#: includes/class-wp-document-revisions-front-end.php:142
-#: includes/class-wp-document-revisions-front-end.php:979
-#: includes/class-wp-document-revisions-front-end.php:1021
+#: includes/class-wp-document-revisions-front-end.php:141
+#: includes/class-wp-document-revisions-front-end.php:955
 msgid "This is not a valid document."
 msgstr "Acesta nu este un document valid."
 
-#: includes/class-wp-document-revisions-front-end.php:165
-#: includes/class-wp-document-revisions-front-end.php:348
+#: includes/class-wp-document-revisions-front-end.php:164
+#: includes/class-wp-document-revisions-front-end.php:347
 #: includes/class-wp-document-revisions-recently-revised-widget.php:121
 msgid "(PDF)"
 msgstr "(PDF)"
 
-#: includes/class-wp-document-revisions-front-end.php:190
+#: includes/class-wp-document-revisions-front-end.php:189
 msgid "ago by"
 msgstr "acum de"
 
-#: includes/class-wp-document-revisions-front-end.php:449
+#: includes/class-wp-document-revisions-front-end.php:448
 msgid "Edit"
 msgstr "Edita"
 
-#: includes/class-wp-document-revisions-front-end.php:467
+#: includes/class-wp-document-revisions-front-end.php:466
 #: includes/class-wp-document-revisions-recently-revised-widget.php:129
 msgid "No thumbnail available."
 msgstr "Nu este disponibilă nicio miniatură."
 
-#: includes/class-wp-document-revisions-front-end.php:744
+#: includes/class-wp-document-revisions-front-end.php:720
 msgid "No selection"
 msgstr "Fără selecție"
 
-#: includes/class-wp-document-revisions-front-end.php:858
+#: includes/class-wp-document-revisions-front-end.php:834
 msgid " Taxonomy details in this block have changed."
 msgstr "Detaliile taxonomiei din acest bloc s-au modificat."
 
-#: includes/class-wp-document-revisions-front-end.php:893
-#: includes/class-wp-document-revisions-front-end.php:907
-#: includes/class-wp-document-revisions-front-end.php:921
+#: includes/class-wp-document-revisions-front-end.php:869
+#: includes/class-wp-document-revisions-front-end.php:883
+#: includes/class-wp-document-revisions-front-end.php:897
 msgid " Taxonomy term does not belong to this taxonomy."
 msgstr "Termenul taxonomic nu aparține acestei taxonomii."
 
-#: includes/class-wp-document-revisions-front-end.php:1031
-msgid "You are not authorized to read this document."
-msgstr ""
-
-#: includes/class-wp-document-revisions-front-end.php:1036
-msgid "This document has no file to preview."
-msgstr ""
-
-#: includes/class-wp-document-revisions-front-end.php:1047
-msgid "Download document"
-msgstr ""
-
-#: includes/class-wp-document-revisions-front-end.php:1066
-msgid "This file type cannot be previewed inline."
-msgstr ""
-
-#: includes/class-wp-document-revisions-manage-rest.php:121
+#: includes/class-wp-document-revisions-manage-rest.php:112
 msgid "Sorry, you are not allowed to edit documents."
 msgstr "Ne pare rău, nu aveți permisiunea de a edita documente."
 
-#: includes/class-wp-document-revisions-manage-rest.php:132
+#: includes/class-wp-document-revisions-manage-rest.php:123
 msgid "Sorry, you are not allowed to view revisions."
 msgstr "Ne pare rău, nu aveți permisiunea de a vizualiza reviziile."
 
-#: includes/class-wp-document-revisions-manage-rest.php:143
+#: includes/class-wp-document-revisions-manage-rest.php:134
 msgid "Sorry, you are not allowed to read documents."
 msgstr "Îmi pare rău, nu aveți permisiunea de a citi documente."
 
-#: includes/class-wp-document-revisions-manage-rest.php:158
+#: includes/class-wp-document-revisions-manage-rest.php:149
 msgid "Sorry, invalid REST call"
 msgstr "Ne pare rău, apel REST invalid"
 
-#: includes/class-wp-document-revisions-manage-rest.php:165
+#: includes/class-wp-document-revisions-manage-rest.php:156
 msgid "Sorry, you are only allowed to use GET method"
 msgstr "Ne pare rău, aveți voie să utilizați doar metoda GET."
 
-#: includes/class-wp-document-revisions-manage-rest.php:269
+#: includes/class-wp-document-revisions-manage-rest.php:260
 msgid "Sorry, you are not allowed to view this revision."
 msgstr "Ne pare rău, nu aveți permisiunea de a vizualiza această revizuire."
 
-#: includes/class-wp-document-revisions-manage-rest.php:316
+#: includes/class-wp-document-revisions-manage-rest.php:307
 msgid "<!-- protected -->"
-msgstr ""
-
-#: includes/class-wp-document-revisions-notifications.php:142
-#: includes/class-wp-document-revisions-notifications.php:196
-msgid "Someone"
-msgstr ""
-
-#. translators: %1$s is the blog name, %2$s is the document title, %3$s is the new workflow state.
-#: includes/class-wp-document-revisions-notifications.php:145
-#, php-format
-msgid "%1$s: %2$s moved to %3$s"
-msgstr ""
-
-#. translators: %1$s is the user who made the change, %2$s is the document title.
-#: includes/class-wp-document-revisions-notifications.php:148
-#, php-format
-msgid "%1$s changed the workflow state of the document %2$s."
-msgstr ""
-
-#. translators: %1$s is the previous workflow state, %2$s is the new workflow state.
-#: includes/class-wp-document-revisions-notifications.php:151
-#, php-format
-msgid "State: %1$s to %2$s"
-msgstr ""
-
-#. translators: %s is the new workflow state.
-#: includes/class-wp-document-revisions-notifications.php:154
-#, php-format
-msgid "State: %s"
-msgstr ""
-
-#. translators: %s is the document URL.
-#: includes/class-wp-document-revisions-notifications.php:157
-#: includes/class-wp-document-revisions-notifications.php:209
-#, php-format
-msgid "View the document: %s"
-msgstr ""
-
-#. translators: %s is the blog name.
-#: includes/class-wp-document-revisions-notifications.php:159
-#: includes/class-wp-document-revisions-notifications.php:211
-#: includes/trait-wp-document-revisions-revisions.php:420
-#, php-format
-msgid "- The %s Team"
-msgstr "- Echipa %s"
-
-#. translators: %1$s is the blog name, %2$s is the document title.
-#: includes/class-wp-document-revisions-notifications.php:199
-#, php-format
-msgid "%1$s: New revision of %2$s"
-msgstr ""
-
-#. translators: %1$s is the user who saved the revision, %2$s is the document title.
-#: includes/class-wp-document-revisions-notifications.php:202
-#, php-format
-msgid "%1$s saved a new revision of the document %2$s."
-msgstr ""
-
-#. translators: %s is the revision summary.
-#: includes/class-wp-document-revisions-notifications.php:206
-#, php-format
-msgid "Summary: %s"
 msgstr ""
 
 #. translators: %1$s is the time ago in words, %2$s is the author.
@@ -283,8 +204,8 @@ msgstr "Indicație afișare fișier PDF:"
 msgid "Open documents in new tab:"
 msgstr "Deschideți documentele într-o filă nouă:"
 
-#: includes/class-wp-document-revisions-recently-revised-widget.php:375
-#: includes/class-wp-document-revisions-recently-revised-widget.php:378
+#: includes/class-wp-document-revisions-recently-revised-widget.php:374
+#: includes/class-wp-document-revisions-recently-revised-widget.php:377
 #: includes/trait-wp-document-revisions-admin-settings.php:273
 msgid "Recently Revised Documents"
 msgstr "Documente recent revizuite"
@@ -678,44 +599,40 @@ msgstr ""
 msgid "The fix is therefore to md5-encode the file name."
 msgstr "Prin urmare, soluția este de a codifica numele fișierului în md5."
 
-#: includes/class-wp-document-revisions.php:292
-#: includes/class-wp-document-revisions.php:726
+#: includes/class-wp-document-revisions.php:288
+#: includes/class-wp-document-revisions.php:702
 #: includes/trait-wp-document-revisions-admin-editor.php:764
 msgid "Documents"
 msgstr "Documente"
 
-#: includes/class-wp-document-revisions.php:295
-msgid "Read and manage documents stored by WP Document Revisions."
-msgstr ""
-
-#: includes/class-wp-document-revisions.php:317
+#: includes/class-wp-document-revisions.php:310
 msgid "Check Document Access"
 msgstr "Verificați accesul la documente"
 
-#: includes/class-wp-document-revisions.php:318
+#: includes/class-wp-document-revisions.php:311
 msgid ""
 "Check whether the current user can perform a specific action on a document."
 msgstr ""
 "Verifică dacă utilizatorul curent poate efectua o anumită acțiune asupra "
 "unui document."
 
-#: includes/class-wp-document-revisions.php:327
+#: includes/class-wp-document-revisions.php:320
 msgid "The document post ID to check access for."
 msgstr "ID-ul postării documentului pentru care se verifică accesul."
 
-#: includes/class-wp-document-revisions.php:331
+#: includes/class-wp-document-revisions.php:324
 msgid "The action to check: read, edit, delete, or publish."
 msgstr "Acțiunea de verificare: citire, editare, ștergere sau publicare."
 
-#: includes/class-wp-document-revisions.php:342
+#: includes/class-wp-document-revisions.php:335
 msgid "Whether the user can perform the action."
 msgstr "Dacă utilizatorul poate efectua acțiunea."
 
-#: includes/class-wp-document-revisions.php:357
+#: includes/class-wp-document-revisions.php:346
 msgid "Get Document Info"
 msgstr "Obțineți informații despre document"
 
-#: includes/class-wp-document-revisions.php:358
+#: includes/class-wp-document-revisions.php:347
 msgid ""
 "Retrieve metadata for a document including file type, revision count, and "
 "lock status."
@@ -723,64 +640,64 @@ msgstr ""
 "Preluarea metadatelor pentru un document, inclusiv tipul de fișier, numărul "
 "de revizii și starea de blocare."
 
-#: includes/class-wp-document-revisions.php:369
-#: includes/class-wp-document-revisions.php:407
+#: includes/class-wp-document-revisions.php:358
+#: includes/class-wp-document-revisions.php:392
 msgid "The document post ID."
 msgstr "ID-ul postării documentului."
 
-#: includes/class-wp-document-revisions.php:395
+#: includes/class-wp-document-revisions.php:380
 msgid "Get Document Revisions"
 msgstr "Obțineți revizuiri ale documentelor"
 
-#: includes/class-wp-document-revisions.php:396
+#: includes/class-wp-document-revisions.php:381
 msgid "Retrieve the revision history of a document."
 msgstr "Recuperează istoricul reviziilor unui document."
 
-#: includes/class-wp-document-revisions.php:440
+#: includes/class-wp-document-revisions.php:421
 msgid "Override Document Lock"
 msgstr "Suprascrie blocarea documentului"
 
-#: includes/class-wp-document-revisions.php:441
+#: includes/class-wp-document-revisions.php:422
 msgid "Override another user's lock on a document to allow editing."
 msgstr ""
 "Suprascrie blocarea unui document de către un alt utilizator pentru a "
 "permite editarea."
 
-#: includes/class-wp-document-revisions.php:452
+#: includes/class-wp-document-revisions.php:433
 msgid "The document post ID to unlock."
 msgstr "ID-ul postării documentului care va fi deblocat."
 
-#: includes/class-wp-document-revisions.php:523
-#: includes/class-wp-document-revisions.php:563
-#: includes/class-wp-document-revisions.php:616
+#: includes/class-wp-document-revisions.php:499
+#: includes/class-wp-document-revisions.php:539
+#: includes/class-wp-document-revisions.php:592
 msgid "Document not found."
 msgstr "Document negăsit."
 
-#: includes/class-wp-document-revisions.php:531
+#: includes/class-wp-document-revisions.php:507
 msgid "You do not have permission to view this document."
 msgstr "Nu aveți permisiunea de a vizualiza acest document."
 
-#: includes/class-wp-document-revisions.php:571
+#: includes/class-wp-document-revisions.php:547
 msgid "You do not have permission to view revisions for this document."
 msgstr "Nu aveți permisiunea de a vizualiza reviziile pentru acest document."
 
-#: includes/class-wp-document-revisions.php:579
+#: includes/class-wp-document-revisions.php:555
 msgid "You do not have permission to view document revisions."
 msgstr "Nu aveți permisiunea de a vizualiza revizuirile documentului."
 
-#: includes/class-wp-document-revisions.php:593
+#: includes/class-wp-document-revisions.php:569
 msgid "Unknown"
 msgstr "Necunoscut"
 
-#: includes/class-wp-document-revisions.php:634
+#: includes/class-wp-document-revisions.php:610
 msgid "You do not have permission to override the lock on this document."
 msgstr "Nu aveți permisiunea de a ignora blocarea acestui document."
 
-#: includes/class-wp-document-revisions.php:662
+#: includes/class-wp-document-revisions.php:638
 msgid "You have activated the plugin WP Document Revisions"
 msgstr "Ai activat pluginul WP Document Revisions"
 
-#: includes/class-wp-document-revisions.php:664
+#: includes/class-wp-document-revisions.php:640
 msgid ""
 "You do not have the edit_documents capability possibly due to multiple "
 "conflicting roles or use of a custom role!"
@@ -788,7 +705,7 @@ msgstr ""
 "Nu aveți funcția edit_documents, posibil din cauza mai multor roluri "
 "conflictuale sau a utilizării unui rol personalizat!"
 
-#: includes/class-wp-document-revisions.php:666
+#: includes/class-wp-document-revisions.php:642
 msgid ""
 "The Documents menu may not be displayed completely with the \"All "
 "Documents\" and \"Add Document\" options missing"
@@ -796,7 +713,7 @@ msgstr ""
 "Este posibil ca meniul Documente să nu fie afișat complet dacă lipsesc "
 "opțiunile „Toate documentele” și „Adăugați document”."
 
-#: includes/class-wp-document-revisions.php:668
+#: includes/class-wp-document-revisions.php:644
 msgid ""
 "You should first check whether you have multiple roles and that each has "
 "edit_documents capability."
@@ -804,148 +721,148 @@ msgstr ""
 "Mai întâi ar trebui să verificați dacă aveți mai multe roluri și dacă "
 "fiecare are capacitatea de a edita_documente."
 
-#: includes/class-wp-document-revisions.php:714
+#: includes/class-wp-document-revisions.php:690
 msgctxt "post type general name"
 msgid "Documents"
 msgstr "Documente"
 
-#: includes/class-wp-document-revisions.php:715
+#: includes/class-wp-document-revisions.php:691
 msgctxt "post type singular name"
 msgid "Document"
 msgstr "Document"
 
-#: includes/class-wp-document-revisions.php:716
+#: includes/class-wp-document-revisions.php:692
 msgctxt "document"
 msgid "Add Document"
 msgstr "Adăugați document"
 
-#: includes/class-wp-document-revisions.php:717
+#: includes/class-wp-document-revisions.php:693
 msgid "Add New Document"
 msgstr "Adăugați un document nou"
 
-#: includes/class-wp-document-revisions.php:718
+#: includes/class-wp-document-revisions.php:694
 msgid "Edit Document"
 msgstr "Editați documentul"
 
-#: includes/class-wp-document-revisions.php:719
+#: includes/class-wp-document-revisions.php:695
 msgid "New Document"
 msgstr "Document nou"
 
-#: includes/class-wp-document-revisions.php:720
+#: includes/class-wp-document-revisions.php:696
 msgid "View Document"
 msgstr "Vizualizați documentul"
 
-#: includes/class-wp-document-revisions.php:721
+#: includes/class-wp-document-revisions.php:697
 msgid "View Documents"
 msgstr "Vizualizați documentele"
 
-#: includes/class-wp-document-revisions.php:722
+#: includes/class-wp-document-revisions.php:698
 msgid "Search Documents"
 msgstr "Căutare documente"
 
-#: includes/class-wp-document-revisions.php:723
+#: includes/class-wp-document-revisions.php:699
 msgid "No documents found"
 msgstr "Nu s-au găsit documente"
 
-#: includes/class-wp-document-revisions.php:724
+#: includes/class-wp-document-revisions.php:700
 msgid "No documents found in Trash"
 msgstr "Nu s-au găsit documente în Coșul de gunoi"
 
-#: includes/class-wp-document-revisions.php:727
+#: includes/class-wp-document-revisions.php:703
 msgid "All Documents"
 msgstr "Toate documentele"
 
-#: includes/class-wp-document-revisions.php:728
+#: includes/class-wp-document-revisions.php:704
 msgid "Document Image"
 msgstr "Imagine document"
 
-#: includes/class-wp-document-revisions.php:729
+#: includes/class-wp-document-revisions.php:705
 msgid "Set Document Image"
 msgstr "Setați imaginea documentului"
 
-#: includes/class-wp-document-revisions.php:730
+#: includes/class-wp-document-revisions.php:706
 msgid "Remove Document Image"
 msgstr "Eliminați imaginea documentului"
 
-#: includes/class-wp-document-revisions.php:731
+#: includes/class-wp-document-revisions.php:707
 msgid "Use as Document Image"
 msgstr "Folosește ca imagine a documentului"
 
-#: includes/class-wp-document-revisions.php:836
+#: includes/class-wp-document-revisions.php:812
 msgctxt "taxonomy general name"
 msgid "Workflow States"
 msgstr "Stări de flux de lucru"
 
-#: includes/class-wp-document-revisions.php:837
+#: includes/class-wp-document-revisions.php:813
 msgctxt "taxonomy singular name"
 msgid "Workflow State"
 msgstr "Starea fluxului de lucru"
 
-#: includes/class-wp-document-revisions.php:838
+#: includes/class-wp-document-revisions.php:814
 msgid "Search Workflow States"
 msgstr "Căutare stări flux de lucru"
 
-#: includes/class-wp-document-revisions.php:839
+#: includes/class-wp-document-revisions.php:815
 msgid "All Workflow States"
 msgstr "Toate stările fluxului de lucru"
 
-#: includes/class-wp-document-revisions.php:840
+#: includes/class-wp-document-revisions.php:816
 msgid "Parent Workflow State"
 msgstr "Starea fluxului de lucru principal"
 
-#: includes/class-wp-document-revisions.php:841
+#: includes/class-wp-document-revisions.php:817
 msgid "Parent Workflow State:"
 msgstr "Starea fluxului de lucru principal:"
 
-#: includes/class-wp-document-revisions.php:842
+#: includes/class-wp-document-revisions.php:818
 msgid "Edit Workflow State"
 msgstr "Editați starea fluxului de lucru"
 
-#: includes/class-wp-document-revisions.php:843
+#: includes/class-wp-document-revisions.php:819
 msgid "Update Workflow State"
 msgstr "Actualizați starea fluxului de lucru"
 
-#: includes/class-wp-document-revisions.php:844
+#: includes/class-wp-document-revisions.php:820
 msgid "Add New Workflow State"
 msgstr "Adăugați o nouă stare a fluxului de lucru"
 
-#: includes/class-wp-document-revisions.php:845
+#: includes/class-wp-document-revisions.php:821
 msgid "New Workflow State Name"
 msgstr "Numele noii stări a fluxului de lucru"
 
-#: includes/class-wp-document-revisions.php:846
+#: includes/class-wp-document-revisions.php:822
 msgid "Workflow States"
 msgstr "Stări de flux de lucru"
 
-#: includes/class-wp-document-revisions.php:904
+#: includes/class-wp-document-revisions.php:880
 msgid "In Progress"
 msgstr "În curs"
 
-#: includes/class-wp-document-revisions.php:904
+#: includes/class-wp-document-revisions.php:880
 msgid "Document is in the process of being written"
 msgstr "Documentul este în curs de redactare"
 
-#: includes/class-wp-document-revisions.php:905
+#: includes/class-wp-document-revisions.php:881
 msgid "Initial Draft"
 msgstr "Schiță inițială"
 
-#: includes/class-wp-document-revisions.php:905
+#: includes/class-wp-document-revisions.php:881
 msgid "Document is being edited and refined"
 msgstr "Documentul este editat și rafinat"
 
-#: includes/class-wp-document-revisions.php:906
+#: includes/class-wp-document-revisions.php:882
 msgid "Under Review"
 msgstr "În curs de revizuire"
 
-#: includes/class-wp-document-revisions.php:906
+#: includes/class-wp-document-revisions.php:882
 msgid "Document is pending final review"
 msgstr "Documentul este în așteptarea revizuirii finale"
 
-#: includes/class-wp-document-revisions.php:907
+#: includes/class-wp-document-revisions.php:883
 msgid "Final"
 msgstr "Final"
 
-#: includes/class-wp-document-revisions.php:907
+#: includes/class-wp-document-revisions.php:883
 msgid "Document is in its final form"
 msgstr "Documentul este în forma sa finală"
 
@@ -1020,18 +937,18 @@ msgstr ""
 
 #: includes/trait-wp-document-revisions-admin-editor.php:112
 #: includes/trait-wp-document-revisions-admin-editor.php:979
-#: build/editor-document-upload/index.js:405
+#: src/editor-document-upload/index.js:405
 msgid "Revision Summary"
 msgstr "Rezumatul revizuirii"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:113
-#: build/editor-document-upload/index.js:320
+#: src/editor-document-upload/index.js:320
 msgid "Document"
 msgstr "Document"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:117
 #: includes/trait-wp-document-revisions-admin-editor.php:755
-#: build/editor-document-upload/index.js:509
+#: src/editor-document-upload/index.js:509
 msgid "Revision Log"
 msgstr "Jurnal de revizii"
 
@@ -1042,7 +959,7 @@ msgstr "Starea fluxului de lucru"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:129
 #: includes/trait-wp-document-revisions-admin-editor.php:1186
-#: includes/trait-wp-document-revisions-admin-list.php:266
+#: includes/trait-wp-document-revisions-admin-list.php:122
 msgid "Owner"
 msgstr "Proprietar"
 
@@ -1061,8 +978,8 @@ msgstr ""
 "id=\"override_link\">să anulați blocarea</a>, dar modificările se vor pierde."
 
 #: includes/trait-wp-document-revisions-admin-editor.php:196
-#: build/editor-document-upload/index.js:257
-#: build/editor-document-upload/index.js:396
+#: src/editor-document-upload/index.js:257
+#: src/editor-document-upload/index.js:396
 msgid "Upload New Version"
 msgstr "Încărcați versiunea nouă"
 
@@ -1071,7 +988,7 @@ msgid "Latest Version of the Document"
 msgstr "Cea mai recentă versiune a documentului"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:204
-#: build/editor-document-upload/index.js:385
+#: src/editor-document-upload/index.js:385
 msgid "Download"
 msgstr "Descărcare"
 
@@ -1157,11 +1074,7 @@ msgid ""
 "You can download and view previous versions of the document by clicking the "
 "timestamp in the revision log. You can also restore revisions by clicking "
 "the <code>restore</code> button beside the revision."
-msgstr ""
-"Poți descărca și vizualiza versiunile anterioare ale documentului făcând "
-"clic pe marcajul temporal din jurnalul de revizii. De asemenea, poți "
-"restaura reviziile făcând clic pe butonul <code>restore</code> de lângă "
-"revizie."
+msgstr "Poți descărca și vizualiza versiunile anterioare ale documentului făcând clic pe marcajul temporal din jurnalul de revizii. De asemenea, poți restaura reviziile făcând clic pe butonul <code>restore</code> de lângă revizie."
 
 #: includes/trait-wp-document-revisions-admin-editor.php:759
 msgid ""
@@ -1207,9 +1120,7 @@ msgstr ""
 msgid ""
 "To add a new document, click <strong>Add Document</strong> on the left-hand "
 "side."
-msgstr ""
-"Pentru a adăuga un document nou, faceți clic pe <strong>Adaugă document</"
-"strong> în partea stângă."
+msgstr "Pentru a adăuga un document nou, faceți clic pe <strong>Adaugă document</strong> în partea stângă."
 
 #: includes/trait-wp-document-revisions-admin-editor.php:767
 msgid ""
@@ -1248,17 +1159,17 @@ msgstr ""
 "modificări ați făcut fără a fi nevoie să deschidă fișierul propriu-zis."
 
 #: includes/trait-wp-document-revisions-admin-editor.php:1002
-#: build/editor-document-upload/index.js:536
+#: src/editor-document-upload/index.js:536
 msgid "Modified"
 msgstr "Modificat"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:1003
-#: build/editor-document-upload/index.js:545
+#: src/editor-document-upload/index.js:545
 msgid "User"
 msgstr "Utilizator"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:1004
-#: build/editor-document-upload/index.js:554
+#: src/editor-document-upload/index.js:554
 msgid "Summary"
 msgstr "Rezumat"
 
@@ -1306,42 +1217,7 @@ msgstr "Toate stările"
 msgid "All owners"
 msgstr "Toți proprietarii"
 
-#: includes/trait-wp-document-revisions-admin-list.php:102
-msgid "Add your first document"
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-list.php:107
-msgid "read the documentation"
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-list.php:112
-msgid "Welcome to WP Document Revisions!"
-msgstr ""
-
-#. translators: 1: link to add a new document, 2: link to the documentation
-#: includes/trait-wp-document-revisions-admin-list.php:116
-#, php-format
-msgid ""
-"You have not added any documents yet. %1$s to start tracking revisions and "
-"workflow, or %2$s."
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-list.php:171
-msgid ""
-"You have been managing your documents with WP Document Revisions — thank "
-"you! If it has been useful, would you consider leaving a quick review? It "
-"genuinely helps other teams discover the plugin."
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-list.php:173
-msgid "Leave a review"
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-list.php:174
-msgid "No thanks"
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-list.php:284
+#: includes/trait-wp-document-revisions-admin-list.php:140
 msgid "Currently Editing"
 msgstr "Editare curentă"
 
@@ -1393,44 +1269,18 @@ msgstr "Acum %1$s de %2$s [%3$s]"
 msgid "Document Date in Permalink"
 msgstr "Data documentului în Permalink"
 
-#: includes/trait-wp-document-revisions-admin-settings.php:390
-msgid "Document Notifications"
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-settings.php:435
-msgid "Email notifications when documents change."
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-settings.php:437
-msgid "Notify these email addresses (one per line or comma-separated):"
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-settings.php:439
-msgid ""
-"The document's author is always notified in addition to this list. Whoever "
-"made the change is never notified of their own change."
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-settings.php:444
-msgid "Notify when a document changes workflow state."
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-settings.php:447
-msgid "Notify when a new revision of a document is saved."
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-settings.php:481
+#: includes/trait-wp-document-revisions-admin-settings.php:394
 msgid "Document directory does not appear to exist. Please review value."
 msgstr ""
 "Directorul de documente pare să nu existe. Vă rugăm să verificați valoarea."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:483
+#: includes/trait-wp-document-revisions-admin-settings.php:396
 msgid "Document directory is not writable. Please check permissions."
 msgstr ""
 "Directorul documentelor nu este permis pentru scriere. Vă rugăm să "
 "verificați permisiunile."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:487
+#: includes/trait-wp-document-revisions-admin-settings.php:400
 msgid ""
 "Document upload directory changed, but existing uploads may need to be moved "
 "to the new folder to ensure they remain accessible."
@@ -1439,22 +1289,22 @@ msgstr ""
 "existente ar putea necesita mutarea în noul folder pentru a le asigura "
 "accesibilitatea."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:516
+#: includes/trait-wp-document-revisions-admin-settings.php:429
 msgid ""
 "Document slug changed, but some previously published URLs may now be broken."
 msgstr ""
 "Codul de identificare al documentului s-a modificat, dar este posibil ca "
 "unele adrese URL publicate anterior să fie acum defecte."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:534
-#: includes/trait-wp-document-revisions-admin-settings.php:565
-#: includes/trait-wp-document-revisions-admin-settings.php:593
+#: includes/trait-wp-document-revisions-admin-settings.php:447
+#: includes/trait-wp-document-revisions-admin-settings.php:478
+#: includes/trait-wp-document-revisions-admin-settings.php:506
 #: includes/trait-wp-document-revisions-revisions.php:196
 #: includes/trait-wp-document-revisions-rewrites.php:341
 msgid "Not authorized"
 msgstr "Neautorizat"
 
-#: includes/trait-wp-document-revisions-admin-settings.php:649
+#: includes/trait-wp-document-revisions-admin-settings.php:562
 msgid ""
 "Directory in which to store uploaded documents. The default is in your "
 "<code>wp-content/uploads</code> folder (or another default uploads folder "
@@ -1468,7 +1318,7 @@ msgstr ""
 "securitate sporită."
 
 #. translators: %site_id% is not interpolated and should not be translated.
-#: includes/trait-wp-document-revisions-admin-settings.php:657
+#: includes/trait-wp-document-revisions-admin-settings.php:570
 #, php-format
 msgid ""
 "You may optionally include the string <code>%site_id%</code> within the path "
@@ -1477,11 +1327,11 @@ msgstr ""
 "Opțional, puteți include șirul de caractere `<code>%site_id%</code>` în cale "
 "pentru a separa fișierele după site."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:672
+#: includes/trait-wp-document-revisions-admin-settings.php:585
 msgid "example-document-title"
 msgstr "exemplu-titlu-document"
 
-#: includes/trait-wp-document-revisions-admin-settings.php:676
+#: includes/trait-wp-document-revisions-admin-settings.php:589
 msgid ""
 "\"Slug\" with which to prefix all URLs for documents (and the document "
 "archive). Default is <code>documents</code>."
@@ -1489,20 +1339,20 @@ msgstr ""
 "„Slug” cu care se adaugă un prefix tuturor adreselor URL pentru documente "
 "(și arhiva documentelor). Implicit este <code>documents</code>."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:690
+#: includes/trait-wp-document-revisions-admin-settings.php:603
 msgid "Remove the year and month element /yyyy/mm from the document permalink."
 msgstr "Eliminați elementele an și lună /yyyy/mm din permalinkul documentului."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:692
+#: includes/trait-wp-document-revisions-admin-settings.php:605
 msgid "By default the document permalink will contain the post year and month."
 msgstr ""
 "În mod implicit, permalinkul documentului va conține anul și luna postării."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:693
+#: includes/trait-wp-document-revisions-admin-settings.php:606
 msgid "The delivered rewrite rules support both formats."
 msgstr "Regulile de rescriere livrate acceptă ambele formate."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:746
+#: includes/trait-wp-document-revisions-admin-settings.php:659
 msgid ""
 "Maximum number of document revisions set to zero using a filter. Check your "
 "configuration."
@@ -1510,7 +1360,7 @@ msgstr ""
 "Numărul maxim de revizii ale documentului a fost setat la zero folosind un "
 "filtru. Verificați configurația."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:759
+#: includes/trait-wp-document-revisions-admin-settings.php:672
 msgid ""
 "More revisions exist for this document than is permitted. Making changes "
 "will delete data."
@@ -1518,7 +1368,7 @@ msgstr ""
 "Există mai multe revizii pentru acest document decât este permis. Efectuarea "
 "modificărilor va șterge datele."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:768
+#: includes/trait-wp-document-revisions-admin-settings.php:681
 msgid ""
 "Maximum number of revisions reached for this document. Making changes will "
 "delete data."
@@ -1556,7 +1406,7 @@ msgid ""
 msgstr ""
 "Ne pare rău, ieșirea a fost deja scrisă, deci fișierul nu poate fi descărcat."
 
-#: includes/trait-wp-document-revisions-file-handler.php:1167
+#: includes/trait-wp-document-revisions-file-handler.php:1165
 msgid "Sorry, this is a private feed."
 msgstr "Ne pare rău, acesta este un feed privat."
 
@@ -1581,7 +1431,7 @@ msgid "Published"
 msgstr "Publicat"
 
 #: includes/trait-wp-document-revisions-query.php:590
-#: build/blocks/documents-widget/index.js:67
+#: src/blocks/documents-widget/edit.js:67
 msgid "Draft"
 msgstr "Proiect"
 
@@ -1590,7 +1440,7 @@ msgid "Scheduled"
 msgstr "Programat"
 
 #: includes/trait-wp-document-revisions-query.php:592
-#: build/blocks/documents-widget/index.js:58
+#: src/blocks/documents-widget/edit.js:58
 msgid "Private"
 msgstr "Privat"
 
@@ -1628,42 +1478,48 @@ msgstr "%1$s (%2$s) a anulat blocarea documentului %3$s (%4$s)."
 msgid "Any changes you have made will be lost."
 msgstr "Orice modificări pe care le-ați făcut se vor pierde."
 
+#. translators: %s is the blog name.
+#: includes/trait-wp-document-revisions-revisions.php:420
+#, php-format
+msgid "- The %s Team"
+msgstr "- Echipa %s"
+
 #: includes/trait-wp-document-revisions-rewrites.php:47
 #: includes/trait-wp-document-revisions-rewrites.php:62
 msgid "revision"
 msgstr "revizuire"
 
-#: build/admin/wp-document-revisions-ai-prefill.js:61
+#: src/admin/wp-document-revisions-ai-prefill.js:61
 msgid "✨ AI suggestion — edit before saving."
 msgstr "✨ Sugestie AI — editează înainte de salvare."
 
-#: build/admin/wp-document-revisions-ai-prefill.js:70
+#: src/admin/wp-document-revisions-ai-prefill.js:70
 msgid "✨ AI summary will be available shortly — refresh this page to see it."
 msgstr ""
 "✨ Rezumatul AI va fi disponibil în curând — actualizați această pagină "
 "pentru a-l vedea."
 
-#: build/admin/wp-document-revisions-ai-prefill.js:100
+#: src/admin/wp-document-revisions-ai-prefill.js:100
 msgid "Dismiss"
 msgstr "Închide"
 
-#: build/admin/wp-document-revisions-ai-prefill.js:123
+#: src/admin/wp-document-revisions-ai-prefill.js:123
 msgid "Reviewed ✓"
 msgstr "Recenzie ✓"
 
-#: build/admin/wp-document-revisions-ai-prefill.js:142
+#: src/admin/wp-document-revisions-ai-prefill.js:142
 msgid "Mark reviewed"
 msgstr "Mark a evaluat"
 
-#: build/admin/wp-document-revisions-validate.js:24
+#: src/admin/wp-document-revisions-validate.js:24
 msgid "Processed successfully."
 msgstr "Procesat cu succes."
 
-#: build/admin/wp-document-revisions.js:127
+#: src/admin/wp-document-revisions.js:127
 msgid "Upload failed."
 msgstr "Încărcarea a eșuat."
 
-#: build/admin/wp-document-revisions.js:156
+#: src/admin/wp-document-revisions.js:156
 msgid ""
 "File uploaded successfully. Add a revision summary below (optional) and "
 "press <strong>Update</strong> to save your changes."
@@ -1672,11 +1528,11 @@ msgstr ""
 "jos (opțional) și apăsați pe <strong>Actualizare</strong> pentru a salva "
 "modificările."
 
-#: build/admin/wp-document-revisions.js:173
+#: src/admin/wp-document-revisions.js:173
 msgid "New version uploaded. Press Update to save."
 msgstr "Versiune nouă încărcată. Apăsați Actualizare pentru a salva."
 
-#: build/admin/wp-document-revisions.js:190
+#: src/admin/wp-document-revisions.js:190
 msgid ""
 "Are you sure you want to restore this revision? If you do, no history will "
 "be lost. This revision will be copied and become the most recent revision."
@@ -1685,126 +1541,99 @@ msgstr ""
 "istoricul nu se va pierde. Această revizie va fi copiată și va deveni cea "
 "mai recentă."
 
-#: build/admin/wp-document-revisions.js:240
-#: build/admin/wp-document-revisions.js:249
+#: src/admin/wp-document-revisions.js:240
+#: src/admin/wp-document-revisions.js:249
 msgid "An error has occurred, please try reloading the page."
 msgstr "A apărut o eroare, vă rugăm să încercați să reîncărcați pagina."
 
-#: build/admin/wp-document-revisions.js:270
+#: src/admin/wp-document-revisions.js:270
 msgid "Lost Document Lock"
 msgstr "Blocare documente pierdute"
 
 #. translators: %s is the title of the document.
-#: build/admin/wp-document-revisions.js:285
+#: src/admin/wp-document-revisions.js:285
 msgid ""
 "Your lock on the document %s has been overridden. Any changes will be lost."
 msgstr ""
 "Blocarea documentului %s a fost anulată. Orice modificare se va pierde."
 
 #. translators: %d is the number of minutes.
-#: build/admin/wp-document-revisions.js:311
+#: src/admin/wp-document-revisions.js:311
 msgid "%d mins"
 msgstr "%d minute"
 
 #. translators: %d is the number of hours (singular).
-#: build/admin/wp-document-revisions.js:316
+#: src/admin/wp-document-revisions.js:316
 msgid "%d hour"
 msgstr "%d oră"
 
 #. translators: %d is the number of hours (plural).
-#: build/admin/wp-document-revisions.js:319
+#: src/admin/wp-document-revisions.js:319
 msgid "%d hours"
 msgstr "%d ore"
 
 #. translators: %d is the number of days (singular).
-#: build/admin/wp-document-revisions.js:324
+#: src/admin/wp-document-revisions.js:324
 msgid "%d day"
 msgstr "%d zi"
 
 #. translators: %d is the number of days (plural).
-#: build/admin/wp-document-revisions.js:327
+#: src/admin/wp-document-revisions.js:327
 msgid "%d days"
 msgstr "%d zile"
 
-#: build/admin/wp-document-revisions.js:410
-#: build/admin/wp-document-revisions.js:417
-#: build/editor-document-upload/index.js:258
-#: build/editor-document-upload/index.js:397
+#: src/admin/wp-document-revisions.js:410
+#: src/admin/wp-document-revisions.js:417
+#: src/editor-document-upload/index.js:258
+#: src/editor-document-upload/index.js:397
 msgid "Upload Document"
 msgstr "Încărcați documentul"
 
-#: build/admin/wp-document-revisions.js:413
+#: src/admin/wp-document-revisions.js:413
 msgid "Select Document"
 msgstr "Selectați documentul"
 
-#: build/blocks/document-preview/index.js:17
-msgid "Preview Settings"
-msgstr ""
-
-#: build/blocks/document-preview/index.js:23
-#: build/blocks/revisions-shortcode/index.js:23
-msgid "Document Id"
-msgstr "ID-ul documentului"
-
-#: build/blocks/document-preview/index.js:30
-msgid "Preview Height (px)"
-msgstr ""
-
-#: build/blocks/document-preview/index.js:41
-msgid "Show Document Title?"
-msgstr ""
-
-#: build/blocks/document-preview/index.js:49
-msgid "Show Download Link?"
-msgstr ""
-
-#: build/blocks/document-preview/index.js:50
-msgid ""
-"Displays a download link below the preview, and is shown as a fallback when "
-"the file type cannot be previewed inline."
-msgstr ""
-
-#: build/blocks/documents-shortcode/index.js:76
+#: src/blocks/documents-shortcode/edit.js:76
 msgid "There are no taxonomies defined."
 msgstr "Nu există taxonomii definite."
 
-#: build/blocks/documents-shortcode/index.js:88
+#: src/blocks/documents-shortcode/edit.js:88
 msgid "Taxonomy:"
 msgstr "Taxonomie:"
 
-#: build/blocks/documents-shortcode/index.js:116
+#: src/blocks/documents-shortcode/edit.js:116
 msgid "Block Heading"
 msgstr "Titlu de bloc"
 
-#: build/blocks/documents-shortcode/index.js:123
+#: src/blocks/documents-shortcode/edit.js:123
 msgid "Display Settings"
 msgstr "Setări de afișare"
 
-#: build/blocks/documents-shortcode/index.js:128
+#: src/blocks/documents-shortcode/edit.js:128
 msgid "Number of documents to display"
 msgstr "Numărul de documente de afișat"
 
-#: build/blocks/documents-shortcode/index.js:140
+#: src/blocks/documents-shortcode/edit.js:140
 msgid "List ordering Field"
 msgstr "Câmp de ordonare a listei"
 
-#: build/blocks/documents-shortcode/index.js:141
+#: src/blocks/documents-shortcode/edit.js:141
 msgid "Example fields are post_title, post_date and post_modified."
 msgstr "Exemple de câmpuri sunt post_title, post_date și post_modified."
 
-#: build/blocks/documents-shortcode/index.js:154
+#: src/blocks/documents-shortcode/edit.js:154
 msgid "Ascending"
 msgstr "Ascendent"
 
-#: build/blocks/documents-shortcode/index.js:158
+#: src/blocks/documents-shortcode/edit.js:158
 msgid "Descending"
 msgstr "Descendent"
 
-#: build/blocks/documents-shortcode/index.js:167
+#: src/blocks/documents-shortcode/edit.js:167
 msgid "Show Edit link"
 msgstr "Afișează linkul de editare"
 
-#: build/blocks/documents-shortcode/index.js:168
+#: src/blocks/documents-shortcode/edit.js:168
 msgid ""
 "Show Edit link allows the list to have a link to the Edit function. A choice "
 "made here will over-ride the system-configured settings. Links will only "
@@ -1814,42 +1643,42 @@ msgstr ""
 "Editare. O alegere făcută aici va anula setările configurate de sistem. "
 "Linkurile vor apărea numai dacă utilizatorul poate edita documentul."
 
-#: build/blocks/documents-shortcode/index.js:175
+#: src/blocks/documents-shortcode/edit.js:175
 msgid "Default"
 msgstr "Implicit"
 
-#: build/blocks/documents-shortcode/index.js:179
+#: src/blocks/documents-shortcode/edit.js:179
 msgid "No Edit link"
 msgstr "Fără link de editare"
 
-#: build/blocks/documents-shortcode/index.js:183
+#: src/blocks/documents-shortcode/edit.js:183
 msgid "Edit link"
 msgstr "Editați linkul"
 
-#: build/blocks/documents-shortcode/index.js:194
-#: build/blocks/documents-widget/index.js:78
+#: src/blocks/documents-shortcode/edit.js:194
+#: src/blocks/documents-widget/edit.js:78
 msgid "Show featured image?"
 msgstr "Afișați imaginea recomandată?"
 
-#: build/blocks/documents-shortcode/index.js:202
-#: build/blocks/documents-widget/index.js:90
+#: src/blocks/documents-shortcode/edit.js:202
+#: src/blocks/documents-widget/edit.js:90
 msgid "Show document description?"
 msgstr "Afișați descrierea documentului?"
 
-#: build/blocks/documents-shortcode/index.js:210
-#: build/blocks/documents-widget/index.js:106
-#: build/blocks/revisions-shortcode/index.js:50
+#: src/blocks/documents-shortcode/edit.js:210
+#: src/blocks/documents-widget/edit.js:106
+#: src/blocks/revisions-shortcode/edit.js:50
 msgid "Show PDF File indication?"
 msgstr "Afișați indicația fișierului PDF?"
 
-#: build/blocks/documents-shortcode/index.js:218
-#: build/blocks/documents-widget/index.js:114
+#: src/blocks/documents-shortcode/edit.js:218
+#: src/blocks/documents-widget/edit.js:114
 msgid "Open documents in new tab?"
 msgstr "Deschideți documentele într-o filă nouă?"
 
-#: build/blocks/documents-shortcode/index.js:219
-#: build/blocks/documents-widget/index.js:115
-#: build/blocks/revisions-shortcode/index.js:59
+#: src/blocks/documents-shortcode/edit.js:219
+#: src/blocks/documents-widget/edit.js:115
+#: src/blocks/revisions-shortcode/edit.js:59
 msgid ""
 "Setting this on will open the document in a new tab. This should be set on "
 "whilst editing the page using this block as clicking on a link whilst "
@@ -1860,15 +1689,15 @@ msgstr ""
 "dacă dați clic pe un link în timpul editării, pagina curentă va fi forțată "
 "să fie părăsită."
 
-#: build/blocks/documents-shortcode/index.js:229
+#: src/blocks/documents-shortcode/edit.js:229
 msgid "Free Form Settings"
 msgstr "Setări de formă liberă"
 
-#: build/blocks/documents-shortcode/index.js:236
+#: src/blocks/documents-shortcode/edit.js:236
 msgid "Free-form parameters"
 msgstr "Parametri de formă liberă"
 
-#: build/blocks/documents-shortcode/index.js:237
+#: src/blocks/documents-shortcode/edit.js:237
 msgid ""
 "The query parameters can be very extensive. enter any other parameters "
 "required here."
@@ -1876,27 +1705,27 @@ msgstr ""
 "Parametrii de interogare pot fi foarte extinși. Introduceți aici orice alți "
 "parametri necesari."
 
-#: build/blocks/documents-widget/index.js:23
+#: src/blocks/documents-widget/edit.js:23
 msgid "Latest Documents Settings"
 msgstr "Setări pentru cele mai recente documente"
 
-#: build/blocks/documents-widget/index.js:29
+#: src/blocks/documents-widget/edit.js:29
 msgid "Latest Documents List Heading"
 msgstr "Titlul listei de documente cele mai recente"
 
-#: build/blocks/documents-widget/index.js:36
+#: src/blocks/documents-widget/edit.js:36
 msgid "Documents to Display"
 msgstr "Documente de afișat"
 
-#: build/blocks/documents-widget/index.js:46
+#: src/blocks/documents-widget/edit.js:46
 msgid "Document Statuses to Display"
 msgstr "Stările documentelor de afișat"
 
-#: build/blocks/documents-widget/index.js:49
+#: src/blocks/documents-widget/edit.js:49
 msgid "Publish"
 msgstr "Publica"
 
-#: build/blocks/documents-widget/index.js:79
+#: src/blocks/documents-widget/edit.js:79
 msgid ""
 "Under certain conditons WordPress can generate an image for Page 1 of PDF "
 "documents. If created this will be used as the Featured Image."
@@ -1905,106 +1734,100 @@ msgstr ""
 "documentelor PDF. Dacă este creată, aceasta va fi utilizată ca imagine "
 "recomandată."
 
-#: build/blocks/documents-widget/index.js:98
+#: src/blocks/documents-widget/edit.js:98
 msgid "Show author name?"
 msgstr "Afișați numele autorului?"
 
-#: build/blocks/revisions-shortcode/index.js:17
+#: src/blocks/revisions-shortcode/edit.js:17
 msgid "Selection Criteria"
 msgstr "Criterii de selecție"
 
-#: build/blocks/revisions-shortcode/index.js:30
+#: src/blocks/revisions-shortcode/edit.js:23
+msgid "Document Id"
+msgstr "ID-ul documentului"
+
+#: src/blocks/revisions-shortcode/edit.js:30
 msgid "Revisions to Display"
 msgstr "Revizuiri de afișat"
 
-#: build/blocks/revisions-shortcode/index.js:42
+#: src/blocks/revisions-shortcode/edit.js:42
 msgid "Show Revision Summaries?"
 msgstr "Afișați rezumatele reviziilor?"
 
-#: build/blocks/revisions-shortcode/index.js:58
+#: src/blocks/revisions-shortcode/edit.js:58
 msgid "Open in New Tab?"
 msgstr "Deschideți într-o filă nouă?"
 
-#: build/editor-document-upload/index.js:50
+#: src/editor-document-upload/index.js:50
 msgid "just now"
 msgstr "chiar acum"
 
-#: build/editor-document-upload/index.js:53
+#: src/editor-document-upload/index.js:53
 msgid "min ago"
 msgstr "acum un minut"
 
-#: build/editor-document-upload/index.js:61
+#: src/editor-document-upload/index.js:61
 msgid "hour ago"
 msgstr "acum o oră"
 
-#: build/editor-document-upload/index.js:62
+#: src/editor-document-upload/index.js:62
 msgid "hours ago"
 msgstr "acum câteva ore"
 
-#: build/editor-document-upload/index.js:71
+#: src/editor-document-upload/index.js:71
 msgid "day ago"
 msgstr "acum o zi"
 
-#: build/editor-document-upload/index.js:72
+#: src/editor-document-upload/index.js:72
 msgid "days ago"
 msgstr "acum câteva zile"
 
-#: build/editor-document-upload/index.js:200
+#: src/editor-document-upload/index.js:200
 msgid ""
 "The attached document file could not be found. It may have been deleted."
 msgstr ""
 "Fișierul document atașat nu a putut fi găsit. Este posibil să fi fost șters."
 
-#: build/editor-document-upload/index.js:212
+#: src/editor-document-upload/index.js:212
 msgid "Document selection failed."
 msgstr "Selecția documentului a eșuat."
 
-#: build/editor-document-upload/index.js:224
+#: src/editor-document-upload/index.js:224
 msgid "New version selected. Press Update to save."
 msgstr "Versiune nouă selectată. Apăsați Actualizare pentru a salva."
 
-#: build/editor-document-upload/index.js:225
+#: src/editor-document-upload/index.js:225
 msgid "Document selected. Press Update to save."
 msgstr "Document selectat. Apăsați Actualizare pentru a salva."
 
-#: build/editor-document-upload/index.js:261
+#: src/editor-document-upload/index.js:261
 msgid "Select"
 msgstr "Selecta"
 
-#: build/editor-document-upload/index.js:312
+#: src/editor-document-upload/index.js:312
 msgid "Attached document"
 msgstr "Document atașat"
 
 #. translators: %s is the name of the user who has the document locked
-#: build/editor-document-upload/index.js:344
+#: src/editor-document-upload/index.js:344
 msgid "%s is currently editing this document."
 msgstr "%s editează în prezent acest document."
 
-#: build/editor-document-upload/index.js:348
+#: src/editor-document-upload/index.js:348
 msgid "This document is currently locked."
 msgstr "Acest document este momentan blocat."
 
-#: build/editor-document-upload/index.js:406
+#: src/editor-document-upload/index.js:406
 msgid "A brief description of the changes in this version."
 msgstr "O scurtă descriere a modificărilor aduse acestei versiuni."
 
-#: build/editor-document-upload/index.js:515
+#: src/editor-document-upload/index.js:515
 msgid "No revisions yet."
 msgstr "Încă nu există revizuiri."
 
-#: build/editor-document-upload/index.js:578
+#: src/editor-document-upload/index.js:578
 msgid "—"
 msgstr "—"
-
-#: src/blocks/document-preview/block.json
-msgctxt "block title"
-msgid "Document Preview"
-msgstr ""
-
-#: src/blocks/document-preview/block.json
-msgctxt "block description"
-msgid "Embed an inline preview of a document's latest revision."
-msgstr ""
 
 #: src/blocks/documents-shortcode/block.json
 msgctxt "block title"

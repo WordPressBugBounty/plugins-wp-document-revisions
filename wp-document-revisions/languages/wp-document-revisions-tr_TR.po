@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: wordpress-document-revisions\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-document-"
 "revisions\n"
-"POT-Creation-Date: 2026-09-24T21:06:46+00:00\n"
+"POT-Creation-Date: 2026-07-27T17:37:46+00:00\n"
 "PO-Revision-Date: 2022-01-24 22:19\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
@@ -28,7 +28,7 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: wp-document-revisions.php
-#: includes/class-wp-document-revisions-front-end.php:565
+#: includes/class-wp-document-revisions-front-end.php:564
 msgid "WP Document Revisions"
 msgstr "WP Belge Revizyonları"
 
@@ -77,156 +77,77 @@ msgstr "Bu belgeyi okumak için yeterli izin yok."
 msgid "No summary has been generated for this revision yet."
 msgstr "Bu revizyon için henüz bir özet oluşturulmadı."
 
-#: includes/class-wp-document-revisions-front-end.php:136
-#: includes/class-wp-document-revisions-front-end.php:819
-#: includes/class-wp-document-revisions-front-end.php:974
+#: includes/class-wp-document-revisions-front-end.php:135
+#: includes/class-wp-document-revisions-front-end.php:795
+#: includes/class-wp-document-revisions-front-end.php:950
 msgid "You are not authorized to read this data"
 msgstr "Bu verilere erişme yetkiniz yok."
 
-#: includes/class-wp-document-revisions-front-end.php:142
-#: includes/class-wp-document-revisions-front-end.php:979
-#: includes/class-wp-document-revisions-front-end.php:1021
+#: includes/class-wp-document-revisions-front-end.php:141
+#: includes/class-wp-document-revisions-front-end.php:955
 msgid "This is not a valid document."
 msgstr "Bu geçerli bir belge değil."
 
-#: includes/class-wp-document-revisions-front-end.php:165
-#: includes/class-wp-document-revisions-front-end.php:348
+#: includes/class-wp-document-revisions-front-end.php:164
+#: includes/class-wp-document-revisions-front-end.php:347
 #: includes/class-wp-document-revisions-recently-revised-widget.php:121
 msgid "(PDF)"
 msgstr "(PDF)"
 
-#: includes/class-wp-document-revisions-front-end.php:190
+#: includes/class-wp-document-revisions-front-end.php:189
 msgid "ago by"
 msgstr "önce tarafından"
 
-#: includes/class-wp-document-revisions-front-end.php:449
+#: includes/class-wp-document-revisions-front-end.php:448
 msgid "Edit"
 msgstr "Düzenlemek"
 
-#: includes/class-wp-document-revisions-front-end.php:467
+#: includes/class-wp-document-revisions-front-end.php:466
 #: includes/class-wp-document-revisions-recently-revised-widget.php:129
 msgid "No thumbnail available."
 msgstr "Küçük resim mevcut değil."
 
-#: includes/class-wp-document-revisions-front-end.php:744
+#: includes/class-wp-document-revisions-front-end.php:720
 msgid "No selection"
 msgstr "Seçim yok"
 
-#: includes/class-wp-document-revisions-front-end.php:858
+#: includes/class-wp-document-revisions-front-end.php:834
 msgid " Taxonomy details in this block have changed."
 msgstr "Bu bloktaki taksonomi ayrıntıları değişti."
 
-#: includes/class-wp-document-revisions-front-end.php:893
-#: includes/class-wp-document-revisions-front-end.php:907
-#: includes/class-wp-document-revisions-front-end.php:921
+#: includes/class-wp-document-revisions-front-end.php:869
+#: includes/class-wp-document-revisions-front-end.php:883
+#: includes/class-wp-document-revisions-front-end.php:897
 msgid " Taxonomy term does not belong to this taxonomy."
 msgstr "Bu taksonomi terimi bu taksonomiye ait değildir."
 
-#: includes/class-wp-document-revisions-front-end.php:1031
-msgid "You are not authorized to read this document."
-msgstr ""
-
-#: includes/class-wp-document-revisions-front-end.php:1036
-msgid "This document has no file to preview."
-msgstr ""
-
-#: includes/class-wp-document-revisions-front-end.php:1047
-msgid "Download document"
-msgstr ""
-
-#: includes/class-wp-document-revisions-front-end.php:1066
-msgid "This file type cannot be previewed inline."
-msgstr ""
-
-#: includes/class-wp-document-revisions-manage-rest.php:121
+#: includes/class-wp-document-revisions-manage-rest.php:112
 msgid "Sorry, you are not allowed to edit documents."
 msgstr "Üzgünüm, belgeleri düzenlemenize izin verilmiyor."
 
-#: includes/class-wp-document-revisions-manage-rest.php:132
+#: includes/class-wp-document-revisions-manage-rest.php:123
 msgid "Sorry, you are not allowed to view revisions."
 msgstr "Üzgünüz, yapılan değişiklikleri görüntülemenize izin verilmiyor."
 
-#: includes/class-wp-document-revisions-manage-rest.php:143
+#: includes/class-wp-document-revisions-manage-rest.php:134
 msgid "Sorry, you are not allowed to read documents."
 msgstr "Üzgünüm, belgeleri okumanıza izin verilmiyor."
 
-#: includes/class-wp-document-revisions-manage-rest.php:158
+#: includes/class-wp-document-revisions-manage-rest.php:149
 msgid "Sorry, invalid REST call"
 msgstr "Üzgünüm, geçersiz REST çağrısı."
 
-#: includes/class-wp-document-revisions-manage-rest.php:165
+#: includes/class-wp-document-revisions-manage-rest.php:156
 msgid "Sorry, you are only allowed to use GET method"
 msgstr "Üzgünüm, yalnızca GET yöntemini kullanmanıza izin veriliyor."
 
-#: includes/class-wp-document-revisions-manage-rest.php:269
+#: includes/class-wp-document-revisions-manage-rest.php:260
 msgid "Sorry, you are not allowed to view this revision."
 msgstr "Üzgünüz, bu revizyonu görüntülemenize izin verilmiyor."
 
-#: includes/class-wp-document-revisions-manage-rest.php:316
+#: includes/class-wp-document-revisions-manage-rest.php:307
 msgid "<!-- protected -->"
 msgstr "<!-- protected -->"
-
-#: includes/class-wp-document-revisions-notifications.php:142
-#: includes/class-wp-document-revisions-notifications.php:196
-msgid "Someone"
-msgstr ""
-
-#. translators: %1$s is the blog name, %2$s is the document title, %3$s is the new workflow state.
-#: includes/class-wp-document-revisions-notifications.php:145
-#, php-format
-msgid "%1$s: %2$s moved to %3$s"
-msgstr ""
-
-#. translators: %1$s is the user who made the change, %2$s is the document title.
-#: includes/class-wp-document-revisions-notifications.php:148
-#, php-format
-msgid "%1$s changed the workflow state of the document %2$s."
-msgstr ""
-
-#. translators: %1$s is the previous workflow state, %2$s is the new workflow state.
-#: includes/class-wp-document-revisions-notifications.php:151
-#, php-format
-msgid "State: %1$s to %2$s"
-msgstr ""
-
-#. translators: %s is the new workflow state.
-#: includes/class-wp-document-revisions-notifications.php:154
-#, php-format
-msgid "State: %s"
-msgstr ""
-
-#. translators: %s is the document URL.
-#: includes/class-wp-document-revisions-notifications.php:157
-#: includes/class-wp-document-revisions-notifications.php:209
-#, php-format
-msgid "View the document: %s"
-msgstr ""
-
-#. translators: %s is the blog name.
-#: includes/class-wp-document-revisions-notifications.php:159
-#: includes/class-wp-document-revisions-notifications.php:211
-#: includes/trait-wp-document-revisions-revisions.php:420
-#, php-format
-msgid "- The %s Team"
-msgstr "- %s Ekibi"
-
-#. translators: %1$s is the blog name, %2$s is the document title.
-#: includes/class-wp-document-revisions-notifications.php:199
-#, php-format
-msgid "%1$s: New revision of %2$s"
-msgstr ""
-
-#. translators: %1$s is the user who saved the revision, %2$s is the document title.
-#: includes/class-wp-document-revisions-notifications.php:202
-#, php-format
-msgid "%1$s saved a new revision of the document %2$s."
-msgstr ""
-
-#. translators: %s is the revision summary.
-#: includes/class-wp-document-revisions-notifications.php:206
-#, php-format
-msgid "Summary: %s"
-msgstr ""
 
 #. translators: %1$s is the time ago in words, %2$s is the author.
 #: includes/class-wp-document-revisions-recently-revised-widget.php:113
@@ -280,8 +201,8 @@ msgstr "PDF Dosyasını Görüntüle:"
 msgid "Open documents in new tab:"
 msgstr "Belgeleri yeni sekmede açın:"
 
-#: includes/class-wp-document-revisions-recently-revised-widget.php:375
-#: includes/class-wp-document-revisions-recently-revised-widget.php:378
+#: includes/class-wp-document-revisions-recently-revised-widget.php:374
+#: includes/class-wp-document-revisions-recently-revised-widget.php:377
 #: includes/trait-wp-document-revisions-admin-settings.php:273
 msgid "Recently Revised Documents"
 msgstr "Son Zamanlarda Revize Edilen Belgeler"
@@ -668,44 +589,40 @@ msgstr ""
 msgid "The fix is therefore to md5-encode the file name."
 msgstr "Dolayısıyla çözüm, dosya adını MD5 kodlamasıyla şifrelemektir."
 
-#: includes/class-wp-document-revisions.php:292
-#: includes/class-wp-document-revisions.php:726
+#: includes/class-wp-document-revisions.php:288
+#: includes/class-wp-document-revisions.php:702
 #: includes/trait-wp-document-revisions-admin-editor.php:764
 msgid "Documents"
 msgstr "Belgeler"
 
-#: includes/class-wp-document-revisions.php:295
-msgid "Read and manage documents stored by WP Document Revisions."
-msgstr ""
-
-#: includes/class-wp-document-revisions.php:317
+#: includes/class-wp-document-revisions.php:310
 msgid "Check Document Access"
 msgstr "Belgeye Erişimi Kontrol Et"
 
-#: includes/class-wp-document-revisions.php:318
+#: includes/class-wp-document-revisions.php:311
 msgid ""
 "Check whether the current user can perform a specific action on a document."
 msgstr ""
 "Mevcut kullanıcının bir belge üzerinde belirli bir işlemi gerçekleştirebilme "
 "yetkisine sahip olup olmadığını kontrol edin."
 
-#: includes/class-wp-document-revisions.php:327
+#: includes/class-wp-document-revisions.php:320
 msgid "The document post ID to check access for."
 msgstr "Erişim kontrolü yapılacak belge gönderi kimliği."
 
-#: includes/class-wp-document-revisions.php:331
+#: includes/class-wp-document-revisions.php:324
 msgid "The action to check: read, edit, delete, or publish."
 msgstr "Kontrol edilecek işlem: okuma, düzenleme, silme veya yayınlama."
 
-#: includes/class-wp-document-revisions.php:342
+#: includes/class-wp-document-revisions.php:335
 msgid "Whether the user can perform the action."
 msgstr "Kullanıcının işlemi gerçekleştirebilme yeteneği."
 
-#: includes/class-wp-document-revisions.php:357
+#: includes/class-wp-document-revisions.php:346
 msgid "Get Document Info"
 msgstr "Belge Bilgilerini Al"
 
-#: includes/class-wp-document-revisions.php:358
+#: includes/class-wp-document-revisions.php:347
 msgid ""
 "Retrieve metadata for a document including file type, revision count, and "
 "lock status."
@@ -713,64 +630,64 @@ msgstr ""
 "Dosya türü, revizyon sayısı ve kilit durumu dahil olmak üzere bir belgeye "
 "ait meta verileri alın."
 
-#: includes/class-wp-document-revisions.php:369
-#: includes/class-wp-document-revisions.php:407
+#: includes/class-wp-document-revisions.php:358
+#: includes/class-wp-document-revisions.php:392
 msgid "The document post ID."
 msgstr "Belge gönderi kimliği."
 
-#: includes/class-wp-document-revisions.php:395
+#: includes/class-wp-document-revisions.php:380
 msgid "Get Document Revisions"
 msgstr "Belge Revizyonlarını Alın"
 
-#: includes/class-wp-document-revisions.php:396
+#: includes/class-wp-document-revisions.php:381
 msgid "Retrieve the revision history of a document."
 msgstr "Bir belgenin revizyon geçmişini alın."
 
-#: includes/class-wp-document-revisions.php:440
+#: includes/class-wp-document-revisions.php:421
 msgid "Override Document Lock"
 msgstr "Belge Kilidini Geçersiz Kıl"
 
-#: includes/class-wp-document-revisions.php:441
+#: includes/class-wp-document-revisions.php:422
 msgid "Override another user's lock on a document to allow editing."
 msgstr ""
 "Başka bir kullanıcının belge üzerindeki kilidini geçersiz kılarak "
 "düzenlemeye izin verin."
 
-#: includes/class-wp-document-revisions.php:452
+#: includes/class-wp-document-revisions.php:433
 msgid "The document post ID to unlock."
 msgstr "Belgeyi açmak için gönderi kimliği."
 
-#: includes/class-wp-document-revisions.php:523
-#: includes/class-wp-document-revisions.php:563
-#: includes/class-wp-document-revisions.php:616
+#: includes/class-wp-document-revisions.php:499
+#: includes/class-wp-document-revisions.php:539
+#: includes/class-wp-document-revisions.php:592
 msgid "Document not found."
 msgstr "Belge bulunamadı."
 
-#: includes/class-wp-document-revisions.php:531
+#: includes/class-wp-document-revisions.php:507
 msgid "You do not have permission to view this document."
 msgstr "Bu belgeyi görüntüleme izniniz yok."
 
-#: includes/class-wp-document-revisions.php:571
+#: includes/class-wp-document-revisions.php:547
 msgid "You do not have permission to view revisions for this document."
 msgstr "Bu belgenin revizyonlarını görüntüleme izniniz yok."
 
-#: includes/class-wp-document-revisions.php:579
+#: includes/class-wp-document-revisions.php:555
 msgid "You do not have permission to view document revisions."
 msgstr "Belge revizyonlarını görüntüleme izniniz yok."
 
-#: includes/class-wp-document-revisions.php:593
+#: includes/class-wp-document-revisions.php:569
 msgid "Unknown"
 msgstr "Bilinmiyor"
 
-#: includes/class-wp-document-revisions.php:634
+#: includes/class-wp-document-revisions.php:610
 msgid "You do not have permission to override the lock on this document."
 msgstr "Bu belgenin kilidini kaldırma izniniz yok."
 
-#: includes/class-wp-document-revisions.php:662
+#: includes/class-wp-document-revisions.php:638
 msgid "You have activated the plugin WP Document Revisions"
 msgstr "WP Document Revisions eklentisini etkinleştirdiniz."
 
-#: includes/class-wp-document-revisions.php:664
+#: includes/class-wp-document-revisions.php:640
 msgid ""
 "You do not have the edit_documents capability possibly due to multiple "
 "conflicting roles or use of a custom role!"
@@ -778,7 +695,7 @@ msgstr ""
 "Birden fazla çakışan rol veya özel bir rol kullanımı nedeniyle "
 "edit_documents özelliğine sahip olmayabilirsiniz!"
 
-#: includes/class-wp-document-revisions.php:666
+#: includes/class-wp-document-revisions.php:642
 msgid ""
 "The Documents menu may not be displayed completely with the \"All "
 "Documents\" and \"Add Document\" options missing"
@@ -786,7 +703,7 @@ msgstr ""
 "Belgeler menüsü tam olarak görüntülenmeyebilir ve \"Tüm Belgeler\" ile "
 "\"Belge Ekle\" seçenekleri eksik olabilir."
 
-#: includes/class-wp-document-revisions.php:668
+#: includes/class-wp-document-revisions.php:644
 msgid ""
 "You should first check whether you have multiple roles and that each has "
 "edit_documents capability."
@@ -794,148 +711,148 @@ msgstr ""
 "Öncelikle birden fazla rolünüz olup olmadığını ve her birinin edit_documents "
 "yeteneğine sahip olup olmadığını kontrol etmelisiniz."
 
-#: includes/class-wp-document-revisions.php:714
+#: includes/class-wp-document-revisions.php:690
 msgctxt "post type general name"
 msgid "Documents"
 msgstr "Belgeler"
 
-#: includes/class-wp-document-revisions.php:715
+#: includes/class-wp-document-revisions.php:691
 msgctxt "post type singular name"
 msgid "Document"
 msgstr "Belge"
 
-#: includes/class-wp-document-revisions.php:716
+#: includes/class-wp-document-revisions.php:692
 msgctxt "document"
 msgid "Add Document"
 msgstr "Belge Ekle"
 
-#: includes/class-wp-document-revisions.php:717
+#: includes/class-wp-document-revisions.php:693
 msgid "Add New Document"
 msgstr "Yeni Belge Ekle"
 
-#: includes/class-wp-document-revisions.php:718
+#: includes/class-wp-document-revisions.php:694
 msgid "Edit Document"
 msgstr "Belgeyi Düzenle"
 
-#: includes/class-wp-document-revisions.php:719
+#: includes/class-wp-document-revisions.php:695
 msgid "New Document"
 msgstr "Yeni Belge"
 
-#: includes/class-wp-document-revisions.php:720
+#: includes/class-wp-document-revisions.php:696
 msgid "View Document"
 msgstr "Belgeyi Görüntüle"
 
-#: includes/class-wp-document-revisions.php:721
+#: includes/class-wp-document-revisions.php:697
 msgid "View Documents"
 msgstr "Belgeleri Görüntüle"
 
-#: includes/class-wp-document-revisions.php:722
+#: includes/class-wp-document-revisions.php:698
 msgid "Search Documents"
 msgstr "Arama Belgeleri"
 
-#: includes/class-wp-document-revisions.php:723
+#: includes/class-wp-document-revisions.php:699
 msgid "No documents found"
 msgstr "Hiçbir belge bulunamadı."
 
-#: includes/class-wp-document-revisions.php:724
+#: includes/class-wp-document-revisions.php:700
 msgid "No documents found in Trash"
 msgstr "Çöp kutusunda hiçbir belge bulunamadı."
 
-#: includes/class-wp-document-revisions.php:727
+#: includes/class-wp-document-revisions.php:703
 msgid "All Documents"
 msgstr "Tüm Belgeler"
 
-#: includes/class-wp-document-revisions.php:728
+#: includes/class-wp-document-revisions.php:704
 msgid "Document Image"
 msgstr "Belge Görüntüsü"
 
-#: includes/class-wp-document-revisions.php:729
+#: includes/class-wp-document-revisions.php:705
 msgid "Set Document Image"
 msgstr "Belge Görüntüsünü Ayarla"
 
-#: includes/class-wp-document-revisions.php:730
+#: includes/class-wp-document-revisions.php:706
 msgid "Remove Document Image"
 msgstr "Belge Görüntüsünü Kaldır"
 
-#: includes/class-wp-document-revisions.php:731
+#: includes/class-wp-document-revisions.php:707
 msgid "Use as Document Image"
 msgstr "Belge Resmi Olarak Kullan"
 
-#: includes/class-wp-document-revisions.php:836
+#: includes/class-wp-document-revisions.php:812
 msgctxt "taxonomy general name"
 msgid "Workflow States"
 msgstr "İş Akışı Durumları"
 
-#: includes/class-wp-document-revisions.php:837
+#: includes/class-wp-document-revisions.php:813
 msgctxt "taxonomy singular name"
 msgid "Workflow State"
 msgstr "İş Akışı Durumu"
 
-#: includes/class-wp-document-revisions.php:838
+#: includes/class-wp-document-revisions.php:814
 msgid "Search Workflow States"
 msgstr "Arama İş Akışı Durumları"
 
-#: includes/class-wp-document-revisions.php:839
+#: includes/class-wp-document-revisions.php:815
 msgid "All Workflow States"
 msgstr "Tüm İş Akışı Durumları"
 
-#: includes/class-wp-document-revisions.php:840
+#: includes/class-wp-document-revisions.php:816
 msgid "Parent Workflow State"
 msgstr "Üst İş Akışı Durumu"
 
-#: includes/class-wp-document-revisions.php:841
+#: includes/class-wp-document-revisions.php:817
 msgid "Parent Workflow State:"
 msgstr "Ana İş Akışı Durumu:"
 
-#: includes/class-wp-document-revisions.php:842
+#: includes/class-wp-document-revisions.php:818
 msgid "Edit Workflow State"
 msgstr "İş Akışı Durumunu Düzenle"
 
-#: includes/class-wp-document-revisions.php:843
+#: includes/class-wp-document-revisions.php:819
 msgid "Update Workflow State"
 msgstr "İş Akışı Durumunu Güncelle"
 
-#: includes/class-wp-document-revisions.php:844
+#: includes/class-wp-document-revisions.php:820
 msgid "Add New Workflow State"
 msgstr "Yeni İş Akışı Durumu Ekle"
 
-#: includes/class-wp-document-revisions.php:845
+#: includes/class-wp-document-revisions.php:821
 msgid "New Workflow State Name"
 msgstr "Yeni İş Akışı Durum Adı"
 
-#: includes/class-wp-document-revisions.php:846
+#: includes/class-wp-document-revisions.php:822
 msgid "Workflow States"
 msgstr "İş Akışı Durumları"
 
-#: includes/class-wp-document-revisions.php:904
+#: includes/class-wp-document-revisions.php:880
 msgid "In Progress"
 msgstr "Devam etmekte"
 
-#: includes/class-wp-document-revisions.php:904
+#: includes/class-wp-document-revisions.php:880
 msgid "Document is in the process of being written"
 msgstr "Belge yazım aşamasındadır."
 
-#: includes/class-wp-document-revisions.php:905
+#: includes/class-wp-document-revisions.php:881
 msgid "Initial Draft"
 msgstr "İlk Taslak"
 
-#: includes/class-wp-document-revisions.php:905
+#: includes/class-wp-document-revisions.php:881
 msgid "Document is being edited and refined"
 msgstr "Belge düzenleniyor ve iyileştiriliyor."
 
-#: includes/class-wp-document-revisions.php:906
+#: includes/class-wp-document-revisions.php:882
 msgid "Under Review"
 msgstr "İnceleme Aşamasında"
 
-#: includes/class-wp-document-revisions.php:906
+#: includes/class-wp-document-revisions.php:882
 msgid "Document is pending final review"
 msgstr "Belge son incelemeyi bekliyor."
 
-#: includes/class-wp-document-revisions.php:907
+#: includes/class-wp-document-revisions.php:883
 msgid "Final"
 msgstr "Son"
 
-#: includes/class-wp-document-revisions.php:907
+#: includes/class-wp-document-revisions.php:883
 msgid "Document is in its final form"
 msgstr "Belge son halindedir."
 
@@ -1008,18 +925,18 @@ msgstr ""
 
 #: includes/trait-wp-document-revisions-admin-editor.php:112
 #: includes/trait-wp-document-revisions-admin-editor.php:979
-#: build/editor-document-upload/index.js:405
+#: src/editor-document-upload/index.js:405
 msgid "Revision Summary"
 msgstr "Revizyon Özeti"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:113
-#: build/editor-document-upload/index.js:320
+#: src/editor-document-upload/index.js:320
 msgid "Document"
 msgstr "Belge"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:117
 #: includes/trait-wp-document-revisions-admin-editor.php:755
-#: build/editor-document-upload/index.js:509
+#: src/editor-document-upload/index.js:509
 msgid "Revision Log"
 msgstr "Revizyon Günlüğü"
 
@@ -1030,7 +947,7 @@ msgstr "İş Akışı Durumu"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:129
 #: includes/trait-wp-document-revisions-admin-editor.php:1186
-#: includes/trait-wp-document-revisions-admin-list.php:266
+#: includes/trait-wp-document-revisions-admin-list.php:122
 msgid "Owner"
 msgstr "Mal sahibi"
 
@@ -1044,14 +961,11 @@ msgstr "%s diğer kullanıcıların değişiklik yapmasını engelledi."
 msgid ""
 "<br />If you believe this is in error you can <a href=\"#\" "
 "id=\"override_link\">override the lock</a>, but their changes will be lost."
-msgstr ""
-"<br />Eğer bunun bir hata olduğunu düşünüyorsanız <a href=\"#\" "
-"id=\"override_link\">kilidi geçersiz kılabilirsiniz</a>, ancak yaptıkları "
-"değişiklikler kaybolacaktır."
+msgstr "<br />Eğer bunun bir hata olduğunu düşünüyorsanız <a href=\"#\" id=\"override_link\">kilidi geçersiz kılabilirsiniz</a>, ancak yaptıkları değişiklikler kaybolacaktır."
 
 #: includes/trait-wp-document-revisions-admin-editor.php:196
-#: build/editor-document-upload/index.js:257
-#: build/editor-document-upload/index.js:396
+#: src/editor-document-upload/index.js:257
+#: src/editor-document-upload/index.js:396
 msgid "Upload New Version"
 msgstr "Yeni Sürümü Yükle"
 
@@ -1060,7 +974,7 @@ msgid "Latest Version of the Document"
 msgstr "Belgenin En Son Sürümü"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:204
-#: build/editor-document-upload/index.js:385
+#: src/editor-document-upload/index.js:385
 msgid "Download"
 msgstr "İndirmek"
 
@@ -1230,17 +1144,17 @@ msgstr ""
 "bu revizyonla birlikte saklanabilen isteğe bağlı notlardır."
 
 #: includes/trait-wp-document-revisions-admin-editor.php:1002
-#: build/editor-document-upload/index.js:536
+#: src/editor-document-upload/index.js:536
 msgid "Modified"
 msgstr "Değiştirildi"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:1003
-#: build/editor-document-upload/index.js:545
+#: src/editor-document-upload/index.js:545
 msgid "User"
 msgstr "Kullanıcı"
 
 #: includes/trait-wp-document-revisions-admin-editor.php:1004
-#: build/editor-document-upload/index.js:554
+#: src/editor-document-upload/index.js:554
 msgid "Summary"
 msgstr "Özet"
 
@@ -1288,42 +1202,7 @@ msgstr "Tüm durumlar"
 msgid "All owners"
 msgstr "Tüm sahipler"
 
-#: includes/trait-wp-document-revisions-admin-list.php:102
-msgid "Add your first document"
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-list.php:107
-msgid "read the documentation"
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-list.php:112
-msgid "Welcome to WP Document Revisions!"
-msgstr ""
-
-#. translators: 1: link to add a new document, 2: link to the documentation
-#: includes/trait-wp-document-revisions-admin-list.php:116
-#, php-format
-msgid ""
-"You have not added any documents yet. %1$s to start tracking revisions and "
-"workflow, or %2$s."
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-list.php:171
-msgid ""
-"You have been managing your documents with WP Document Revisions — thank "
-"you! If it has been useful, would you consider leaving a quick review? It "
-"genuinely helps other teams discover the plugin."
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-list.php:173
-msgid "Leave a review"
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-list.php:174
-msgid "No thanks"
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-list.php:284
+#: includes/trait-wp-document-revisions-admin-list.php:140
 msgid "Currently Editing"
 msgstr "Şu anda düzenleniyor"
 
@@ -1375,41 +1254,15 @@ msgstr "%1$s önce %2$s [%3$s] tarafından"
 msgid "Document Date in Permalink"
 msgstr "Belge Tarihi (Kalıcı Bağlantıda)"
 
-#: includes/trait-wp-document-revisions-admin-settings.php:390
-msgid "Document Notifications"
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-settings.php:435
-msgid "Email notifications when documents change."
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-settings.php:437
-msgid "Notify these email addresses (one per line or comma-separated):"
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-settings.php:439
-msgid ""
-"The document's author is always notified in addition to this list. Whoever "
-"made the change is never notified of their own change."
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-settings.php:444
-msgid "Notify when a document changes workflow state."
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-settings.php:447
-msgid "Notify when a new revision of a document is saved."
-msgstr ""
-
-#: includes/trait-wp-document-revisions-admin-settings.php:481
+#: includes/trait-wp-document-revisions-admin-settings.php:394
 msgid "Document directory does not appear to exist. Please review value."
 msgstr "Belge dizini mevcut görünmüyor. Lütfen değeri gözden geçirin."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:483
+#: includes/trait-wp-document-revisions-admin-settings.php:396
 msgid "Document directory is not writable. Please check permissions."
 msgstr "Belge dizini yazılabilir değil. Lütfen izinleri kontrol edin."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:487
+#: includes/trait-wp-document-revisions-admin-settings.php:400
 msgid ""
 "Document upload directory changed, but existing uploads may need to be moved "
 "to the new folder to ensure they remain accessible."
@@ -1417,22 +1270,22 @@ msgstr ""
 "Belge yükleme dizini değişti, ancak erişilebilirliğin devam etmesi için "
 "mevcut yüklemelerin yeni klasöre taşınması gerekebilir."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:516
+#: includes/trait-wp-document-revisions-admin-settings.php:429
 msgid ""
 "Document slug changed, but some previously published URLs may now be broken."
 msgstr ""
 "Belge URL'si değişti, bu nedenle daha önce yayınlanan bazı URL'ler artık "
 "çalışmayabilir."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:534
-#: includes/trait-wp-document-revisions-admin-settings.php:565
-#: includes/trait-wp-document-revisions-admin-settings.php:593
+#: includes/trait-wp-document-revisions-admin-settings.php:447
+#: includes/trait-wp-document-revisions-admin-settings.php:478
+#: includes/trait-wp-document-revisions-admin-settings.php:506
 #: includes/trait-wp-document-revisions-revisions.php:196
 #: includes/trait-wp-document-revisions-rewrites.php:341
 msgid "Not authorized"
 msgstr "Yetkilendirilmemiş"
 
-#: includes/trait-wp-document-revisions-admin-settings.php:649
+#: includes/trait-wp-document-revisions-admin-settings.php:562
 msgid ""
 "Directory in which to store uploaded documents. The default is in your "
 "<code>wp-content/uploads</code> folder (or another default uploads folder "
@@ -1445,7 +1298,7 @@ msgstr ""
 "<code>public_html</code> klasörünün dışındaki bir klasöre taşınabilir."
 
 #. translators: %site_id% is not interpolated and should not be translated.
-#: includes/trait-wp-document-revisions-admin-settings.php:657
+#: includes/trait-wp-document-revisions-admin-settings.php:570
 #, php-format
 msgid ""
 "You may optionally include the string <code>%site_id%</code> within the path "
@@ -1454,11 +1307,11 @@ msgstr ""
 "İsteğe bağlı olarak, dosyaları siteye göre ayırmak için dosya yoluna "
 "<code>%site_id%</code> dizesini ekleyebilirsiniz."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:672
+#: includes/trait-wp-document-revisions-admin-settings.php:585
 msgid "example-document-title"
 msgstr "örnek-belge-başlığı"
 
-#: includes/trait-wp-document-revisions-admin-settings.php:676
+#: includes/trait-wp-document-revisions-admin-settings.php:589
 msgid ""
 "\"Slug\" with which to prefix all URLs for documents (and the document "
 "archive). Default is <code>documents</code>."
@@ -1466,20 +1319,20 @@ msgstr ""
 "Belgelerin (ve belge arşivinin) tüm URL'lerine önek olarak eklenecek "
 "\"Slug\". Varsayılan değer <code>documents</code>'tur."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:690
+#: includes/trait-wp-document-revisions-admin-settings.php:603
 msgid "Remove the year and month element /yyyy/mm from the document permalink."
 msgstr "Belge kalıcı bağlantısından yıl ve ay öğesini /yyyy/mm kaldırın."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:692
+#: includes/trait-wp-document-revisions-admin-settings.php:605
 msgid "By default the document permalink will contain the post year and month."
 msgstr ""
 "Varsayılan olarak, belge kalıcı bağlantısı yayın yılını ve ayını içerecektir."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:693
+#: includes/trait-wp-document-revisions-admin-settings.php:606
 msgid "The delivered rewrite rules support both formats."
 msgstr "Sunulan yeniden yazma kuralları her iki formatı da desteklemektedir."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:746
+#: includes/trait-wp-document-revisions-admin-settings.php:659
 msgid ""
 "Maximum number of document revisions set to zero using a filter. Check your "
 "configuration."
@@ -1487,7 +1340,7 @@ msgstr ""
 "Filtre kullanılarak belge revizyonlarının maksimum sayısı sıfıra ayarlandı. "
 "Yapılandırmanızı kontrol edin."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:759
+#: includes/trait-wp-document-revisions-admin-settings.php:672
 msgid ""
 "More revisions exist for this document than is permitted. Making changes "
 "will delete data."
@@ -1495,7 +1348,7 @@ msgstr ""
 "Bu belgede izin verilenden daha fazla revizyon bulunmaktadır. Değişiklik "
 "yapılması verilerin silinmesine neden olacaktır."
 
-#: includes/trait-wp-document-revisions-admin-settings.php:768
+#: includes/trait-wp-document-revisions-admin-settings.php:681
 msgid ""
 "Maximum number of revisions reached for this document. Making changes will "
 "delete data."
@@ -1531,7 +1384,7 @@ msgid ""
 "Sorry, Output has already been written, so your file cannot be downloaded."
 msgstr "Üzgünüz, çıktı zaten yazıldı, bu nedenle dosyanız indirilemiyor."
 
-#: includes/trait-wp-document-revisions-file-handler.php:1167
+#: includes/trait-wp-document-revisions-file-handler.php:1165
 msgid "Sorry, this is a private feed."
 msgstr "Üzgünüm, bu özel bir yayın."
 
@@ -1556,7 +1409,7 @@ msgid "Published"
 msgstr "Yayınlandı"
 
 #: includes/trait-wp-document-revisions-query.php:590
-#: build/blocks/documents-widget/index.js:67
+#: src/blocks/documents-widget/edit.js:67
 msgid "Draft"
 msgstr "Taslak"
 
@@ -1565,7 +1418,7 @@ msgid "Scheduled"
 msgstr "Planlanmış"
 
 #: includes/trait-wp-document-revisions-query.php:592
-#: build/blocks/documents-widget/index.js:58
+#: src/blocks/documents-widget/edit.js:58
 msgid "Private"
 msgstr "Özel"
 
@@ -1603,42 +1456,48 @@ msgstr "%1$s (%2$s), %3$s (%4$s) belgesi üzerindeki kilidinizi geçersiz kıld�
 msgid "Any changes you have made will be lost."
 msgstr "Yaptığınız tüm değişiklikler kaybolacaktır."
 
+#. translators: %s is the blog name.
+#: includes/trait-wp-document-revisions-revisions.php:420
+#, php-format
+msgid "- The %s Team"
+msgstr "- %s Ekibi"
+
 #: includes/trait-wp-document-revisions-rewrites.php:47
 #: includes/trait-wp-document-revisions-rewrites.php:62
 msgid "revision"
 msgstr "revizyon"
 
-#: build/admin/wp-document-revisions-ai-prefill.js:61
+#: src/admin/wp-document-revisions-ai-prefill.js:61
 msgid "✨ AI suggestion — edit before saving."
 msgstr "✨ Yapay zeka önerisi — kaydetmeden önce düzenleyin."
 
-#: build/admin/wp-document-revisions-ai-prefill.js:70
+#: src/admin/wp-document-revisions-ai-prefill.js:70
 msgid "✨ AI summary will be available shortly — refresh this page to see it."
 msgstr ""
 "✨ Yapay zeka özeti kısa süre içinde yayınlanacak — görmek için bu sayfayı "
 "yenileyin."
 
-#: build/admin/wp-document-revisions-ai-prefill.js:100
+#: src/admin/wp-document-revisions-ai-prefill.js:100
 msgid "Dismiss"
 msgstr "Azletmek"
 
-#: build/admin/wp-document-revisions-ai-prefill.js:123
+#: src/admin/wp-document-revisions-ai-prefill.js:123
 msgid "Reviewed ✓"
 msgstr "İncelendi ✓"
 
-#: build/admin/wp-document-revisions-ai-prefill.js:142
+#: src/admin/wp-document-revisions-ai-prefill.js:142
 msgid "Mark reviewed"
 msgstr "Mark inceledi"
 
-#: build/admin/wp-document-revisions-validate.js:24
+#: src/admin/wp-document-revisions-validate.js:24
 msgid "Processed successfully."
 msgstr "İşlem başarıyla tamamlandı."
 
-#: build/admin/wp-document-revisions.js:127
+#: src/admin/wp-document-revisions.js:127
 msgid "Upload failed."
 msgstr "Yükleme başarısız oldu."
 
-#: build/admin/wp-document-revisions.js:156
+#: src/admin/wp-document-revisions.js:156
 msgid ""
 "File uploaded successfully. Add a revision summary below (optional) and "
 "press <strong>Update</strong> to save your changes."
@@ -1647,11 +1506,11 @@ msgstr ""
 "bağlı) ve değişikliklerinizi kaydetmek için <strong>Güncelle</strong> "
 "düğmesine basın."
 
-#: build/admin/wp-document-revisions.js:173
+#: src/admin/wp-document-revisions.js:173
 msgid "New version uploaded. Press Update to save."
 msgstr "Yeni sürüm yüklendi. Kaydetmek için Güncelle'ye basın."
 
-#: build/admin/wp-document-revisions.js:190
+#: src/admin/wp-document-revisions.js:190
 msgid ""
 "Are you sure you want to restore this revision? If you do, no history will "
 "be lost. This revision will be copied and become the most recent revision."
@@ -1660,17 +1519,17 @@ msgstr ""
 "hiçbir geçmiş verisi kaybolmayacaktır. Bu sürüm kopyalanacak ve en son sürüm "
 "haline gelecektir."
 
-#: build/admin/wp-document-revisions.js:240
-#: build/admin/wp-document-revisions.js:249
+#: src/admin/wp-document-revisions.js:240
+#: src/admin/wp-document-revisions.js:249
 msgid "An error has occurred, please try reloading the page."
 msgstr "Bir hata oluştu, lütfen sayfayı yeniden yüklemeyi deneyin."
 
-#: build/admin/wp-document-revisions.js:270
+#: src/admin/wp-document-revisions.js:270
 msgid "Lost Document Lock"
 msgstr "Kayıp Belge Kilidi"
 
 #. translators: %s is the title of the document.
-#: build/admin/wp-document-revisions.js:285
+#: src/admin/wp-document-revisions.js:285
 msgid ""
 "Your lock on the document %s has been overridden. Any changes will be lost."
 msgstr ""
@@ -1678,110 +1537,83 @@ msgstr ""
 "kaybolacak."
 
 #. translators: %d is the number of minutes.
-#: build/admin/wp-document-revisions.js:311
+#: src/admin/wp-document-revisions.js:311
 msgid "%d mins"
 msgstr "%d dakika"
 
 #. translators: %d is the number of hours (singular).
-#: build/admin/wp-document-revisions.js:316
+#: src/admin/wp-document-revisions.js:316
 msgid "%d hour"
 msgstr "%d saat"
 
 #. translators: %d is the number of hours (plural).
-#: build/admin/wp-document-revisions.js:319
+#: src/admin/wp-document-revisions.js:319
 msgid "%d hours"
 msgstr "%d saat"
 
 #. translators: %d is the number of days (singular).
-#: build/admin/wp-document-revisions.js:324
+#: src/admin/wp-document-revisions.js:324
 msgid "%d day"
 msgstr "%d gün"
 
 #. translators: %d is the number of days (plural).
-#: build/admin/wp-document-revisions.js:327
+#: src/admin/wp-document-revisions.js:327
 msgid "%d days"
 msgstr "%d gün"
 
-#: build/admin/wp-document-revisions.js:410
-#: build/admin/wp-document-revisions.js:417
-#: build/editor-document-upload/index.js:258
-#: build/editor-document-upload/index.js:397
+#: src/admin/wp-document-revisions.js:410
+#: src/admin/wp-document-revisions.js:417
+#: src/editor-document-upload/index.js:258
+#: src/editor-document-upload/index.js:397
 msgid "Upload Document"
 msgstr "Belge Yükle"
 
-#: build/admin/wp-document-revisions.js:413
+#: src/admin/wp-document-revisions.js:413
 msgid "Select Document"
 msgstr "Belge Seç"
 
-#: build/blocks/document-preview/index.js:17
-msgid "Preview Settings"
-msgstr ""
-
-#: build/blocks/document-preview/index.js:23
-#: build/blocks/revisions-shortcode/index.js:23
-msgid "Document Id"
-msgstr "Belge Kimliği"
-
-#: build/blocks/document-preview/index.js:30
-msgid "Preview Height (px)"
-msgstr ""
-
-#: build/blocks/document-preview/index.js:41
-msgid "Show Document Title?"
-msgstr ""
-
-#: build/blocks/document-preview/index.js:49
-msgid "Show Download Link?"
-msgstr ""
-
-#: build/blocks/document-preview/index.js:50
-msgid ""
-"Displays a download link below the preview, and is shown as a fallback when "
-"the file type cannot be previewed inline."
-msgstr ""
-
-#: build/blocks/documents-shortcode/index.js:76
+#: src/blocks/documents-shortcode/edit.js:76
 msgid "There are no taxonomies defined."
 msgstr "Tanımlanmış herhangi bir sınıflandırma bulunmamaktadır."
 
-#: build/blocks/documents-shortcode/index.js:88
+#: src/blocks/documents-shortcode/edit.js:88
 msgid "Taxonomy:"
 msgstr "Taksonomi:"
 
-#: build/blocks/documents-shortcode/index.js:116
+#: src/blocks/documents-shortcode/edit.js:116
 msgid "Block Heading"
 msgstr "Blok Başlığı"
 
-#: build/blocks/documents-shortcode/index.js:123
+#: src/blocks/documents-shortcode/edit.js:123
 msgid "Display Settings"
 msgstr "Ekran Ayarları"
 
-#: build/blocks/documents-shortcode/index.js:128
+#: src/blocks/documents-shortcode/edit.js:128
 msgid "Number of documents to display"
 msgstr "Görüntülenecek belge sayısı"
 
-#: build/blocks/documents-shortcode/index.js:140
+#: src/blocks/documents-shortcode/edit.js:140
 msgid "List ordering Field"
 msgstr "Liste sıralama alanı"
 
-#: build/blocks/documents-shortcode/index.js:141
+#: src/blocks/documents-shortcode/edit.js:141
 msgid "Example fields are post_title, post_date and post_modified."
 msgstr ""
 "Örnek alanlar arasında post_title, post_date ve post_modified yer almaktadır."
 
-#: build/blocks/documents-shortcode/index.js:154
+#: src/blocks/documents-shortcode/edit.js:154
 msgid "Ascending"
 msgstr "Yükselen"
 
-#: build/blocks/documents-shortcode/index.js:158
+#: src/blocks/documents-shortcode/edit.js:158
 msgid "Descending"
 msgstr "İnen"
 
-#: build/blocks/documents-shortcode/index.js:167
+#: src/blocks/documents-shortcode/edit.js:167
 msgid "Show Edit link"
 msgstr "Düzenle bağlantısını göster"
 
-#: build/blocks/documents-shortcode/index.js:168
+#: src/blocks/documents-shortcode/edit.js:168
 msgid ""
 "Show Edit link allows the list to have a link to the Edit function. A choice "
 "made here will over-ride the system-configured settings. Links will only "
@@ -1792,42 +1624,42 @@ msgstr ""
 "tarafından yapılandırılmış ayarları geçersiz kılacaktır. Bağlantılar "
 "yalnızca kullanıcının belgeyi düzenleyebilmesi durumunda görünecektir."
 
-#: build/blocks/documents-shortcode/index.js:175
+#: src/blocks/documents-shortcode/edit.js:175
 msgid "Default"
 msgstr "Varsayılan"
 
-#: build/blocks/documents-shortcode/index.js:179
+#: src/blocks/documents-shortcode/edit.js:179
 msgid "No Edit link"
 msgstr "Düzenleme bağlantısı yok"
 
-#: build/blocks/documents-shortcode/index.js:183
+#: src/blocks/documents-shortcode/edit.js:183
 msgid "Edit link"
 msgstr "Bağlantıyı düzenle"
 
-#: build/blocks/documents-shortcode/index.js:194
-#: build/blocks/documents-widget/index.js:78
+#: src/blocks/documents-shortcode/edit.js:194
+#: src/blocks/documents-widget/edit.js:78
 msgid "Show featured image?"
 msgstr "Öne çıkan görseli gösterilsin mi?"
 
-#: build/blocks/documents-shortcode/index.js:202
-#: build/blocks/documents-widget/index.js:90
+#: src/blocks/documents-shortcode/edit.js:202
+#: src/blocks/documents-widget/edit.js:90
 msgid "Show document description?"
 msgstr "Belge açıklamasını gösterilsin mi?"
 
-#: build/blocks/documents-shortcode/index.js:210
-#: build/blocks/documents-widget/index.js:106
-#: build/blocks/revisions-shortcode/index.js:50
+#: src/blocks/documents-shortcode/edit.js:210
+#: src/blocks/documents-widget/edit.js:106
+#: src/blocks/revisions-shortcode/edit.js:50
 msgid "Show PDF File indication?"
 msgstr "PDF dosyasını gösterilsin mi?"
 
-#: build/blocks/documents-shortcode/index.js:218
-#: build/blocks/documents-widget/index.js:114
+#: src/blocks/documents-shortcode/edit.js:218
+#: src/blocks/documents-widget/edit.js:114
 msgid "Open documents in new tab?"
 msgstr "Belgeleri yeni sekmede aç?"
 
-#: build/blocks/documents-shortcode/index.js:219
-#: build/blocks/documents-widget/index.js:115
-#: build/blocks/revisions-shortcode/index.js:59
+#: src/blocks/documents-shortcode/edit.js:219
+#: src/blocks/documents-widget/edit.js:115
+#: src/blocks/revisions-shortcode/edit.js:59
 msgid ""
 "Setting this on will open the document in a new tab. This should be set on "
 "whilst editing the page using this block as clicking on a link whilst "
@@ -1838,15 +1670,15 @@ msgstr ""
 "düzenleme sırasında bir bağlantıya tıklamak mevcut sayfanın kapatılmasına "
 "neden olur."
 
-#: build/blocks/documents-shortcode/index.js:229
+#: src/blocks/documents-shortcode/edit.js:229
 msgid "Free Form Settings"
 msgstr "Serbest Biçimli Ayarlar"
 
-#: build/blocks/documents-shortcode/index.js:236
+#: src/blocks/documents-shortcode/edit.js:236
 msgid "Free-form parameters"
 msgstr "Serbest biçimli parametreler"
 
-#: build/blocks/documents-shortcode/index.js:237
+#: src/blocks/documents-shortcode/edit.js:237
 msgid ""
 "The query parameters can be very extensive. enter any other parameters "
 "required here."
@@ -1854,27 +1686,27 @@ msgstr ""
 "Sorgu parametreleri oldukça kapsamlı olabilir. Gerekli diğer parametreleri "
 "buraya girin."
 
-#: build/blocks/documents-widget/index.js:23
+#: src/blocks/documents-widget/edit.js:23
 msgid "Latest Documents Settings"
 msgstr "Son Belgeler Ayarları"
 
-#: build/blocks/documents-widget/index.js:29
+#: src/blocks/documents-widget/edit.js:29
 msgid "Latest Documents List Heading"
 msgstr "Son Belgeler Listesi Başlığı"
 
-#: build/blocks/documents-widget/index.js:36
+#: src/blocks/documents-widget/edit.js:36
 msgid "Documents to Display"
 msgstr "Görüntülenecek Belgeler"
 
-#: build/blocks/documents-widget/index.js:46
+#: src/blocks/documents-widget/edit.js:46
 msgid "Document Statuses to Display"
 msgstr "Görüntülenecek Belge Durumları"
 
-#: build/blocks/documents-widget/index.js:49
+#: src/blocks/documents-widget/edit.js:49
 msgid "Publish"
 msgstr "Yayınla"
 
-#: build/blocks/documents-widget/index.js:79
+#: src/blocks/documents-widget/edit.js:79
 msgid ""
 "Under certain conditons WordPress can generate an image for Page 1 of PDF "
 "documents. If created this will be used as the Featured Image."
@@ -1883,105 +1715,99 @@ msgstr ""
 "resim oluşturabilir. Oluşturulursa, bu resim öne çıkan görsel olarak "
 "kullanılacaktır."
 
-#: build/blocks/documents-widget/index.js:98
+#: src/blocks/documents-widget/edit.js:98
 msgid "Show author name?"
 msgstr "Yazarın adını gösterilsin mi?"
 
-#: build/blocks/revisions-shortcode/index.js:17
+#: src/blocks/revisions-shortcode/edit.js:17
 msgid "Selection Criteria"
 msgstr "Seçim Kriterleri"
 
-#: build/blocks/revisions-shortcode/index.js:30
+#: src/blocks/revisions-shortcode/edit.js:23
+msgid "Document Id"
+msgstr "Belge Kimliği"
+
+#: src/blocks/revisions-shortcode/edit.js:30
 msgid "Revisions to Display"
 msgstr "Ekranda Yapılan Değişiklikler"
 
-#: build/blocks/revisions-shortcode/index.js:42
+#: src/blocks/revisions-shortcode/edit.js:42
 msgid "Show Revision Summaries?"
 msgstr "Revizyon özetlerini gösterilsin mi?"
 
-#: build/blocks/revisions-shortcode/index.js:58
+#: src/blocks/revisions-shortcode/edit.js:58
 msgid "Open in New Tab?"
 msgstr "Yeni sekmede aç?"
 
-#: build/editor-document-upload/index.js:50
+#: src/editor-document-upload/index.js:50
 msgid "just now"
 msgstr "Şu anda"
 
-#: build/editor-document-upload/index.js:53
+#: src/editor-document-upload/index.js:53
 msgid "min ago"
 msgstr "dakika önce"
 
-#: build/editor-document-upload/index.js:61
+#: src/editor-document-upload/index.js:61
 msgid "hour ago"
 msgstr "bir saat önce"
 
-#: build/editor-document-upload/index.js:62
+#: src/editor-document-upload/index.js:62
 msgid "hours ago"
 msgstr "saatler önce"
 
-#: build/editor-document-upload/index.js:71
+#: src/editor-document-upload/index.js:71
 msgid "day ago"
 msgstr "bir gün önce"
 
-#: build/editor-document-upload/index.js:72
+#: src/editor-document-upload/index.js:72
 msgid "days ago"
 msgstr "günler önce"
 
-#: build/editor-document-upload/index.js:200
+#: src/editor-document-upload/index.js:200
 msgid ""
 "The attached document file could not be found. It may have been deleted."
 msgstr "Ekli belge dosyası bulunamadı. Silinmiş olabilir."
 
-#: build/editor-document-upload/index.js:212
+#: src/editor-document-upload/index.js:212
 msgid "Document selection failed."
 msgstr "Belge seçimi başarısız oldu."
 
-#: build/editor-document-upload/index.js:224
+#: src/editor-document-upload/index.js:224
 msgid "New version selected. Press Update to save."
 msgstr "Yeni sürüm seçildi. Kaydetmek için Güncelle'ye basın."
 
-#: build/editor-document-upload/index.js:225
+#: src/editor-document-upload/index.js:225
 msgid "Document selected. Press Update to save."
 msgstr "Seçilen belge. Kaydetmek için Güncelle'ye basın."
 
-#: build/editor-document-upload/index.js:261
+#: src/editor-document-upload/index.js:261
 msgid "Select"
 msgstr "Seçme"
 
-#: build/editor-document-upload/index.js:312
+#: src/editor-document-upload/index.js:312
 msgid "Attached document"
 msgstr "Ekli belge"
 
 #. translators: %s is the name of the user who has the document locked
-#: build/editor-document-upload/index.js:344
+#: src/editor-document-upload/index.js:344
 msgid "%s is currently editing this document."
 msgstr "%s şu anda bu belgeyi düzenliyor."
 
-#: build/editor-document-upload/index.js:348
+#: src/editor-document-upload/index.js:348
 msgid "This document is currently locked."
 msgstr "Bu belge şu anda kilitli."
 
-#: build/editor-document-upload/index.js:406
+#: src/editor-document-upload/index.js:406
 msgid "A brief description of the changes in this version."
 msgstr "Bu sürümdeki değişikliklerin kısa bir açıklaması."
 
-#: build/editor-document-upload/index.js:515
+#: src/editor-document-upload/index.js:515
 msgid "No revisions yet."
 msgstr "Henüz herhangi bir değişiklik yapılmadı."
 
-#: build/editor-document-upload/index.js:578
+#: src/editor-document-upload/index.js:578
 msgid "—"
 msgstr "—"
-
-#: src/blocks/document-preview/block.json
-msgctxt "block title"
-msgid "Document Preview"
-msgstr ""
-
-#: src/blocks/document-preview/block.json
-msgctxt "block description"
-msgid "Embed an inline preview of a document's latest revision."
-msgstr ""
 
 #: src/blocks/documents-shortcode/block.json
 msgctxt "block title"

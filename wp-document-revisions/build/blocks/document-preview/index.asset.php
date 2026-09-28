@@ -5,7 +5,8 @@
 		'wp-blocks',
 		'wp-components',
 		'wp-i18n',
-		'wp-server-side-render'
+		'wp-server-side-render',
+		'wp-shortcode'
 	),
-	'version' => '31b01fe5471d93f0ff82'
+	'version' => '215b2b36578414ebd912'
 );

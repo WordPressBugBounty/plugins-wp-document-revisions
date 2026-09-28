@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'wp-document-revisions/wp-document-revisions',
-        'pretty_version' => 'v5.4.3',
-        'version' => '5.4.3.0',
-        'reference' => '724e5043804dfae86f207d3c8a6d3688c6cba198',
+        'pretty_version' => 'v5.5.0',
+        'version' => '5.5.0.0',
+        'reference' => 'e375465fd0923f014cab32dd341290c826f76ed6',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -47,9 +47,9 @@
             'dev_requirement' => false,
         ),
         'wp-document-revisions/wp-document-revisions' => array(
-            'pretty_version' => 'v5.4.3',
-            'version' => '5.4.3.0',
-            'reference' => '724e5043804dfae86f207d3c8a6d3688c6cba198',
+            'pretty_version' => 'v5.5.0',
+            'version' => '5.5.0.0',
+            'reference' => 'e375465fd0923f014cab32dd341290c826f76ed6',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

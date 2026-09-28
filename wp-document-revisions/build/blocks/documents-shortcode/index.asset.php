@@ -6,7 +6,8 @@
 		'wp-components',
 		'wp-element',
 		'wp-i18n',
-		'wp-server-side-render'
+		'wp-server-side-render',
+		'wp-shortcode'
 	),
-	'version' => '626419fa12e7f04d7a22'
+	'version' => '1eb4e01aadc15117964f'
 );

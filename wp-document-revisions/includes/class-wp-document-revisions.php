@@ -165,7 +165,6 @@ class WP_Document_Revisions {
 		add_filter( 'post_link', array( $this, 'permalink' ), 10, 3 );
 		add_filter( 'template_include', array( $this, 'serve_file' ), 10, 1 );
 		add_filter( 'serve_document_auth', array( $this, 'serve_document_auth' ), 10, 3 );
-		add_action( 'parse_request', array( $this, 'ie_cache_fix' ) );
 		add_filter( 'query_vars', array( $this, 'add_query_var' ) );
 		add_filter( 'default_feed', array( $this, 'hijack_feed' ) );
 		add_action( 'do_feed_revision_log', array( $this, 'do_feed_revision_log' ) );
@@ -213,6 +212,10 @@ class WP_Document_Revisions {
 
 		// block external processes from deleting revisions.
 		add_filter( 'pre_delete_post', array( $this, 'possibly_delete_revision' ), 9999, 3 );
+
+		// only allow the attachment id meta to point at an attachment of the same document.
+		add_filter( 'add_post_metadata', array( $this, 'guard_attachment_meta' ), 10, 4 );
+		add_filter( 'update_post_metadata', array( $this, 'guard_attachment_meta' ), 10, 4 );
 
 		// revisions management.
 		add_filter( 'wp_revisions_to_keep', array( $this, 'manage_document_revisions_limit' ), 999, 2 );
@@ -702,6 +705,38 @@ class WP_Document_Revisions {
 			}
 			$this->admin = new WP_Document_Revisions_Admin( self::$instance );
 		}
+	}
+
+	/**
+	 * Blocks writes of the attachment id meta that name another document's attachment.
+	 *
+	 * The meta is writable over REST (and by other code paths from forgeable input), so it
+	 * must not name an attachment that is parented to a different post.
+	 *
+	 * @since 5.5.0
+	 * @param null|bool $check      Whether to allow the write. Null to carry on.
+	 * @param int       $object_id  Post id.
+	 * @param string    $meta_key   Meta key.
+	 * @param mixed     $meta_value Meta value.
+	 * @return null|bool Null to allow the write, false to block it.
+	 */
+	public function guard_attachment_meta( $check, $object_id, $meta_key, $meta_value ) {
+		if ( '_document_attachment_id' !== $meta_key || null !== $check ) {
+			return $check;
+		}
+
+		$attach_id = absint( $meta_value );
+		if ( 0 === $attach_id ) {
+			return $check;
+		}
+
+		// Only an existing attachment of another post is a threat; anything else never resolves.
+		$attachment = get_post( $attach_id );
+		if ( $attachment instanceof WP_Post && 'attachment' === $attachment->post_type && (int) $attachment->post_parent !== (int) $object_id ) {
+			return false;
+		}
+
+		return $check;
 	}
 
 	/**
@@ -1212,29 +1247,14 @@ class WP_Document_Revisions {
 	}
 
 	/**
-	 * Remove nocache headers from document downloads on IE < 8
-	 * Hooked into parse_request so we can fire after request is parsed, but before headers are sent
-	 * See http://support.microsoft.com/kb/323308.
+	 * Formerly removed nocache headers from document downloads on IE < 8. No longer hooked.
 	 *
-	 * @param WP $wp The global WP object. Passed by reference.
+	 * @deprecated 5.5.0 Internet Explorer is no longer supported.
+	 *
+	 * @param WP $wp The global WP object.
 	 * @return void
 	 */
-	public function ie_cache_fix( WP $wp ): void {
-		// SSL check.
-		if ( ! is_ssl() ) {
-			return;
-		}
-
-		// IE check.
-		if ( ! isset( $_SERVER['HTTP_USER_AGENT'] ) || stripos( sanitize_text_field( wp_unslash( $_SERVER['HTTP_USER_AGENT'] ) ), 'MSIE' ) === false ) {
-			return;
-		}
-
-		// verify that they are requesting a document.
-		if ( ! isset( $wp->query_vars['post_type'] ) || 'document' !== $wp->query_vars['post_type'] ) {
-			return;
-		}
-
-		add_filter( 'nocache_headers', '__return_empty_array' );
+	public function ie_cache_fix( WP $wp ): void { // phpcs:ignore Generic.CodeAnalysis.UnusedFunctionParameter.Found
+		_deprecated_function( __METHOD__, '5.5.0' );
 	}
 }
