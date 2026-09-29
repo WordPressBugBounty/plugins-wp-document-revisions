@@ -142,6 +142,11 @@ class WP_Document_Revisions_Front_End {
 			return '<p>' . esc_html__( 'This is not a valid document.', 'wp-document-revisions' ) . '</p>';
 		}
 
+		// The user must be able to read this document.
+		if ( ! $this->can_read_revisions( (int) $id ) ) {
+			return '<p>' . esc_html__( 'You are not authorized to read this data', 'wp-document-revisions' ) . '</p>';
+		}
+
 		// get revisions.
 		$revisions = $this->get_revisions( $id );
 
@@ -188,7 +193,7 @@ class WP_Document_Revisions_Front_End {
 				echo ( $atts_new_tab ? ' target="_blank"' : '' );
 				printf( '>%s</a> <span class="agoby">', esc_html( human_time_diff( strtotime( $revision->post_modified_gmt ), time() ) ) . wp_kses_post( $atts_show_pdf ) );
 				esc_html_e( 'ago by', 'wp-document-revisions' );
-				printf( '</span> <span class="author">%s</span>', esc_html( get_the_author_meta( 'display_name', (int) $revision->post_author ) ) );
+				printf( '</span> <span class="author">%s</span>', esc_html( get_the_author_meta( 'display_name', $wpdr->get_revision_author( $revision ) ) ) );
 				echo ( $atts_summary ? '<br/>' . esc_html( $revision->post_excerpt ) : '' );
 				?>
 			</li>
@@ -282,7 +287,6 @@ class WP_Document_Revisions_Front_End {
 			'post__not_in',
 			'post_name__in',
 			'has_password',
-			'post_password',
 			'post_status',
 			'numberposts',
 			'year',
@@ -439,6 +443,8 @@ class WP_Document_Revisions_Front_End {
 			</a>
 			<?php
 			if ( $show_edit && current_user_can( 'edit_document', $document->ID ) ) {
+				// The Edit link is the only front-end output styled by style-front.css.
+				$this->enqueue_front_style();
 				$link = add_query_arg(
 					array(
 						'post'   => $document->ID,
@@ -448,7 +454,9 @@ class WP_Document_Revisions_Front_End {
 				);
 				echo '&nbsp;&nbsp;<small><a class="document-mod" href="' . esc_attr( $link ) . '">[' . esc_html__( 'Edit', 'wp-document-revisions' ) . ']</a></small><br />';
 			}
-			if ( $atts_show_thumb ) {
+			// Password-protected documents don't show their thumbnail or description.
+			$protected = post_password_required( $document->ID );
+			if ( $atts_show_thumb && ! $protected ) {
 				if ( is_null( $doc_dir ) ) {
 					// PDF files may have a generated image, and the access call uses a cached version of the (std) upload directory
 					// so cannot change within call and may be wrong, so possibly replace it in the output.
@@ -495,7 +503,7 @@ class WP_Document_Revisions_Front_End {
 			}
 			// is_numeric is old format. WPDR comment will be stripped by wp_kses_post.
 			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			echo ( $atts_show_descr && ! is_numeric( $document->post_content ) ) ? '<div class="wp-block-paragraph">' . wp_kses_post( $document->post_content ) . '</div>' : '';
+			echo ( $atts_show_descr && ! $protected && ! is_numeric( $document->post_content ) ) ? '<div class="wp-block-paragraph">' . wp_kses_post( $document->post_content ) . '</div>' : '';
 			?>
 			</li>
 		<?php } ?>
@@ -506,16 +514,57 @@ class WP_Document_Revisions_Front_End {
 	}
 
 	/**
-	 * Shortcode can have CSS on any page.
+	 * Registers the front-end CSS. It's enqueued only when output that uses it renders.
 	 *
 	 * @since 3.2.0
 	 */
 	public function enqueue_front(): void {
+		$this->register_front_style();
+	}
 
-		$wpdr = self::$parent;
+	/**
+	 * Registers the front-end stylesheet if it isn't already.
+	 *
+	 * @since 5.6.0
+	 */
+	private function register_front_style(): void {
+		if ( wp_style_is( 'wp-document-revisions-front', 'registered' ) ) {
+			return;
+		}
+		wp_register_style( 'wp-document-revisions-front', plugins_url( '/css/style-front.css', __DIR__ ), array(), self::$parent->version );
+	}
 
-		// enqueue CSS for shortcode.
-		wp_enqueue_style( 'wp-document-revisions-front', plugins_url( '/css/style-front.css', __DIR__ ), array(), $wpdr->version );
+	/**
+	 * Enqueues the front-end stylesheet from inside shortcode or block output.
+	 *
+	 * WordPress prints styles enqueued after wp_head in the footer.
+	 *
+	 * @since 5.6.0
+	 */
+	private function enqueue_front_style(): void {
+		$this->register_front_style();
+		wp_enqueue_style( 'wp-document-revisions-front' );
+	}
+
+	/**
+	 * Whether to register the plugin's blocks.
+	 *
+	 * @since 5.6.0
+	 * @return bool
+	 */
+	public static function blocks_enabled(): bool {
+		/**
+		 * Filters whether to register WP Document Revisions' blocks (documents list,
+		 * revisions list, document preview and recently revised documents).
+		 *
+		 * The [documents], [document_revisions] and [document_preview] shortcodes and
+		 * the classic widget are unaffected.
+		 *
+		 * @since 5.6.0
+		 *
+		 * @param bool $register Whether to register the blocks. Default true.
+		 */
+		return (bool) apply_filters( 'document_register_blocks', true );
 	}
 
 
@@ -575,8 +624,8 @@ class WP_Document_Revisions_Front_End {
 	 * @since 3.3.0
 	 */
 	public function documents_shortcode_blocks(): void {
-		if ( ! function_exists( 'register_block_type' ) ) {
-			// Gutenberg is not active, e.g. Old WP version installed.
+		if ( ! function_exists( 'register_block_type' ) || ! self::blocks_enabled() ) {
+			// Gutenberg is not active (e.g. old WP version installed), or the site turned the blocks off.
 			return;
 		}
 
@@ -973,6 +1022,18 @@ class WP_Document_Revisions_Front_End {
 	}
 
 	/**
+	 * Whether the current user can see a document's revision list.
+	 *
+	 * @since 5.5.1
+	 *
+	 * @param int $id document ID.
+	 * @return bool
+	 */
+	public function can_read_revisions( int $id ): bool {
+		return current_user_can( 'read_document', $id ) && ! post_password_required( $id );
+	}
+
+	/**
 	 * Server side block to render the revisions list.
 	 *
 	 * @param array<string, mixed> $atts shortcode attributes.
@@ -1006,12 +1067,17 @@ class WP_Document_Revisions_Front_End {
 			return '<p>' . esc_html__( 'This is not a valid document.', 'wp-document-revisions' ) . '</p>';
 		}
 
+		// The user must be able to read this document.
+		if ( ! $wpdr_fe->can_read_revisions( (int) $atts['id'] ) ) {
+			return '<p>' . esc_html__( 'You are not authorized to read this data', 'wp-document-revisions' ) . '</p>';
+		}
+
 		// Remove show_pdf if false.
 		if ( ! $atts['show_pdf'] ) {
 			unset( $atts['show_pdf'] );
 		}
 
-		$output  = '<h2 class="document-title document-' . esc_attr( $atts['id'] ) . '">' . get_the_title( $atts['id'] ) . '</h2>';
+		$output  = '<h2 class="document-title document-' . esc_attr( $atts['id'] ) . '">' . esc_html( get_the_title( $atts['id'] ) ) . '</h2>';
 		$output .= $wpdr_fe->revisions_shortcode( $atts );
 		return $output;
 	}
