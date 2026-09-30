@@ -722,10 +722,17 @@ trait WP_Document_Revisions_Admin_Settings {
 	 * Callback to handle profile updates.
 	 *
 	 * @since 0.5
+	 * @since 5.7.0 Regenerates the key of the user being edited, not the current user's.
+	 * @param int|null $user_id the ID of the user whose profile is being saved.
 	 */
-	public function profile_update_cb(): void {
+	public function profile_update_cb( $user_id = null ): void {
+		$user_id = $user_id ? absint( $user_id ) : get_current_user_id();
+		if ( ! $user_id || ! current_user_can( 'edit_user', $user_id ) ) {
+			return;
+		}
+
 		if ( isset( $_POST['generate-new-feed-key'] ) && isset( $_POST['_document_revisions_nonce'] ) && wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['_document_revisions_nonce'] ) ), 'generate-new-feed-key' ) ) {
-			$this->generate_new_feed_key();
+			$this->generate_new_feed_key( $user_id );
 		}
 	}
 
@@ -819,11 +826,40 @@ trait WP_Document_Revisions_Admin_Settings {
 	 */
 	public function filter_from_media_grid( array $query ) {
 		// note: hook late so that unattached filter can hook in, if necessary.
-		if ( ! apply_filters( 'document_use_block_editor', false ) ) {
-			add_filter( 'posts_where_paged', array( $this, 'filter_media_where' ), 20 );
-		}
+		add_filter( 'posts_where_paged', array( $this, 'filter_media_where' ), 20 );
 
 		return $query;
+	}
+
+	/**
+	 * Hides the details of a document attachment in the media modal when the user
+	 * cannot edit its document, as doc_clean_attachment() does for the REST API.
+	 *
+	 * @since 5.7.0
+	 *
+	 * @param array<string, mixed> $response   the attachment data for the media modal.
+	 * @param WP_Post              $attachment the attachment.
+	 * @return array<string, mixed>
+	 */
+	public function clean_attachment_for_js( $response, WP_Post $attachment ) {
+		$parent = (int) $attachment->post_parent;
+		if ( 0 === $parent || 'document' !== get_post_type( $parent ) || current_user_can( 'edit_document', $parent ) ) {
+			return $response;
+		}
+
+		$protected               = __( '<!-- protected -->', 'wp-document-revisions' );
+		$response['title']       = $protected;
+		$response['filename']    = $protected;
+		$response['name']        = $protected;
+		$response['description'] = $protected;
+		$response['caption']     = $protected;
+		$response['url']         = '';
+		$response['link']        = '';
+		$response['sizes']       = array();
+		$response['alt']         = '';
+		unset( $response['filesizeInBytes'], $response['filesizeHumanReadable'], $response['image'], $response['thumb'], $response['originalImageURL'], $response['originalImageName'] );
+
+		return $response;
 	}
 
 	/**
