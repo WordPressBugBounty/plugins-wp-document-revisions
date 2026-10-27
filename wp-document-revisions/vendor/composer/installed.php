@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'wp-document-revisions/wp-document-revisions',
-        'pretty_version' => 'v5.8.1',
-        'version' => '5.8.1.0',
-        'reference' => '9d2de5b59af4ff6695619571a00763da94f91433',
+        'pretty_version' => 'v5.8.2',
+        'version' => '5.8.2.0',
+        'reference' => '3bbb0e3d4d402887800339d933dc3285036de2a5',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -29,9 +29,9 @@
             'dev_requirement' => false,
         ),
         'smalot/pdfparser' => array(
-            'pretty_version' => 'v2.12.5',
-            'version' => '2.12.5.0',
-            'reference' => '2cfa0d92bd557875c9f52a75fde0e8392302a354',
+            'pretty_version' => 'v2.13.1',
+            'version' => '2.13.1.0',
+            'reference' => 'a71c6dd38e60a995fdb4d36e4433b8b3557c65dc',
             'type' => 'library',
             'install_path' => __DIR__ . '/../smalot/pdfparser',
             'aliases' => array(),
@@ -47,9 +47,9 @@
             'dev_requirement' => false,
         ),
         'wp-document-revisions/wp-document-revisions' => array(
-            'pretty_version' => 'v5.8.1',
-            'version' => '5.8.1.0',
-            'reference' => '9d2de5b59af4ff6695619571a00763da94f91433',
+            'pretty_version' => 'v5.8.2',
+            'version' => '5.8.2.0',
+            'reference' => '3bbb0e3d4d402887800339d933dc3285036de2a5',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

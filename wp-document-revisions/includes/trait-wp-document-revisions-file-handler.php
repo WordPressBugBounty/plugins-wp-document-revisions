@@ -58,6 +58,16 @@ trait WP_Document_Revisions_File_Handler {
 		// grab the post revision if any.
 		$version = get_query_var( 'revision' );
 
+		// The query var comes straight from the request (?revision=abc, ?revision[]=1), so accept
+		// only a whole number; anything else is treated like a revision that doesn't exist.
+		if ( $version && ( ! is_scalar( $version ) || ! preg_match( '/^\d+$/', (string) $version ) ) ) {
+			wp_die(
+				esc_html__( 'No document file is attached.', 'wp-document-revisions' ),
+				'',
+				array( 'response' => absint( $this->no_document_response_code( $post, 0 ) ) )
+			);
+		}
+
 		// if there's not a post revision given, default to the latest.
 		if ( ! $version ) {
 			$revn = $this->get_latest_revision( $post->ID );
@@ -71,7 +81,7 @@ trait WP_Document_Revisions_File_Handler {
 			}
 			$rev_id = $revn->ID;
 		} else {
-			$rev_id = $this->get_revision_id( $version, $post->ID );
+			$rev_id = $this->get_revision_id( (int) $version, $post->ID );
 		}
 
 		// ensure we use the document upload directory.
@@ -731,6 +741,9 @@ trait WP_Document_Revisions_File_Handler {
 		 */
 		do_action( 'document_upload_end', $attachment_id, (int) wp_get_post_parent_id( $attachment_id ) );
 
+		// At end of loading the attachment into the upload directory, so remove it.
+		remove_filter( 'upload_dir', array( $this, 'document_upload_dir_filter' ) );
+
 		return $metadata;
 	}
 
@@ -1019,9 +1032,6 @@ trait WP_Document_Revisions_File_Handler {
 		}
 		// add indicator to note it has been changed (so no need to reprocess).
 		$metadata['wpdr_hidden'] = 1;
-
-		// have finished loading the attachment into the upload directory, so remove it.
-		remove_filter( 'upload_dir', array( $this, 'document_upload_dir_filter' ) );
 
 		// store the attachment in postmeta for fallback on initial file load.
 		update_post_meta( $attach->post_parent, '_document_attachment_id', $attachment_id );
