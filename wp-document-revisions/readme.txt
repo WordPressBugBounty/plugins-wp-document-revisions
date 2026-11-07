@@ -5,7 +5,7 @@ Tags: documents, document management, version control, collaboration, revisions
 Requires at least: 5.9
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 5.8.2
+Stable tag: 5.8.3
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -144,11 +144,9 @@ See [**the full list of features**](https://wp-document-revisions.github.io/wp-d
 
 For development or contributing:
 
-```bash
-git clone https://github.com/wp-document-revisions/wp-document-revisions.git
-cd wp-document-revisions
-composer install --no-dev
-```
+    git clone https://github.com/wp-document-revisions/wp-document-revisions.git
+    cd wp-document-revisions
+    composer install --no-dev
 
 = ⚙️ Requirements =
 
@@ -221,23 +219,21 @@ Every part of the behavior is filterable. See [Filters](https://wp-document-revi
 
 = Example: route "Under Review" to a review team =
 
-```php
-add_filter(
-	'document_notification_recipients',
-	function ( $emails, $doc_id, $event, $actor_id ) {
-		if ( 'state_change' !== $event ) {
-			return $emails;
-		}
-		$states = wp_get_object_terms( $doc_id, 'workflow_state', array( 'fields' => 'names' ) );
-		if ( in_array( 'Under Review', $states, true ) ) {
-			$emails[] = 'review-team@example.com';
-		}
-		return $emails;
-	},
-	10,
-	4
-);
-```
+    add_filter(
+    	'document_notification_recipients',
+    	function ( $emails, $doc_id, $event, $actor_id ) {
+    		if ( 'state_change' !== $event ) {
+    			return $emails;
+    		}
+    		$states = wp_get_object_terms( $doc_id, 'workflow_state', array( 'fields' => 'names' ) );
+    		if ( in_array( 'Under Review', $states, true ) ) {
+    			$emails[] = 'review-team@example.com';
+    		}
+    		return $emails;
+    	},
+    	10,
+    	4
+    );
 
 == Delivery ==
 
@@ -311,6 +307,13 @@ Thanks to everyone who has contributed translations, including:
 
 Numbers in brackets show the issue number in https://github.com/wp-document-revisions/wp-document-revisions/issues/
 
+= 5.8.3 =
+
+* Activating the plugin for the first time no longer shows a false "You do not have the edit_documents capability" warning. On WordPress Playground, including the Live Preview on WordPress.org, the plugin activates on every visit, so every session showed it. (#887, #890) Thanks to [@NeilWJames](https://github.com/NeilWJames) for reporting it.
+* When the server can't read a document's file, for example after a PHP upgrade changes the account PHP runs as, opening the document now shows a message explaining that the file isn't readable, instead of a blank error page. (#885, #889)
+* The plugin no longer bundles its Norwegian (Bokmål), Polish and Turkish translations. WordPress now installs these from translate.wordpress.org language packs, so nothing changes on sites using those languages. (#894)
+* Code examples on the WordPress.org plugin page now display as code. (#901)
+
 = 5.8.2 =
 
 * Security: WordPress's embed lookup (oEmbed) gave out the stored file name of a document's files. Document files sit in the uploads folder by default, so on sites that don't block that folder, anyone could use the name to download the file of a password-protected document, or any earlier version of a published one. The embed lookup now refuses document files, and visitors who can't edit a document see the document's title instead of a file's stored name ([GHSA-5452-pc3q-85f6](https://github.com/wp-document-revisions/wp-document-revisions/security/advisories/GHSA-5452-pc3q-85f6)).
@@ -321,8 +324,6 @@ Numbers in brackets show the issue number in https://github.com/wp-document-revi
 
 = 5.8.1 =
 
-* Uploading a new version of a document whose file name has capitals, spaces or accented characters (for example "Annual Report.pdf") now replaces the document's file. Before, the upload appeared to succeed, but clicking Update put the document back on its old file. If a document got stuck on its old file, upload the new version again. (#858) Thanks to [@cvladan](https://profiles.wordpress.org/cvladan/) for reporting and diagnosing it.
-
-= 5.8.0 =
+* Uploading a new version of a document now replaces the document's file in a few rare cases where it didn't, such as an image or audio file with an embedded title, or a site using the `document_internal_filename` filter. Before, the upload appeared to succeed, but clicking Update put the document back on its old file. If a document got stuck on its old file, upload the new version again. (#858) Thanks to [@cvladan](https://profiles.wordpress.org/cvladan/) for reporting it.
 
 For complete changelog, see [GitHub](https://wp-document-revisions.github.io/wp-document-revisions/changelog/)

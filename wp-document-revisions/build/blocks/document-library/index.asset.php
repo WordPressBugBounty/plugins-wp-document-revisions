@@ -8,5 +8,5 @@
 		'wp-server-side-render',
 		'wp-shortcode'
 	),
-	'version' => '2a17766ce1752ec93672'
+	'version' => 'dec39209b15f76d250f0'
 );
